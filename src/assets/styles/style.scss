@@ -1,0 +1,19 @@
+$primary: #6255a5;
+
+@import "../../../node_modules/bootstrap/scss/bootstrap";
+@import "../../../node_modules/bootstrap/scss/variables";
+
+header {
+  position: sticky;
+  top: 0;
+  background-color: $white;
+  z-index: 1;
+  .header-logo {
+    height: 4rem;
+  }
+}
+
+footer {
+  background-color: $primary;
+  color: $white;
+}
