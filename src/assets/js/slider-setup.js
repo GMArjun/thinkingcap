@@ -2,8 +2,8 @@ var swiper = new Swiper("#popular-subjects", {
   slidesPerView: 5,
   spaceBetween: 20,
   navigation: {
-    nextEl: ".swiper-button-top-next",
-    prevEl: ".swiper-button-top-prev",
+    nextEl: ".slide-top-next",
+    prevEl: ".slide-top-prev",
   },
   breakpoints: {
     320: {
@@ -20,3 +20,27 @@ var swiper = new Swiper("#popular-subjects", {
     },
   },
 });
+
+var swiper = new Swiper("#popular-subjectss", {
+    slidesPerView: 5,
+    spaceBetween: 20,
+    navigation: {
+      nextEl: ".swiper-button-top-next",
+      prevEl: ".swiper-button-top-prev",
+    },
+    breakpoints: {
+      320: {
+        slidesPerView: 1,
+      },
+      480: {
+        slidesPerView: 2,
+      },
+      768: {
+        slidesPerView: 3,
+      },
+      1120: {
+        slidesPerView: 6,
+      },
+    },
+  });
+  
