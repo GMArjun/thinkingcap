@@ -11,6 +11,7 @@ $input-font-size: 0.875rem;
 $font-size-xs: 0.75rem;
 
 @import "../../../node_modules/bootstrap/scss/bootstrap";
+@import "swiper";
 
 /* scrollbar */
 ::-webkit-scrollbar {
@@ -41,6 +42,7 @@ header {
   background-color: $white;
   z-index: 1;
   box-shadow: 0px 4px 2px $gray-100;
+  z-index: 99;
   .header-logo {
     height: 4rem;
   }
@@ -109,4 +111,49 @@ footer {
 }
 .btn-secondary {
   color: $white !important;
+}
+
+.card-type-slider {
+  .swiper-slide {
+    & > a {
+      color: $black;
+      transition: 0.3s ease;
+      &:hover {
+        color: $primary;
+      }
+      .cards-bg-light {
+        background-color: $gray-200;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 200px;
+        flex-direction: column;
+        gap: $spacer;
+        img {
+          height: 100px;
+        }
+      }
+    }
+  }
+  .swiper-button-top-next {
+    right: -18px;
+    @extend .swiper-button-next;
+  }
+  .swiper-button-top-prev {
+    left: -18px;
+    @extend .swiper-button-prev;
+  }
+  .swiper-button-top-next,
+  .swiper-button-top-prev {
+    height: $spacer * 2.5;
+    width: $spacer * 2.5;
+    border-radius: 100%;
+    background-color: $black;
+    color: $white;
+    font-weight: $font-weight-bold;
+    pointer-events: auto !important;
+    &::after {
+      font-size: $font-size-xs;
+    }
+  }
 }
