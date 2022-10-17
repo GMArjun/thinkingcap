@@ -9,6 +9,7 @@ $font-family-base: font-regular;
 $btn-font-size: 0.875rem;
 $input-font-size: 0.875rem;
 $font-size-xs: 0.75rem;
+$star-yellow: #ffbb00;
 
 @import "../../../node_modules/bootstrap/scss/bootstrap";
 @import "swiper";
@@ -113,6 +114,28 @@ footer {
   color: $white !important;
 }
 
+.slide-right {
+  right: -18px;
+  @extend .swiper-button-next;
+}
+.slide-left {
+  left: -18px;
+  @extend .swiper-button-prev;
+}
+.slide-left,
+.slide-right {
+  height: $spacer * 2.5;
+  width: $spacer * 2.5;
+  border-radius: 100%;
+  background-color: $black;
+  color: $white;
+  font-weight: $font-weight-bold;
+  pointer-events: auto !important;
+  &::after {
+    font-size: $font-size-xs;
+  }
+}
+
 .card-type-slider {
   .swiper-slide {
     & > a {
@@ -135,25 +158,62 @@ footer {
       }
     }
   }
-  .slide-right {
-    right: -18px;
-    @extend .swiper-button-next;
-  }
-  .slide-left {
-    left: -18px;
-    @extend .swiper-button-prev;
-  }
-  .slide-left,
-  .slide-right {
-    height: $spacer * 2.5;
-    width: $spacer * 2.5;
-    border-radius: 100%;
-    background-color: $black;
-    color: $white;
-    font-weight: $font-weight-bold;
-    pointer-events: auto !important;
-    &::after {
-      font-size: $font-size-xs;
+}
+
+.course-type-slider {
+  .swiper-slide {
+    & > a {
+      color: $black;
+      transition: 0.3s ease;
+      .description-block {
+        & > div {
+          &:first-child {
+            display: -webkit-box;
+            -webkit-line-clamp: 2;
+            -webkit-box-orient: vertical;  
+            overflow: hidden;
+          }
+        }
+      }
+      &:hover {
+        .description-block {
+          & > div {
+            &:first-child {
+              color: $primary;
+            }
+          }
+        }
+      }
+      .course-card {
+        .img-container {
+          position: relative;
+          overflow: hidden;
+          height: 0px;
+          padding-top: 56%;
+          img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            right: 0;
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+            transition: 1s all ease;
+          }
+          &:hover {
+            img {
+              transform: scale(1.05);
+            }
+          }
+        }
+        .star-rating_r {
+          .fa-star,
+          .fa-star-half-stroke {
+            color: $star-yellow;
+          }
+        }
+      }
     }
   }
 }

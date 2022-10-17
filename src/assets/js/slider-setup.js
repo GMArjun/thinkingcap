@@ -21,12 +21,15 @@ var swiper = new Swiper("#popular-subjects", {
   },
 });
 
-var swiper = new Swiper("#popular-subjectss", {
-    slidesPerView: 5,
+let courseSliders = [1, 2, 3];
+
+courseSliders.forEach((i) => {
+  new Swiper(`#courses-collection-${i}`, {
+    slidesPerView: 4,
     spaceBetween: 20,
     navigation: {
-      nextEl: ".swiper-button-top-next",
-      prevEl: ".swiper-button-top-prev",
+      nextEl: `.course-slide-control-next-${i}`,
+      prevEl: `.course-slide-control-prev-${i}`,
     },
     breakpoints: {
       320: {
@@ -39,8 +42,8 @@ var swiper = new Swiper("#popular-subjectss", {
         slidesPerView: 3,
       },
       1120: {
-        slidesPerView: 6,
+        slidesPerView: 4,
       },
     },
   });
-  
+});
