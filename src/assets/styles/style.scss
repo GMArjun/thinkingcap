@@ -76,17 +76,15 @@ footer {
       height: 14px;
     }
   }
-  .app-links {
-    @media screen and (max-width: 767px) {
-      max-width: 360px;
+  .subscribe-block {
+    @include media-breakpoint-up(sm) {
+      max-width: 300px;
       width: 100%;
       margin: 0 auto;
     }
-  }
-  .subscribe-block {
-    max-width: 200px;
-    width: 100%;
-    margin: 0 auto;
+    @include media-breakpoint-up(md) {
+      margin: unset;
+    }
   }
 }
 

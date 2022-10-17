@@ -12,20 +12,21 @@
 
 <body>
     <header>
-        <div class="container-xl px-3">
+        <div class="container-xl px-4">
             <img src="./assets/img/icons/logo.png" class="header-logo" alt="logo">
         </div>
     </header>
     <main>
         <div class="home-page">
             <img src="./assets/img/static/homebanner.png" class="w-100" alt="">
-            <div class="container-xl px-3">
+            <div class="container-xl px-4">
 
                 <section class="become-instructor-block py-5">
                     <div class="row g-5">
                         <div class="col-md-6">
                             <div class="pe-xl-5">
-                                <img src="./assets/img/static/instructor.jpg" class="rounded-5 w-100" alt="">
+                                <img src="./assets/img/static/instructor.jpg" class="d-none d-md-block rounded-5 w-100"
+                                    alt="">
                             </div>
                         </div>
                         <div class="col-md-6 align-self-center">
@@ -34,6 +35,11 @@
                                 <p class="fs-4">Instructors from around the world teach millions of students on Thinking
                                     cap. We provide
                                     the tools and skillsto teach what you like.</p>
+
+                                <div>
+                                    <img src="./assets/img/static/instructor.jpg" class="d-md-none rounded-5 w-100"
+                                        alt="">
+                                </div>
                                 <div class="mt-4 mt-lg-5 pt-xl-5">
                                     <button type="button" class="btn btn-primary rounded-3"
                                         style="--bs-btn-padding-y: 1rem; --bs-btn-padding-x: 2rem; --bs-btn-font-size: 1.25rem;">Register
@@ -124,49 +130,59 @@
         </div>
     </main>
     <footer class="py-4 py-sm-5">
-        <div class="container-xl px-3">
+        <div class="container-xl px-4">
             <img src="./assets/img/icons/logo-white.png" class="footer-logo mb-4" alt="logo">
-            <div class="row gx-5">
-                <div class="col-12 col-lg-3">
-                    <p class="mb-1 fs-6 fw-bold">About Us</p>
-                    <p class="fs-sm">We want to help bring talented students and unique startups together</p>
-
-                    <p class="mb-2 fs-6 fw-bold mt-4">Contact Us</p>
-                    <div class="d-flex align-items-center gap-2 mb-2">
-                        <span class="contact-rings">
-                            <img src="./assets/img/icons/phonecall.png" alt="logo">
-                        </span>
-                        <a class="text-white text-decoration-none fs-sm" href="tel:+919990009900">+91 9990 009 900</a>
-                    </div>
-                    <div class="d-flex align-items-center gap-2 mb-4">
-                        <span class="contact-rings">
-                            <img src="./assets/img/icons/emailicon.png" alt="logo">
-                        </span>
-                        <a class="text-white text-decoration-none fs-sm" href="demo@gmail.com">demo@gmail.com</a>
+            <div class="row gx-lg-5 gy-4 gy-sm-5">
+                <div class="order-1 col-12 col-md-6 col-xl-3">
+                    <div class="row gy-4">
+                        <div class="col-sm-6 col-md-12">
+                            <p class="mb-1 fs-6 fw-bold">About Us</p>
+                            <p class="fs-sm mb-0">We want to help bring talented students and unique startups together
+                            </p>
+                        </div>
+                        <div class="col-sm-6 col-md-12">
+                            <p class="mb-2 fs-6 fw-bold">Contact Us</p>
+                            <div class="d-flex align-items-center gap-2 mb-2">
+                                <span class="contact-rings">
+                                    <img src="./assets/img/icons/phonecall.png" alt="logo">
+                                </span>
+                                <a class="text-white text-decoration-none fs-sm" href="tel:+919990009900">+91 9990 009
+                                    900</a>
+                            </div>
+                            <div class="d-flex align-items-center gap-2">
+                                <span class="contact-rings">
+                                    <img src="./assets/img/icons/emailicon.png" alt="logo">
+                                </span>
+                                <a class="text-white text-decoration-none fs-sm"
+                                    href="demo@gmail.com">demo@gmail.com</a>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <div class="col-sm-6 col-md-4 col-lg-3 d-xl-flex justify-content-center">
-                    <div class="footer-container mb-4">
+                <div
+                    class="order-2 order-md-3 order-xl-2 col-sm-6 col-md-6 col-lg-6 col-xl-3 d-xl-flex justify-content-center">
+                    <div class="footer-container">
                         <p class="mb-1 fs-6 fw-bold">Information</p>
                         <div class="footer-links mb-1"><a href="#">About us</a></div>
                         <div class="footer-links mb-1"><a href="#">More search</a></div>
                         <div class="footer-links mb-1"><a href="#">Blog</a></div>
                         <div class="footer-links mb-1"><a href="#">Testimonials</a></div>
-                        <div class="footer-links mb-1"><a href="#">Events</a></div>
+                        <div class="footer-links"><a href="#">Events</a></div>
                     </div>
                 </div>
-                <div class="col-sm-6 col-md-4 col-lg-3 d-xl-flex justify-content-center">
-                    <div class="footer-container mb-4">
+                <div
+                    class="order-3 order-lg-4 order-xl-3 col-sm-6 col-md-6 col-lg-6 col-xl-3 d-xl-flex justify-content-center">
+                    <div class="footer-container">
                         <p class="mb-1 fs-6 fw-bold">Helpful Links</p>
                         <div class="footer-links mb-1"><a href="#">Service</a></div>
                         <div class="footer-links mb-1"><a href="#">Support</a></div>
                         <div class="footer-links mb-1"><a href="#">Blog</a></div>
                         <div class="footer-links mb-1"><a href="#">Terms & Conditions</a></div>
-                        <div class="footer-links mb-1"><a href="#">Privacy Policy</a></div>
+                        <div class="footer-links"><a href="#">Privacy Policy</a></div>
                     </div>
                 </div>
-                <div class="col-12 col-md-4 col-lg-3">
-                    <div class="subscribe-block mb-4">
+                <div class="order-4 order-md-2 order-xl-4 col-12 col-md-6 col-lg-6 col-xl-3">
+                    <div class="subscribe-block">
                         <p class="mb-3 fs-6 fw-bold">Subscribe More Info</p>
                         <input class="form-control text-center" type="text" placeholder="Enter your Email">
                         <button type="button" class="btn btn-secondary w-100 mt-3">Subscribe</button>
@@ -181,18 +197,17 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-12">
-                    <div class="d-flex justify-content-center gap-3 social-links mt-3 mt-md-5 pt-md-3">
+                <div class="order-5 col-12">
+                    <div class="d-flex justify-content-center gap-3 social-links">
                         <a href="#">
-                            <img height="36" src="./assets/img/icons/fb-icon.png" alt="logo">
+                            <img height="32" src="./assets/img/icons/fb-icon.png" alt="logo">
                         </a>
                         <a href="#">
-                            <img height="36" src="./assets/img/icons/insta-icon.png" alt="logo">
+                            <img height="32" src="./assets/img/icons/insta-icon.png" alt="logo">
                         </a>
                         <a href="#">
-                            <img height="36" src="./assets/img/icons/twitter-icon.png" alt="logo">
+                            <img height="32" src="./assets/img/icons/twitter-icon.png" alt="logo">
                         </a>
-
                     </div>
                 </div>
             </div>
