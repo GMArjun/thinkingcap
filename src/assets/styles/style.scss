@@ -76,6 +76,13 @@ footer {
       height: 14px;
     }
   }
+  .app-links {
+    @include media-breakpoint-only(xs) {
+      max-width: 400px;
+      width: 100%;
+      margin: 0 auto;
+    }
+  }
   .subscribe-block {
     @include media-breakpoint-up(sm) {
       max-width: 300px;
