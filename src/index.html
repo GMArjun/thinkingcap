@@ -14,9 +14,90 @@
 <body>
     <header>
         <div class="container-xl px-4">
-            <img src="./assets/img/icons/logo.png" class="header-logo" alt="logo">
+            <div class="logo-container">
+                <button class="btn outline-0 border-0 ms-n2" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#asidebar" aria-controls="asidebar"><i class="fa fa-bars"></i>
+                </button>
+                <img src="./assets/img/icons/logo.png" class="header-logo" alt="logo">
+            </div>
         </div>
+
+        <aside class="asider-bar offcanvas offcanvas-start" tabindex="-1" id="asidebar">
+            <div class="offcanvas-header">
+                <button type="button" class="cls-btn outline-0 border-0" data-bs-dismiss="offcanvas"
+                    data-bs-target="#asidebar" aria-label="Close"><i class="fa fa-close"></i></button>
+            </div>
+            <div class="offcanvas-body">
+                <div class="auth-section">
+                    <a class="d-block" href="">Login</a>
+                    <a class="d-block" href="">Signup</a>
+                </div>
+                <hr>
+                <a href="#">Instructors</a>
+                <hr>
+                <div class="mb-2">Categories</div>
+                <div class="page-header">
+                    <nav>
+                        <div class="menu-wrapper is-visible">
+                            <div class="list-wrapper">
+                                <ul class="menu level-1">
+                                    <li>
+                                        <a href="" class="nested">Web Development</a>
+                                        <ul class="sub-menu level-2">
+                                            <li>
+                                                <a href="" class="nested">Javascript</a>
+                                                <ul class="sub-menu level-3">
+                                                    <li> <a href="">React</a> </li>
+                                                    <li> <a href="">Vue</a> </li>
+                                                    <li> <a href="">Angular</a> </li>
+                                                </ul>
+                                            </li>
+                                            <li>
+                                                <a href="">Course Materials</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <a href="" class="nested">Mobile Development</a>
+                                        <ul class="sub-menu level-2">
+                                            <li>
+                                                <a href="">Unity</a>
+                                            </li>
+                                            <li>
+                                                <a href="">3D Game Development</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <a href="">IT Certifications</a>
+                                    </li>
+                                    <li>
+                                        <a href="">Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero vel
+                                            sequi nobis atque, laudantium perspiciatis!</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="list-wrapper">
+                                <button type="button" class="back-one-level mb-2 ps-0">
+                                    <i class="fa fa-arrow-left f-12"></i>
+                                    <span class="text-start fs-sm text-truncate" />
+                                </button>
+                                <div class="sub-menu-wrapper"></div>
+                            </div>
+                            <div class="list-wrapper">
+                                <button type="button" class="back-one-level mb-2 ps-0">
+                                    <i class="fa fa-arrow-left f-12"></i>
+                                    <span class="text-start fs-sm text-truncate" />
+                                </button>
+                                <div class="sub-menu-wrapper"></div>
+                            </div>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </aside>
     </header>
+
     <main>
         <div class="home-page">
             <img src="./assets/img/static/homebanner.png" class="w-100" alt="">
@@ -942,6 +1023,8 @@
     <script src="./assets/js/bootstrap.js"></script>
     <script src="./assets/js/swiper.js"></script>
     <script src="./assets/js/slider-setup.js"></script>
+    <script src="./assets/js/mobile-menu.js"></script>
+
 </body>
 
 </html>
