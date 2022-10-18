@@ -13,12 +13,27 @@
 
 <body>
     <header>
-        <div class="container-xl px-4">
-            <div class="logo-container">
-                <button class="btn outline-0 border-0 ms-n2" type="button" data-bs-toggle="offcanvas"
-                    data-bs-target="#asidebar" aria-controls="asidebar"><i class="fa fa-bars"></i>
-                </button>
-                <img src="./assets/img/icons/logo.png" class="header-logo" alt="logo">
+        <div class="container-fluid px-4 position-relative">
+            <div class="header-nav d-flex align-items-center">
+                <div class="logo-container d-flex align-items-center">
+                    <button class="btn outline-0 border-0 ms-n2 d-block d-lg-none" type="button"
+                        data-bs-toggle="offcanvas" data-bs-target="#asidebar" aria-controls="asidebar"><i
+                            class="fa fa-bars"></i>
+                    </button>
+                    <img src="./assets/img/icons/logo.png" class="header-logo" alt="logo">
+                </div>
+                <a href="#" class="nav-link flex-0-auto d-none d-lg-block">Categories</a>
+                <div class="header-search-bar">
+                    <input class="form-control form-control-lg" placeholder="Search Courses" type="text">
+                    <a class="btn outline-0 border-0 cursor-pointer search-btn me-n3"> <i class="fa fa-search"></i> </a>
+                    <a class="btn outline-0 border-0 cursor-pointer close-btn me-n2"> <i class="fa fa-close"></i>
+                    </a>
+                </div>
+                <div class="header-controls d-none d-lg-flex align-items-center flex-0-auto">
+                    <a href="#" class="nav-link">Instructors</a>
+                    <a href="#" class="nav-link">Login</a>
+                    <a class="btn btn-secondary flex-0-auto" style="--bs-btn-padding-x: 1.5rem;" href="#">Sign up</a>
+                </div>
             </div>
         </div>
 
@@ -1025,6 +1040,20 @@
     <script src="./assets/js/slider-setup.js"></script>
     <script src="./assets/js/mobile-menu.js"></script>
 
+    <script>
+        let searchBar = document.querySelector(".header-search-bar");
+        let searchButton = document.querySelector(".header-search-bar .search-btn");
+        let searchClose = document.querySelector(".header-search-bar .close-btn");
+
+        searchButton.addEventListener("click", function (e) {
+            searchBar.classList.add("open");
+        });
+
+        searchClose.addEventListener("click", function (e) {
+            searchBar.classList.remove("open");
+        });
+
+    </script>
 </body>
 
 </html>

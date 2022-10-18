@@ -49,6 +49,146 @@ header {
   .header-logo {
     height: 4rem;
   }
+  .header-nav {
+    min-height: 75px;
+  }
+  .logo-container {
+    gap: $spacer / 2;
+  }
+  .header-controls,
+  .header-nav {
+    gap: $spacer * 2;
+  }
+  .header-search-bar {
+    position: relative;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    @include media-breakpoint-up(lg) {
+      max-width: 500px;
+      margin: 0 auto;
+    }
+    &::before {
+      font-family: FontAwesome;
+      content: "\f002";
+      display: inline-block;
+      padding-right: 3px;
+      vertical-align: middle;
+      color: $gray-500;
+      position: absolute;
+      left: $spacer;
+      font-size: $input-font-size;
+      top: 11px;
+      @include media-breakpoint-down(lg) {
+        display: none;
+      }
+    }
+    input {
+      font-size: $input-font-size;
+      box-shadow: none !important;
+      border: none;
+      background-color: $gray-200 !important;
+      padding: $input-font-size * 0.8 $input-font-size;
+      padding-left: $spacer * 2.5;
+      @include media-breakpoint-down(lg) {
+        border: 0;
+        padding: 0;
+        width: 0;
+        transition: padding 0.2s ease-in-out, width 0.2s ease-in-out;
+      }
+    }
+
+    .search-btn {
+      @include media-breakpoint-up(lg) {
+        display: none;
+      }
+    }
+
+    .close-btn {
+      display: none;
+    }
+
+    .search-btn,
+    .close-btn {
+      min-width: 50px;
+      font-size: 1rem;
+    }
+
+    &.open {
+      position: absolute;
+      height: 100%;
+      width: 100%;
+      left: 0;
+      right: 0;
+      background-color: $gray-100;
+      max-width: 100%;
+      padding: $spacer;
+      &::before {
+        display: block;
+        left: $spacer * 2;
+        top: 27px;
+      }
+      input {
+        width: 100%;
+        padding: $input-font-size * 0.8 $input-font-size;
+        padding-left: $spacer * 2.5;
+      }
+      .search-btn {
+        display: none;
+      }
+      .close-btn {
+        display: block;
+      }
+    }
+  }
+}
+
+.search-box {
+  display: flex;
+  justify-content: flex-end;
+
+  & > input {
+    border: 0;
+    padding: 0;
+    width: 0;
+    transition: padding 0.2s ease-in-out, width 0.2s ease-in-out;
+  }
+
+  &.open {
+    padding: 10px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    box-sizing: border-box;
+    align-items: center;
+    background-color: #fff;
+    z-index: 1;
+    & > input {
+      display: inline-block;
+      border-radius: 40px;
+      width: 100%;
+      outline: none;
+      padding: 8px;
+      border: none;
+      background: #efefef;
+      border-radius: 5px;
+      height: 40px;
+      width: 100%;
+      text-indent: 40px;
+      background-position: 15px;
+      background-size: 20px;
+      background-image: url("../assets/magnifying-glass (1).png");
+      background-repeat: no-repeat;
+      background-position: 15px;
+      background-size: 20px;
+    }
+    .search-btn {
+      display: none;
+    }
+  }
 }
 
 main {
@@ -337,4 +477,8 @@ footer {
       }
     }
   }
+}
+
+.flex-0-auto {
+  flex: 0 0 auto;
 }
