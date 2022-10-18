@@ -60,7 +60,10 @@ header {
     background-color: $gray-100 !important;
   }
   .header-nav {
-    min-height: 75px;
+    min-height: 65px;
+    @include media-breakpoint-up(lg) {
+      min-height: 75px;
+    }
   }
   .logo-container {
     gap: $spacer / 2;
@@ -137,13 +140,12 @@ header {
       width: 100%;
       left: 0;
       right: 0;
-      background-color: $gray-100;
       max-width: 100%;
       padding: 0px $spacer * 1.5;
       &::before {
         display: block;
         left: $spacer * 2.5;
-        top: 27px;
+        top: 22px;
       }
       input {
         width: 100%;
