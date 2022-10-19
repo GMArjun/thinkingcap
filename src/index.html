@@ -22,7 +22,34 @@
                     </button>
                     <img src="./assets/img/icons/logo.png" class="header-logo" alt="logo">
                 </div>
-                <a href="#" class="nav-link flex-0-auto d-none d-lg-block">Categories</a>
+                <div class="nav-item dropdown category-menu d-none d-lg-block">
+                    <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" data-bs-auto-close="outside"
+                        data-bs-offset="0,32">Categories</a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Gallery</a></li>
+                        <li><a class="dropdown-item" href="blog.html">Blog</a></li>
+                        <li class="dropend">
+                            <a href="#" class="dropdown-item dropdown-toggle" data-bs-toggle="dropdown"
+                                data-bs-auto-close="outside" data-bs-display="static">Submenu Right</a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href=""> Second level 1</a></li>
+                                <li><a class="dropdown-item" href=""> Second level 2</a></li>
+                                <li><a class="dropdown-item" href=""> Second level 3</a></li>
+                                <li class="dropend">
+                                    <a href="#" class="dropdown-item dropdown-toggle" data-bs-toggle="dropdown"
+                                        data-bs-auto-close="outside" data-bs-display="static">Let's go deeper!</a>
+                                    <ul class="dropdown-menu dropdown-submenu">
+                                        <li><a class="dropdown-item" href=""> Third level 1</a></li>
+                                        <li><a class="dropdown-item" href=""> Third level 2</a></li>
+                                        <li><a class="dropdown-item" href=""> Third level 3</a></li>
+                                        <li><a class="dropdown-item" href=""> Third level 4</a></li>
+                                    </ul>
+                                </li>
+                                <li><a class="dropdown-item" href=""> Third level 5</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
                 <div class="header-search-bar">
                     <input class="form-control form-control-lg" placeholder="Search Courses" type="text">
                     <a class="btn outline-0 border-0 cursor-pointer search-btn"> <i class="fa fa-search"></i> </a>
@@ -1039,21 +1066,7 @@
     <script src="./assets/js/swiper.js"></script>
     <script src="./assets/js/slider-setup.js"></script>
     <script src="./assets/js/mobile-menu.js"></script>
-
-    <script>
-        let searchBar = document.querySelector(".header-search-bar");
-        let searchButton = document.querySelector(".header-search-bar .search-btn");
-        let searchClose = document.querySelector(".header-search-bar .close-btn");
-
-        searchButton.addEventListener("click", function (e) {
-            searchBar.classList.add("open");
-        });
-
-        searchClose.addEventListener("click", function (e) {
-            searchBar.classList.remove("open");
-        });
-
-    </script>
+    <script src="./assets/js/searchbar-toggle.js"></script>
 </body>
 
 </html>

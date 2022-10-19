@@ -125,7 +125,7 @@ header {
     .close-btn {
       background-color: $gray-200;
       display: none;
-      color: $gray-500;
+      color: $black;
     }
 
     .search-btn,
@@ -214,6 +214,71 @@ footer {
     }
     @include media-breakpoint-up(md) {
       margin: unset;
+    }
+  }
+}
+
+.category-menu {
+  .dropdown-menu {
+    min-height: 400px;
+    min-width: 225px;
+    max-width: 226px;
+    border-radius: 0px;
+    --bs-dropdown-item-padding-y: 0.4rem;
+    .dropdown-item {
+      @extend .text-truncate, .pe-5;
+      padding-right: 3rem;
+      font-size: $input-font-size;
+      &:hover,
+      &:focus {
+        background-color: transparent !important;
+        color: $primary;
+      }
+      &.show {
+        color: $primary;
+      }
+    }
+  }
+  & > .dropdown-menu {
+    & > .dropend {
+      & > .dropdown-menu {
+        top: -4.79rem;
+        margin-left: -1px;
+        & > .dropend {
+          & > .dropdown-menu {
+            top: -6.89rem;
+            margin-left: -1px;
+          }
+        }
+      }
+    }
+  }
+  & > .dropdown-toggle {
+    &::after {
+      display: none;
+      // font-family: FontAwesome;
+      // content: "\f078";
+      // display: inline-block;
+      // border: none !important;
+      // vertical-align: middle;
+      // margin-left: $spacer / 2;
+      // font-size: $input-font-size;
+    }
+  }
+  .dropend {
+    .dropdown-toggle {
+      &::after {
+        font-family: FontAwesome;
+        content: "\f054";
+        display: inline-block;
+        border: none !important;
+        vertical-align: middle;
+        margin-left: $spacer / 2;
+        font-size: $font-size-xs;
+        position: absolute;
+        top: 8px;
+        right: 15px;
+      }
     }
   }
 }
