@@ -254,6 +254,7 @@ footer {
     }
   }
   & > .dropdown-toggle {
+    outline: 0;
     &::after {
       display: none;
       // font-family: FontAwesome;
@@ -267,6 +268,7 @@ footer {
   }
   .dropend {
     .dropdown-toggle {
+      outline: 0;
       &::after {
         font-family: FontAwesome;
         content: "\f054";
