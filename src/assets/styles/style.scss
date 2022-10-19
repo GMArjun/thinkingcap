@@ -569,7 +569,7 @@ footer {
     padding-right: 3px;
     vertical-align: middle;
     position: absolute;
-    left: $spacer;
+    left: $spacer * .875;
     font-size: $input-font-size;
   }
   &-fb {
@@ -585,6 +585,6 @@ footer {
     background-image: url("../img//icons/google-icon.png");
     background-size: 16px;
     background-repeat: no-repeat;
-    background-position: 14px 8px;
+    background-position: 10px 8px;
   }
 }
