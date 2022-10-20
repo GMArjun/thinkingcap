@@ -616,7 +616,7 @@ footer {
       display: none;
     }
   }
-  .swiper-button-disabled{
+  .swiper-button-disabled {
     display: none;
   }
 }
@@ -667,6 +667,50 @@ footer {
           }
         }
       }
+    }
+  }
+}
+
+.learning-block {
+  overflow: hidden;
+  &:hover {
+    .img-container {
+      img {
+        transform: scale(1.05);
+      }
+    }
+  }
+  .img-container {
+    position: relative;
+    overflow: hidden;
+    height: 100%;
+    @include media-breakpoint-down(md) {
+      padding-top: 56%;
+    }
+    img {
+      position: absolute;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      right: 0;
+      height: 100%;
+      width: 100%;
+      object-fit: cover;
+      transition: 1s all ease;
+    }
+  }
+  .progress{
+    height: 5px;
+  }
+  .author-preview{
+    height: $spacer * 2.5;
+    width: $spacer * 2.5;
+    border-radius: 100%;
+    overflow: hidden;
+    img{
+      height: 100%;
+      width: 100%;
+      object-fit: cover;
     }
   }
 }
