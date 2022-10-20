@@ -749,3 +749,46 @@ footer {
     }
   }
 }
+
+.profile-details-block {
+  max-width: 440px;
+  margin: 0 auto;
+  #display-image {
+    width: 150px;
+    height: 150px;
+    border: 1px solid $gray-200;
+    background-position: center;
+    background-size: cover;
+    border-radius: 100%;
+    position: relative;
+  }
+  .uploader-input {
+    width: 40px;
+    background-color: $gray-400;
+    height: 40px;
+    display: inline-block;
+    overflow: hidden;
+    cursor: pointer;
+    border-radius: 100%;
+    color: $white;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    input {
+      height: 100%;
+      width: 100%;
+      opacity: 0;
+      cursor: pointer;
+    }
+    &::before {
+      font-family: FontAwesome;
+      content: "\f304";
+      display: inline-block;
+      color: $black;
+      position: absolute;
+      left: 14px;
+      font-size: $input-font-size;
+      top: 10px;
+    }
+  }
+}
