@@ -684,8 +684,8 @@ footer {
     position: relative;
     overflow: hidden;
     height: 100%;
-    @include media-breakpoint-down(md) {
-      padding-top: 56%;
+    @include media-breakpoint-down(xxl) {
+      padding-top: 40%;
     }
     img {
       position: absolute;
@@ -699,15 +699,15 @@ footer {
       transition: 1s all ease;
     }
   }
-  .progress{
+  .progress {
     height: 5px;
   }
-  .author-preview{
+  .author-preview {
     height: $spacer * 2.5;
     width: $spacer * 2.5;
     border-radius: 100%;
     overflow: hidden;
-    img{
+    img {
       height: 100%;
       width: 100%;
       object-fit: cover;
