@@ -1,4 +1,6 @@
-var swiper = new Swiper("#popular-subjects", {
+let courseSliders = [1, 2, 3];
+
+new Swiper("#popular-subjects", {
   slidesPerView: 5,
   spaceBetween: 20,
   navigation: {
@@ -20,8 +22,6 @@ var swiper = new Swiper("#popular-subjects", {
     },
   },
 });
-
-let courseSliders = [1, 2, 3];
 
 courseSliders.forEach((i) => {
   new Swiper(`#courses-collection-${i}`, {
@@ -46,4 +46,28 @@ courseSliders.forEach((i) => {
       },
     },
   });
+});
+
+new Swiper("#tab-slider", {
+  slidesPerView: "auto",
+  spaceBetween: 20,
+  navigation: {
+    nextEl: ".slide-tab-next",
+    prevEl: ".slide-tab-prev",
+  },
+  breakpoints: {
+    320: {
+      direction: "horizontal",
+    },
+    480: {
+      direction: "horizontal",
+    },
+    768: {
+      direction: "horizontal",
+    },
+    992: {
+      direction: "vertical",
+      spaceBetween: 5,
+    },
+  },
 });
