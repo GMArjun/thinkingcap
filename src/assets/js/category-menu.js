@@ -13,6 +13,23 @@ let showCategoryMenu = (level) => {
   menuInstance.show();
 };
 
+menuHomeToggler.addEventListener("shown.bs.dropdown", (event) => {
+  const main = document.querySelector("main");
+  const overlay = document.createElement("div");
+  overlay.classList.add("menu-dropdown-overlay");
+  main.appendChild(overlay);
+  overlay.addEventListener("mouseover", () => {
+    new bootstrap.Dropdown(menuHomeToggler);
+    let menuInstance = bootstrap.Dropdown.getInstance(menuHomeToggler);
+    menuInstance.hide();
+  });
+});
+
+menuHomeToggler.addEventListener("hidden.bs.dropdown", (event) => {
+  const main = document.querySelector(".menu-dropdown-overlay");
+  main.remove();
+});
+
 categoryMenu.forEach((level) => {
   level.addEventListener("click", () => {
     showCategoryMenu(level);
@@ -21,9 +38,3 @@ categoryMenu.forEach((level) => {
     showCategoryMenu(level);
   });
 });
-
-document.body.onscroll = () => {
-  new bootstrap.Dropdown(menuHomeToggler);
-  let menuInstance = bootstrap.Dropdown.getInstance(menuHomeToggler);
-  menuInstance.hide();
-};
