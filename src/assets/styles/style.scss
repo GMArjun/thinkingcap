@@ -585,6 +585,10 @@ footer {
 }
 
 .tab-type-page {
+  .sticky-tab {
+    position: sticky;
+    top: 95px;
+  }
   .tab-link-block {
     @include media-breakpoint-up(lg) {
       border-right: var(--bs-border-width) var(--bs-border-style)
