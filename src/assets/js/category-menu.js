@@ -9,8 +9,8 @@ let categoryMenu = [menuHomeToggler, ...menuAllLevelToggler];
 
 let showCategoryMenu = (level) => {
   new bootstrap.Dropdown(level);
-  let dropdownInstanceAfter = bootstrap.Dropdown.getInstance(level);
-  dropdownInstanceAfter.show();
+  let menuInstance = bootstrap.Dropdown.getInstance(level);
+  menuInstance.show();
 };
 
 categoryMenu.forEach((level) => {
@@ -21,3 +21,9 @@ categoryMenu.forEach((level) => {
     showCategoryMenu(level);
   });
 });
+
+document.body.onscroll = () => {
+  new bootstrap.Dropdown(menuHomeToggler);
+  let menuInstance = bootstrap.Dropdown.getInstance(menuHomeToggler);
+  menuInstance.hide();
+};
