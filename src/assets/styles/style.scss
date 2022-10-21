@@ -718,6 +718,16 @@ footer {
   }
 }
 
+.icon-circle{
+  background-color: $gray-200;
+  height: $spacer * 2.5;
+  width: $spacer * 2.5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
 .purchase-history-block {
   overflow: hidden;
   &:hover {
