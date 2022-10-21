@@ -827,3 +827,53 @@ footer {
   top: 90px;
   height: calc(100vh - 90px);
 }
+
+.filters-block {
+  a {
+    text-decoration: none;
+    color: $black;
+    display: block;
+  }
+  .filter-head {
+    position: relative;
+    &::after {
+      font-family: FontAwesome;
+      content: "\f054";
+      display: inline-block;
+      padding-right: 3px;
+      vertical-align: middle;
+      color: #000;
+      position: absolute;
+      right: 0;
+      font-size: 0.875rem;
+      top: 1px;
+      background-image: none;
+      width: unset;
+      transition: 0.2s ease;
+    }
+    &[aria-expanded="true"] {
+      color: $primary;
+      font-weight: 700;
+      &::after {
+        transform: rotate(90deg);
+      }
+    }
+  }
+  .accordion-body {
+    a {
+      font-size: $input-font-size;
+      &.active,
+      &:hover {
+        color: $primary !important;
+        font-weight: 700;
+      }
+    }
+  }
+  hr{
+    color: $gray-500;
+  }
+}
+
+.form-check-label{
+  cursor: pointer;
+}

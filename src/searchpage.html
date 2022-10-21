@@ -1,0 +1,615 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#6255a5" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./assets/styles/style.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+</head>
+
+<body>
+
+    <header>
+        <div class="container-fluid px-4 position-relative">
+            <div class="header-nav d-flex align-items-center">
+                <div class="logo-container d-flex align-items-center">
+                    <button class="btn outline-0 border-0 d-block nav-icon d-lg-none" type="button"
+                        data-bs-toggle="offcanvas" data-bs-target="#asidebar" aria-controls="asidebar"><i
+                            class="fa fa-bars"></i>
+                    </button>
+                    <img src="./assets/img/icons/logo.png" class="header-logo" alt="logo">
+                </div>
+                <div class="nav-item dropdown category-menu d-none d-lg-block">
+                    <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" data-bs-auto-close="outside"
+                        data-bs-offset="0,32">Categories</a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Health & Fitness</a></li>
+                        <li><a class="dropdown-item" href="#">Business</a></li>
+                        <li class="dropend">
+                            <a href="#" class="dropdown-item dropdown-toggle" data-bs-toggle="dropdown"
+                                data-bs-auto-close="outside" data-bs-display="static">Development</a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href=""> Data Science</a></li>
+                                <li><a class="dropdown-item" href=""> Mobile Development</a></li>
+                                <li><a class="dropdown-item" href=""> Software Testing</a></li>
+                                <li class="dropend">
+                                    <a href="#" class="dropdown-item dropdown-toggle" data-bs-toggle="dropdown"
+                                        data-bs-auto-close="outside" data-bs-display="static">Web Development</a>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item" href=""> Javascript</a></li>
+                                        <li><a class="dropdown-item" href=""> Vue</a></li>
+                                        <li><a class="dropdown-item" href=""> React</a></li>
+                                        <li><a class="dropdown-item" href=""> Angular</a></li>
+                                    </ul>
+                                </li>
+                                <li><a class="dropdown-item" href="">Development Tools</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <div class="header-search-bar">
+                    <input class="form-control form-control-lg" placeholder="Search Courses" type="text">
+                    <a class="btn outline-0 border-0 cursor-pointer search-btn"> <i class="fa fa-search"></i> </a>
+                    <a class="btn outline-0 border-0 cursor-pointer close-btn"> <i class="fa fa-close"></i>
+                    </a>
+                </div>
+                <div class="header-controls d-none d-lg-flex align-items-center flex-0-auto">
+                    <a href="#" class="nav-link">Instructors</a>
+                    <a href="#" class="nav-link">Login</a>
+                    <a class="btn btn-secondary flex-0-auto" style="--bs-btn-padding-x: 1.5rem;" href="#">Sign up</a>
+                </div>
+            </div>
+        </div>
+
+        <aside class="asider-bar offcanvas offcanvas-start" tabindex="-1" id="asidebar">
+            <div class="offcanvas-header">
+                <button type="button" class="cls-btn outline-0 border-0" data-bs-dismiss="offcanvas"
+                    data-bs-target="#asidebar" aria-label="Close"><i class="fa fa-close"></i></button>
+            </div>
+            <div class="offcanvas-body">
+                <div class="auth-section">
+                    <a class="d-block" href="">Login</a>
+                    <a class="d-block" href="">Signup</a>
+                </div>
+                <hr>
+                <a href="#">Instructors</a>
+                <hr>
+                <div class="mb-2">Categories</div>
+                <div class="page-header">
+                    <nav>
+                        <div class="menu-wrapper is-visible">
+                            <div class="list-wrapper">
+                                <ul class="menu level-1">
+                                    <li>
+                                        <a href="" class="nested">Web Development</a>
+                                        <ul class="sub-menu level-2">
+                                            <li>
+                                                <a href="" class="nested">Javascript</a>
+                                                <ul class="sub-menu level-3">
+                                                    <li> <a href="">React</a> </li>
+                                                    <li> <a href="">Vue</a> </li>
+                                                    <li> <a href="">Angular</a> </li>
+                                                </ul>
+                                            </li>
+                                            <li>
+                                                <a href="">Course Materials</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <a href="" class="nested">Mobile Development</a>
+                                        <ul class="sub-menu level-2">
+                                            <li>
+                                                <a href="">Unity</a>
+                                            </li>
+                                            <li>
+                                                <a href="">3D Game Development</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <a href="">IT Certifications</a>
+                                    </li>
+                                    <li>
+                                        <a href="">Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero vel
+                                            sequi nobis atque, laudantium perspiciatis!</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="list-wrapper">
+                                <button type="button" class="back-one-level mb-2 ps-0">
+                                    <i class="fa fa-arrow-left f-12"></i>
+                                    <span class="text-start fs-sm text-truncate" />
+                                </button>
+                                <div class="sub-menu-wrapper"></div>
+                            </div>
+                            <div class="list-wrapper">
+                                <button type="button" class="back-one-level mb-2 ps-0">
+                                    <i class="fa fa-arrow-left f-12"></i>
+                                    <span class="text-start fs-sm text-truncate" />
+                                </button>
+                                <div class="sub-menu-wrapper"></div>
+                            </div>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </aside>
+    </header>
+
+    <main>
+        <div class="search-page">
+            <div class="container-xl px-4">
+                <div class="pt-5 pb-4">
+                    <nav aria-label="breadcrumb">
+                        <ol class="breadcrumb">
+                            <li class="breadcrumb-item active"><a class="text-decoration-none" href="./index.html">My
+                                    courses</a></li>
+                            <li class="breadcrumb-item active text-dark" aria-current="page">Web Development</li>
+                        </ol>
+                    </nav>
+                </div>
+
+                <div class="row g-5 pb-5">
+                    <div class="col-xxl-3">
+                        <div class="filters-block border p-3 rounded-3 d-grid gap-2">
+                            <div class="fw-bold">Filter By</div>
+                            <div class="courses-filter d-grid gap-2">
+                                <div class="course-filter-block d-grid gap-2">
+                                    <a class="filter-head fw-bold text-truncate pe-4" data-bs-toggle="collapse"
+                                        href="#course1" role="button" aria-expanded="true" aria-controls="course1">
+                                        Development Courses
+                                    </a>
+                                    <div class="collapse show" id="course1">
+                                        <div class="accordion accordion-flush ps-3 d-grid gap-2" id="course11">
+                                            <div class="accordion-item border-0 d-grid gap-2">
+                                                <div class="accordion-header" id="course11-head1">
+                                                    <a role="button"
+                                                        class="accordion-button filter-head text-truncate pe-4 bg-white collapsed p-0 shadow-none"
+                                                        data-bs-toggle="collapse" data-bs-target="#course11-collapse1"
+                                                        aria-expanded="true" aria-controls="course11-collapse1">Web
+                                                        Development</a>
+                                                </div>
+                                                <div id="course11-collapse1" class="accordion-collapse collapse show"
+                                                    aria-labelledby="course11-head1" data-bs-parent="#course11">
+                                                    <div class="accordion-body p-0 d-grid gap-2">
+                                                        <a href="#" class="ps-3 text-truncate text-muted">Javascript</a>
+                                                        <a href="#" class="ps-3 text-truncate text-muted active">Vuejs</a>
+                                                        <a href="#" class="ps-3 text-truncate text-muted">HTML</a>
+                                                        <a href="#" class="ps-3 text-truncate text-muted">CSS </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="accordion-item border-0 d-grid gap-2">
+                                                <div class="accordion-header" id="course11-head2">
+                                                    <a role="button"
+                                                        class="accordion-button filter-head text-truncate pe-4 bg-white collapsed p-0 shadow-none"
+                                                        data-bs-toggle="collapse" data-bs-target="#course11-collapse2"
+                                                        aria-expanded="false" aria-controls="course11-collapse2">Mobile
+                                                        App Development</a>
+                                                </div>
+                                                <div id="course11-collapse2" class="accordion-collapse collapse"
+                                                    aria-labelledby="course11-head2" data-bs-parent="#course11">
+                                                    <div class="accordion-body p-0 d-grid gap-2">
+                                                        <a href="#" class="ps-3 text-truncate text-muted">Google
+                                                            Flutter</a>
+                                                        <a href="#" class="ps-3 text-truncate text-muted">IOS
+                                                            Development</a>
+                                                        <a href="#" class="ps-3 text-truncate text-muted">Android
+                                                            Development</a>
+                                                        <a href="#" class="ps-3 text-truncate text-muted">Hybrid App
+                                                            Development </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="course-filter-block d-grid gap-2">
+                                    <a class="filter-head fw-bold text-truncate pe-4" data-bs-toggle="collapse"
+                                        href="#course2" role="button" aria-expanded="false" aria-controls="course2">
+                                        Financing & Accounting
+                                    </a>
+                                    <div class="collapse" id="course2">
+                                        <div class="accordion accordion-flush ps-3 d-grid gap-2" id="course21">
+                                            <div class="accordion-item border-0 d-grid gap-2">
+                                                <div class="accordion-header" id="course21-head1">
+                                                    <a role="button"
+                                                        class="accordion-button filter-head text-truncate pe-4 bg-white collapsed p-0 shadow-none"
+                                                        data-bs-toggle="collapse" data-bs-target="#course21-collapse1"
+                                                        aria-expanded="false"
+                                                        aria-controls="course21-collapse1">Economics</a>
+                                                </div>
+                                                <div id="course21-collapse1" class="accordion-collapse collapse"
+                                                    aria-labelledby="course21-head1" data-bs-parent="#course21">
+                                                    <div class="accordion-body p-0 d-grid gap-2">
+                                                        <a href="#" class="ps-3 text-truncate text-muted">Macro
+                                                            Economics</a>
+                                                        <a href="#" class="ps-3 text-truncate text-muted">Micro
+                                                            Economics</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="accordion-item border-0 d-grid gap-2">
+                                                <div class="accordion-header" id="course21-head2">
+                                                    <a role="button"
+                                                        class="accordion-button filter-head text-truncate pe-4 bg-white collapsed p-0 shadow-none"
+                                                        data-bs-toggle="collapse" data-bs-target="#course21-collapse2"
+                                                        aria-expanded="false"
+                                                        aria-controls="course21-collapse2">Investing & Trading</a>
+                                                </div>
+                                                <div id="course21-collapse2" class="accordion-collapse collapse"
+                                                    aria-labelledby="course21-head2" data-bs-parent="#course21">
+                                                    <div class="accordion-body p-0 d-grid gap-2">
+                                                        <a href="#" class="ps-3 text-truncate text-muted">Stock
+                                                            Trading</a>
+                                                        <a href="#" class="ps-3 text-truncate text-muted">Investing</a>
+                                                        <a href="#" class="ps-3 text-truncate text-muted">Finance
+                                                            Markets</a>
+                                                        <a href="#" class="ps-3 text-truncate text-muted">Day
+                                                            Trading</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <hr class="my-0" />
+
+                            <div class="course-filter-block d-grid gap-2">
+                                <a class="filter-head fw-bold text-truncate pe-4" data-bs-toggle="collapse"
+                                    href="#rating" role="button" aria-expanded="true" aria-controls="rating">
+                                    Ratings
+                                </a>
+                                <div class="collapse show" id="rating">
+
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="" id="4up">
+                                        <label class="form-check-label" for="4up">
+                                            <div class="course-rating fs-sm d-flex gap-2">
+                                                <span class="star-rating_r">
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fa-regular fa-star"></i>
+                                                </span>
+                                                <span class="text-muted">& Up</span>
+                                            </div>
+                                        </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="" id="3up">
+                                        <label class="form-check-label" for="3up">
+                                            <div class="course-rating fs-sm d-flex gap-2">
+                                                <span class="star-rating_r">
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fa-regular fa-star"></i>
+                                                    <i class="fa-regular fa-star"></i>
+                                                </span>
+                                                <span class="text-muted">& Up</span>
+                                            </div>
+                                        </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="" id="2up">
+                                        <label class="form-check-label" for="2up">
+                                            <div class="course-rating fs-sm d-flex gap-2">
+                                                <span class="star-rating_r">
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fa-regular fa-star"></i>
+                                                    <i class="fa-regular fa-star"></i>
+                                                    <i class="fa-regular fa-star"></i>
+                                                </span>
+                                                <span class="text-muted">& Up</span>
+                                            </div>
+                                        </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="" id="1up">
+                                        <label class="form-check-label" for="1up">
+                                            <div class="course-rating fs-sm d-flex gap-2">
+                                                <span class="star-rating_r">
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fa-regular fa-star"></i>
+                                                    <i class="fa-regular fa-star"></i>
+                                                    <i class="fa-regular fa-star"></i>
+                                                    <i class="fa-regular fa-star"></i>
+                                                </span>
+                                                <span class="text-muted">& Up</span>
+                                            </div>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <hr class="my-0" />
+
+                            <div class="course-filter-block d-grid gap-2">
+                                <a class="filter-head fw-bold text-truncate pe-4" data-bs-toggle="collapse"
+                                    href="#price" role="button" aria-expanded="true" aria-controls="price">
+                                    Pricing
+                                </a>
+                                <div class="collapse show" id="price">
+
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="col-xxl-9 ps-xxl-5">
+                        <div class="row g-4">
+                            <div class="col-sm-6 col-md-4 col-lg-4">
+                                <a href="#" class="text-decoration-none text-black">
+                                    <div class="course-card d-grid gap-1">
+                                        <div class="img-container rounded-3">
+                                            <img src="./assets/img/static/course-img8.jpg" />
+                                        </div>
+                                        <div class="description-block d-grid gap-1">
+                                            <div class="fw-bold">Learn Python: The Complete Python
+                                                Programming Course</div>
+                                            <div class="fs-sm text-muted text-truncate">Avinash Jain, The Codex
+                                            </div>
+                                            <div class="course-rating fs-sm d-flex gap-2">
+                                                <span class="fw-bold">4.5</span>
+                                                <span class="star-rating_r">
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fa-solid fa-star-half-stroke"></i>
+                                                </span>
+                                                <span class="text-muted">(852)</span>
+                                            </div>
+                                            <div class="fw-bold">$1,999</div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-sm-6 col-md-4 col-lg-4">
+                                <a href="#" class="text-decoration-none text-black">
+                                    <div class="course-card d-grid gap-1">
+                                        <div class="img-container rounded-3">
+                                            <img src="./assets/img/static/course-img8.jpg" />
+                                        </div>
+                                        <div class="description-block d-grid gap-1">
+                                            <div class="fw-bold">Learn Python: The Complete Python
+                                                Programming Course</div>
+                                            <div class="fs-sm text-muted text-truncate">Avinash Jain, The Codex
+                                            </div>
+                                            <div class="course-rating fs-sm d-flex gap-2">
+                                                <span class="fw-bold">4.5</span>
+                                                <span class="star-rating_r">
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fa-solid fa-star-half-stroke"></i>
+                                                </span>
+                                                <span class="text-muted">(852)</span>
+                                            </div>
+                                            <div class="fw-bold">$1,999</div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-sm-6 col-md-4 col-lg-4">
+                                <a href="#" class="text-decoration-none text-black">
+                                    <div class="course-card d-grid gap-1">
+                                        <div class="img-container rounded-3">
+                                            <img src="./assets/img/static/course-img8.jpg" />
+                                        </div>
+                                        <div class="description-block d-grid gap-1">
+                                            <div class="fw-bold">Learn Python: The Complete Python
+                                                Programming Course</div>
+                                            <div class="fs-sm text-muted text-truncate">Avinash Jain, The Codex
+                                            </div>
+                                            <div class="course-rating fs-sm d-flex gap-2">
+                                                <span class="fw-bold">4.5</span>
+                                                <span class="star-rating_r">
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fa-solid fa-star-half-stroke"></i>
+                                                </span>
+                                                <span class="text-muted">(852)</span>
+                                            </div>
+                                            <div class="fw-bold">$1,999</div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-sm-6 col-md-4 col-lg-4">
+                                <a href="#" class="text-decoration-none text-black">
+                                    <div class="course-card d-grid gap-1">
+                                        <div class="img-container rounded-3">
+                                            <img src="./assets/img/static/course-img8.jpg" />
+                                        </div>
+                                        <div class="description-block d-grid gap-1">
+                                            <div class="fw-bold">Learn Python: The Complete Python
+                                                Programming Course</div>
+                                            <div class="fs-sm text-muted text-truncate">Avinash Jain, The Codex
+                                            </div>
+                                            <div class="course-rating fs-sm d-flex gap-2">
+                                                <span class="fw-bold">4.5</span>
+                                                <span class="star-rating_r">
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fa-solid fa-star-half-stroke"></i>
+                                                </span>
+                                                <span class="text-muted">(852)</span>
+                                            </div>
+                                            <div class="fw-bold">$1,999</div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-sm-6 col-md-4 col-lg-4">
+                                <a href="#" class="text-decoration-none text-black">
+                                    <div class="course-card d-grid gap-1">
+                                        <div class="img-container rounded-3">
+                                            <img src="./assets/img/static/course-img8.jpg" />
+                                        </div>
+                                        <div class="description-block d-grid gap-1">
+                                            <div class="fw-bold">Learn Python: The Complete Python
+                                                Programming Course</div>
+                                            <div class="fs-sm text-muted text-truncate">Avinash Jain, The Codex
+                                            </div>
+                                            <div class="course-rating fs-sm d-flex gap-2">
+                                                <span class="fw-bold">4.5</span>
+                                                <span class="star-rating_r">
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fa-solid fa-star-half-stroke"></i>
+                                                </span>
+                                                <span class="text-muted">(852)</span>
+                                            </div>
+                                            <div class="fw-bold">$1,999</div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-sm-6 col-md-4 col-lg-4">
+                                <a href="#" class="text-decoration-none text-black">
+                                    <div class="course-card d-grid gap-1">
+                                        <div class="img-container rounded-3">
+                                            <img src="./assets/img/static/course-img8.jpg" />
+                                        </div>
+                                        <div class="description-block d-grid gap-1">
+                                            <div class="fw-bold">Learn Python: The Complete Python
+                                                Programming Course</div>
+                                            <div class="fs-sm text-muted text-truncate">Avinash Jain, The Codex
+                                            </div>
+                                            <div class="course-rating fs-sm d-flex gap-2">
+                                                <span class="fw-bold">4.5</span>
+                                                <span class="star-rating_r">
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fa-solid fa-star-half-stroke"></i>
+                                                </span>
+                                                <span class="text-muted">(852)</span>
+                                            </div>
+                                            <div class="fw-bold">$1,999</div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </main>
+
+    <footer class="py-4 py-sm-5">
+        <div class="container-xl px-4">
+            <img src="./assets/img/icons/logo-white.png" class="footer-logo mb-4" alt="logo">
+            <div class="row gx-lg-5 gy-4 gy-sm-5">
+                <div class="order-1 col-12 col-md-6 col-xl-3">
+                    <div class="row gy-4">
+                        <div class="col-sm-6 col-md-12">
+                            <p class="mb-1 fw-bold">About Us</p>
+                            <p class="fs-sm mb-0">We want to help bring talented students and unique startups together
+                            </p>
+                        </div>
+                        <div class="col-sm-6 col-md-12">
+                            <p class="mb-2 fw-bold">Contact Us</p>
+                            <div class="d-flex align-items-center gap-2 mb-2">
+                                <span class="contact-rings">
+                                    <img src="./assets/img/icons/phonecall.png" alt="logo">
+                                </span>
+                                <a class="text-white text-decoration-none fs-sm" href="tel:+919990009900">+91 9990 009
+                                    900</a>
+                            </div>
+                            <div class="d-flex align-items-center gap-2">
+                                <span class="contact-rings">
+                                    <img src="./assets/img/icons/emailicon.png" alt="logo">
+                                </span>
+                                <a class="text-white text-decoration-none fs-sm"
+                                    href="demo@gmail.com">demo@gmail.com</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div
+                    class="order-2 order-md-3 order-xl-2 col-sm-6 col-md-6 col-lg-6 col-xl-3 d-xl-flex justify-content-center">
+                    <div class="footer-container">
+                        <p class="mb-1 fw-bold">Information</p>
+                        <div class="footer-links mb-1"><a href="#">About us</a></div>
+                        <div class="footer-links mb-1"><a href="#">More search</a></div>
+                        <div class="footer-links mb-1"><a href="#">Blog</a></div>
+                        <div class="footer-links mb-1"><a href="#">Testimonials</a></div>
+                        <div class="footer-links"><a href="#">Events</a></div>
+                    </div>
+                </div>
+                <div
+                    class="order-3 order-lg-4 order-xl-3 col-sm-6 col-md-6 col-lg-6 col-xl-3 d-xl-flex justify-content-center">
+                    <div class="footer-container">
+                        <p class="mb-1 fw-bold">Helpful Links</p>
+                        <div class="footer-links mb-1"><a href="#">Service</a></div>
+                        <div class="footer-links mb-1"><a href="#">Support</a></div>
+                        <div class="footer-links mb-1"><a href="#">Blog</a></div>
+                        <div class="footer-links mb-1"><a href="#">Terms & Conditions</a></div>
+                        <div class="footer-links"><a href="#">Privacy Policy</a></div>
+                    </div>
+                </div>
+                <div class="order-4 order-md-2 order-xl-4 col-12 col-md-6 col-lg-6 col-xl-3">
+                    <div class="subscribe-block">
+                        <p class="mb-3 fw-bold">Subscribe More Info</p>
+                        <input class="form-control text-center" type="text" placeholder="Enter your Email">
+                        <button type="button" class="btn btn-secondary w-100 mt-3">Subscribe</button>
+
+                        <div class="row mt-3 gx-3 app-links">
+                            <div class="col-6">
+                                <a href="#"><img src="./assets/img/icons/playstore.png" class="w-100" alt="logo"></a>
+                            </div>
+                            <div class="col-6">
+                                <a href="#"> <img src="./assets/img/icons/appstore.png" class="w-100" alt="logo"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="order-5 col-12">
+                    <div class="d-flex justify-content-center gap-3 social-links">
+                        <a href="#">
+                            <img height="32" src="./assets/img/icons/fb-icon.png" alt="logo">
+                        </a>
+                        <a href="#">
+                            <img height="32" src="./assets/img/icons/insta-icon.png" alt="logo">
+                        </a>
+                        <a href="#">
+                            <img height="32" src="./assets/img/icons/twitter-icon.png" alt="logo">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="./assets/js/bootstrap.js"></script>
+    <script src="./assets/js/swiper.js"></script>
+    <script src="./assets/js/slider-setup.js"></script>
+    <script src="./assets/js/category-menu.js"></script>
+    <script src="./assets/js/mobile-category-menu.js"></script>
+    <script src="./assets/js/searchbar-toggle.js"></script>
+</body>
+
+</html>
