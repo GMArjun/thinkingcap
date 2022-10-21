@@ -718,7 +718,7 @@ footer {
   }
 }
 
-.icon-circle{
+.icon-circle {
   background-color: $gray-200;
   height: $spacer * 2.5;
   width: $spacer * 2.5;
@@ -726,7 +726,6 @@ footer {
   justify-content: center;
   align-items: center;
 }
-
 
 .purchase-history-block {
   overflow: hidden;
@@ -952,5 +951,24 @@ footer {
         display: none;
       }
     }
+  }
+}
+
+.border-dotted {
+  border-top: 2px solid;
+  border-style: dotted;
+}
+
+.details-author-block {
+  .author-preview {
+    height: $spacer * 10;
+    width: $spacer * 10;
+  }
+}
+
+.review-block {
+  .author-preview {
+    height: $spacer * 3.5;
+    width: $spacer * 3.5;
   }
 }
