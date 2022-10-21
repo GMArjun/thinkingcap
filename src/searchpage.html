@@ -123,14 +123,14 @@
                             <div class="list-wrapper">
                                 <button type="button" class="back-one-level mb-2 ps-0">
                                     <i class="fa fa-arrow-left f-12"></i>
-                                    <span class="text-start fs-sm text-truncate" />
+                                    <span class="text-start small text-truncate" />
                                 </button>
                                 <div class="sub-menu-wrapper"></div>
                             </div>
                             <div class="list-wrapper">
                                 <button type="button" class="back-one-level mb-2 ps-0">
                                     <i class="fa fa-arrow-left f-12"></i>
-                                    <span class="text-start fs-sm text-truncate" />
+                                    <span class="text-start small text-truncate" />
                                 </button>
                                 <div class="sub-menu-wrapper"></div>
                             </div>
@@ -143,8 +143,8 @@
 
     <main>
         <div class="search-page">
-            <div class="container-xl px-4">
-                <div class="pt-5 pb-4">
+            <div class="container-xxl px-4">
+                <div class="pt-xl-5 pt-4 pb-3 pb-xl-4">
                     <nav aria-label="breadcrumb">
                         <ol class="breadcrumb">
                             <li class="breadcrumb-item active"><a class="text-decoration-none" href="./index.html">My
@@ -154,213 +154,303 @@
                     </nav>
                 </div>
 
-                <div class="row g-5 pb-5">
-                    <div class="col-xxl-3">
-                        <div class="filters-block border p-3 rounded-3 d-grid gap-2">
-                            <div class="fw-bold">Filter By</div>
-                            <div class="courses-filter d-grid gap-2">
-                                <div class="course-filter-block d-grid gap-2">
-                                    <a class="filter-head fw-bold text-truncate pe-4" data-bs-toggle="collapse"
-                                        href="#course1" role="button" aria-expanded="true" aria-controls="course1">
-                                        Development Courses
-                                    </a>
-                                    <div class="collapse show" id="course1">
-                                        <div class="accordion accordion-flush ps-3 d-grid gap-2" id="course11">
-                                            <div class="accordion-item border-0 d-grid gap-2">
-                                                <div class="accordion-header" id="course11-head1">
-                                                    <a role="button"
-                                                        class="accordion-button filter-head text-truncate pe-4 bg-white collapsed p-0 shadow-none"
-                                                        data-bs-toggle="collapse" data-bs-target="#course11-collapse1"
-                                                        aria-expanded="true" aria-controls="course11-collapse1">Web
-                                                        Development</a>
-                                                </div>
-                                                <div id="course11-collapse1" class="accordion-collapse collapse show"
-                                                    aria-labelledby="course11-head1" data-bs-parent="#course11">
-                                                    <div class="accordion-body p-0 d-grid gap-2">
-                                                        <a href="#" class="ps-3 text-truncate text-muted">Javascript</a>
-                                                        <a href="#" class="ps-3 text-truncate text-muted active">Vuejs</a>
-                                                        <a href="#" class="ps-3 text-truncate text-muted">HTML</a>
-                                                        <a href="#" class="ps-3 text-truncate text-muted">CSS </a>
+                <div class="row gx-5 gy-4 pb-5">
+                    <div class="col-lg-4 col-xl-3">
+
+                        <div class="stickable-lg">
+                            <div class="text-end d-block d-lg-none">
+                                <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas"
+                                    data-bs-target="#filtersbottom" aria-controls="filtersbottom">Filters</button>
+                            </div>
+
+                            <div class="offcanvas offcanvas-bottom" tabindex="-1" id="filtersbottom"
+                                aria-labelledby="filtersbottomLabel">
+                                <div class="offcanvas-body pb-5 px-0 pt-0">
+                                    <div class="filters-block p-4 p-xl-3 rounded-3 d-grid gap-3 pb-5">
+                                        <div
+                                            class="mb-2 mb-xl-0 fw-bold small filter-header d-flex align-items-center justify-content-between gap-3 mb-xl-0">
+                                            Filter By
+                                            <a role="button" class="btn-close d-flex d-lg-none opacity-100 pe-0"
+                                                data-bs-dismiss="offcanvas" aria-label="Close">
+                                                <i class="fa fa-close"></i>
+                                            </a>
+                                        </div>
+                                        <div class="courses-filter d-grid gap-3">
+                                            <div class="course-filter-block d-grid gap-2">
+                                                <a class="filter-head fw-bold text-truncate pe-4"
+                                                    data-bs-toggle="collapse" href="#course1" role="button"
+                                                    aria-expanded="true" aria-controls="course1">
+                                                    Development Courses
+                                                </a>
+                                                <div class="collapse show" id="course1">
+                                                    <div class="accordion accordion-flush ps-3 d-grid gap-2"
+                                                        id="course11">
+                                                        <div class="accordion-item border-0 d-grid gap-2">
+                                                            <div class="accordion-header" id="course11-head1">
+                                                                <a role="button"
+                                                                    class="accordion-button filter-head text-truncate pe-4 bg-white collapsed p-0 shadow-none"
+                                                                    data-bs-toggle="collapse"
+                                                                    data-bs-target="#course11-collapse1"
+                                                                    aria-expanded="true"
+                                                                    aria-controls="course11-collapse1">Web
+                                                                    Development</a>
+                                                            </div>
+                                                            <div id="course11-collapse1"
+                                                                class="accordion-collapse collapse show"
+                                                                aria-labelledby="course11-head1"
+                                                                data-bs-parent="#course11">
+                                                                <div class="accordion-body p-0 d-grid gap-1">
+                                                                    <a href="#"
+                                                                        class="ps-3 text-truncate text-muted">Javascript</a>
+                                                                    <a href="#"
+                                                                        class="ps-3 text-truncate text-muted active">Vuejs</a>
+                                                                    <a href="#"
+                                                                        class="ps-3 text-truncate text-muted">HTML</a>
+                                                                    <a href="#"
+                                                                        class="ps-3 text-truncate text-muted">CSS
+                                                                    </a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="accordion-item border-0 d-grid gap-2">
+                                                            <div class="accordion-header" id="course11-head2">
+                                                                <a role="button"
+                                                                    class="accordion-button filter-head text-truncate pe-4 bg-white collapsed p-0 shadow-none"
+                                                                    data-bs-toggle="collapse"
+                                                                    data-bs-target="#course11-collapse2"
+                                                                    aria-expanded="false"
+                                                                    aria-controls="course11-collapse2">Mobile
+                                                                    App Development</a>
+                                                            </div>
+                                                            <div id="course11-collapse2"
+                                                                class="accordion-collapse collapse"
+                                                                aria-labelledby="course11-head2"
+                                                                data-bs-parent="#course11">
+                                                                <div class="accordion-body p-0 d-grid gap-1">
+                                                                    <a href="#"
+                                                                        class="ps-3 text-truncate text-muted">Google
+                                                                        Flutter</a>
+                                                                    <a href="#"
+                                                                        class="ps-3 text-truncate text-muted">IOS
+                                                                        Development</a>
+                                                                    <a href="#"
+                                                                        class="ps-3 text-truncate text-muted">Android
+                                                                        Development</a>
+                                                                    <a href="#"
+                                                                        class="ps-3 text-truncate text-muted">Hybrid
+                                                                        App
+                                                                        Development </a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
                                                     </div>
                                                 </div>
                                             </div>
-                                            <div class="accordion-item border-0 d-grid gap-2">
-                                                <div class="accordion-header" id="course11-head2">
-                                                    <a role="button"
-                                                        class="accordion-button filter-head text-truncate pe-4 bg-white collapsed p-0 shadow-none"
-                                                        data-bs-toggle="collapse" data-bs-target="#course11-collapse2"
-                                                        aria-expanded="false" aria-controls="course11-collapse2">Mobile
-                                                        App Development</a>
-                                                </div>
-                                                <div id="course11-collapse2" class="accordion-collapse collapse"
-                                                    aria-labelledby="course11-head2" data-bs-parent="#course11">
-                                                    <div class="accordion-body p-0 d-grid gap-2">
-                                                        <a href="#" class="ps-3 text-truncate text-muted">Google
-                                                            Flutter</a>
-                                                        <a href="#" class="ps-3 text-truncate text-muted">IOS
-                                                            Development</a>
-                                                        <a href="#" class="ps-3 text-truncate text-muted">Android
-                                                            Development</a>
-                                                        <a href="#" class="ps-3 text-truncate text-muted">Hybrid App
-                                                            Development </a>
+
+                                            <div class="course-filter-block d-grid gap-2">
+                                                <a class="filter-head fw-bold text-truncate pe-4"
+                                                    data-bs-toggle="collapse" href="#course2" role="button"
+                                                    aria-expanded="false" aria-controls="course2">
+                                                    Financing & Accounting
+                                                </a>
+                                                <div class="collapse" id="course2">
+                                                    <div class="accordion accordion-flush ps-3 d-grid gap-2"
+                                                        id="course21">
+                                                        <div class="accordion-item border-0 d-grid gap-2">
+                                                            <div class="accordion-header" id="course21-head1">
+                                                                <a role="button"
+                                                                    class="accordion-button filter-head text-truncate pe-4 bg-white collapsed p-0 shadow-none"
+                                                                    data-bs-toggle="collapse"
+                                                                    data-bs-target="#course21-collapse1"
+                                                                    aria-expanded="false"
+                                                                    aria-controls="course21-collapse1">Economics</a>
+                                                            </div>
+                                                            <div id="course21-collapse1"
+                                                                class="accordion-collapse collapse"
+                                                                aria-labelledby="course21-head1"
+                                                                data-bs-parent="#course21">
+                                                                <div class="accordion-body p-0 d-grid gap-1">
+                                                                    <a href="#"
+                                                                        class="ps-3 text-truncate text-muted">Macro
+                                                                        Economics</a>
+                                                                    <a href="#"
+                                                                        class="ps-3 text-truncate text-muted">Micro
+                                                                        Economics</a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="accordion-item border-0 d-grid gap-2">
+                                                            <div class="accordion-header" id="course21-head2">
+                                                                <a role="button"
+                                                                    class="accordion-button filter-head text-truncate pe-4 bg-white collapsed p-0 shadow-none"
+                                                                    data-bs-toggle="collapse"
+                                                                    data-bs-target="#course21-collapse2"
+                                                                    aria-expanded="false"
+                                                                    aria-controls="course21-collapse2">Investing &
+                                                                    Trading</a>
+                                                            </div>
+                                                            <div id="course21-collapse2"
+                                                                class="accordion-collapse collapse"
+                                                                aria-labelledby="course21-head2"
+                                                                data-bs-parent="#course21">
+                                                                <div class="accordion-body p-0 d-grid gap-1">
+                                                                    <a href="#"
+                                                                        class="ps-3 text-truncate text-muted">Stock
+                                                                        Trading</a>
+                                                                    <a href="#"
+                                                                        class="ps-3 text-truncate text-muted">Investing</a>
+                                                                    <a href="#"
+                                                                        class="ps-3 text-truncate text-muted">Finance
+                                                                        Markets</a>
+                                                                    <a href="#"
+                                                                        class="ps-3 text-truncate text-muted">Day
+                                                                        Trading</a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
                                                     </div>
                                                 </div>
                                             </div>
                                         </div>
-                                    </div>
-                                </div>
 
-                                <div class="course-filter-block d-grid gap-2">
-                                    <a class="filter-head fw-bold text-truncate pe-4" data-bs-toggle="collapse"
-                                        href="#course2" role="button" aria-expanded="false" aria-controls="course2">
-                                        Financing & Accounting
-                                    </a>
-                                    <div class="collapse" id="course2">
-                                        <div class="accordion accordion-flush ps-3 d-grid gap-2" id="course21">
-                                            <div class="accordion-item border-0 d-grid gap-2">
-                                                <div class="accordion-header" id="course21-head1">
-                                                    <a role="button"
-                                                        class="accordion-button filter-head text-truncate pe-4 bg-white collapsed p-0 shadow-none"
-                                                        data-bs-toggle="collapse" data-bs-target="#course21-collapse1"
-                                                        aria-expanded="false"
-                                                        aria-controls="course21-collapse1">Economics</a>
+                                        <hr class="my-0" />
+
+                                        <div class="d-grid gap-3">
+                                            <a class="filter-head fw-bold text-truncate pe-4" data-bs-toggle="collapse"
+                                                href="#rating" role="button" aria-expanded="true"
+                                                aria-controls="rating">
+                                                Ratings
+                                            </a>
+                                            <div class="collapse show" id="rating">
+
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox" value="" id="4up">
+                                                    <label class="form-check-label" for="4up">
+                                                        <div class="course-rating small d-flex gap-2">
+                                                            <span class="star-rating_r">
+                                                                <i class="fas fa-star"></i>
+                                                                <i class="fas fa-star"></i>
+                                                                <i class="fas fa-star"></i>
+                                                                <i class="fas fa-star"></i>
+                                                                <i class="fa-regular fa-star"></i>
+                                                            </span>
+                                                            <span class="text-muted">& Up</span>
+                                                        </div>
+                                                    </label>
                                                 </div>
-                                                <div id="course21-collapse1" class="accordion-collapse collapse"
-                                                    aria-labelledby="course21-head1" data-bs-parent="#course21">
-                                                    <div class="accordion-body p-0 d-grid gap-2">
-                                                        <a href="#" class="ps-3 text-truncate text-muted">Macro
-                                                            Economics</a>
-                                                        <a href="#" class="ps-3 text-truncate text-muted">Micro
-                                                            Economics</a>
-                                                    </div>
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox" value="" id="3up">
+                                                    <label class="form-check-label" for="3up">
+                                                        <div class="course-rating small d-flex gap-2">
+                                                            <span class="star-rating_r">
+                                                                <i class="fas fa-star"></i>
+                                                                <i class="fas fa-star"></i>
+                                                                <i class="fas fa-star"></i>
+                                                                <i class="fa-regular fa-star"></i>
+                                                                <i class="fa-regular fa-star"></i>
+                                                            </span>
+                                                            <span class="text-muted">& Up</span>
+                                                        </div>
+                                                    </label>
                                                 </div>
-                                            </div>
-                                            <div class="accordion-item border-0 d-grid gap-2">
-                                                <div class="accordion-header" id="course21-head2">
-                                                    <a role="button"
-                                                        class="accordion-button filter-head text-truncate pe-4 bg-white collapsed p-0 shadow-none"
-                                                        data-bs-toggle="collapse" data-bs-target="#course21-collapse2"
-                                                        aria-expanded="false"
-                                                        aria-controls="course21-collapse2">Investing & Trading</a>
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox" value="" id="2up">
+                                                    <label class="form-check-label" for="2up">
+                                                        <div class="course-rating small d-flex gap-2">
+                                                            <span class="star-rating_r">
+                                                                <i class="fas fa-star"></i>
+                                                                <i class="fas fa-star"></i>
+                                                                <i class="fa-regular fa-star"></i>
+                                                                <i class="fa-regular fa-star"></i>
+                                                                <i class="fa-regular fa-star"></i>
+                                                            </span>
+                                                            <span class="text-muted">& Up</span>
+                                                        </div>
+                                                    </label>
                                                 </div>
-                                                <div id="course21-collapse2" class="accordion-collapse collapse"
-                                                    aria-labelledby="course21-head2" data-bs-parent="#course21">
-                                                    <div class="accordion-body p-0 d-grid gap-2">
-                                                        <a href="#" class="ps-3 text-truncate text-muted">Stock
-                                                            Trading</a>
-                                                        <a href="#" class="ps-3 text-truncate text-muted">Investing</a>
-                                                        <a href="#" class="ps-3 text-truncate text-muted">Finance
-                                                            Markets</a>
-                                                        <a href="#" class="ps-3 text-truncate text-muted">Day
-                                                            Trading</a>
-                                                    </div>
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox" value="" id="1up">
+                                                    <label class="form-check-label" for="1up">
+                                                        <div class="course-rating small d-flex gap-2">
+                                                            <span class="star-rating_r">
+                                                                <i class="fas fa-star"></i>
+                                                                <i class="fa-regular fa-star"></i>
+                                                                <i class="fa-regular fa-star"></i>
+                                                                <i class="fa-regular fa-star"></i>
+                                                                <i class="fa-regular fa-star"></i>
+                                                            </span>
+                                                            <span class="text-muted">& Up</span>
+                                                        </div>
+                                                    </label>
                                                 </div>
                                             </div>
                                         </div>
+
+                                        <hr class="my-0" />
+
+                                        <div class="d-grid gap-3">
+                                            <a class="filter-head fw-bold text-truncate pe-4" data-bs-toggle="collapse"
+                                                href="#price" role="button" aria-expanded="true" aria-controls="price">
+                                                Pricing
+                                            </a>
+                                            <div class="collapse show" id="price">
+                                                <div class="d-flex gap-3 mb-3">
+
+                                                    <input type="number" class="form-control" placeholder="$ min">
+
+                                                    <input type="number" class="form-control" placeholder="$ max">
+
+                                                </div>
+                                                <button type="button" class="btn btn-primary w-100">Go</button>
+                                            </div>
+                                        </div>
+
                                     </div>
                                 </div>
                             </div>
-
-                            <hr class="my-0" />
-
-                            <div class="course-filter-block d-grid gap-2">
-                                <a class="filter-head fw-bold text-truncate pe-4" data-bs-toggle="collapse"
-                                    href="#rating" role="button" aria-expanded="true" aria-controls="rating">
-                                    Ratings
-                                </a>
-                                <div class="collapse show" id="rating">
-
-                                    <div class="form-check">
-                                        <input class="form-check-input" type="checkbox" value="" id="4up">
-                                        <label class="form-check-label" for="4up">
-                                            <div class="course-rating fs-sm d-flex gap-2">
-                                                <span class="star-rating_r">
-                                                    <i class="fas fa-star"></i>
-                                                    <i class="fas fa-star"></i>
-                                                    <i class="fas fa-star"></i>
-                                                    <i class="fas fa-star"></i>
-                                                    <i class="fa-regular fa-star"></i>
-                                                </span>
-                                                <span class="text-muted">& Up</span>
-                                            </div>
-                                        </label>
-                                    </div>
-                                    <div class="form-check">
-                                        <input class="form-check-input" type="checkbox" value="" id="3up">
-                                        <label class="form-check-label" for="3up">
-                                            <div class="course-rating fs-sm d-flex gap-2">
-                                                <span class="star-rating_r">
-                                                    <i class="fas fa-star"></i>
-                                                    <i class="fas fa-star"></i>
-                                                    <i class="fas fa-star"></i>
-                                                    <i class="fa-regular fa-star"></i>
-                                                    <i class="fa-regular fa-star"></i>
-                                                </span>
-                                                <span class="text-muted">& Up</span>
-                                            </div>
-                                        </label>
-                                    </div>
-                                    <div class="form-check">
-                                        <input class="form-check-input" type="checkbox" value="" id="2up">
-                                        <label class="form-check-label" for="2up">
-                                            <div class="course-rating fs-sm d-flex gap-2">
-                                                <span class="star-rating_r">
-                                                    <i class="fas fa-star"></i>
-                                                    <i class="fas fa-star"></i>
-                                                    <i class="fa-regular fa-star"></i>
-                                                    <i class="fa-regular fa-star"></i>
-                                                    <i class="fa-regular fa-star"></i>
-                                                </span>
-                                                <span class="text-muted">& Up</span>
-                                            </div>
-                                        </label>
-                                    </div>
-                                    <div class="form-check">
-                                        <input class="form-check-input" type="checkbox" value="" id="1up">
-                                        <label class="form-check-label" for="1up">
-                                            <div class="course-rating fs-sm d-flex gap-2">
-                                                <span class="star-rating_r">
-                                                    <i class="fas fa-star"></i>
-                                                    <i class="fa-regular fa-star"></i>
-                                                    <i class="fa-regular fa-star"></i>
-                                                    <i class="fa-regular fa-star"></i>
-                                                    <i class="fa-regular fa-star"></i>
-                                                </span>
-                                                <span class="text-muted">& Up</span>
-                                            </div>
-                                        </label>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <hr class="my-0" />
-
-                            <div class="course-filter-block d-grid gap-2">
-                                <a class="filter-head fw-bold text-truncate pe-4" data-bs-toggle="collapse"
-                                    href="#price" role="button" aria-expanded="true" aria-controls="price">
-                                    Pricing
-                                </a>
-                                <div class="collapse show" id="price">
-
-                                </div>
-                            </div>
-
                         </div>
                     </div>
-                    <div class="col-xxl-9 ps-xxl-5">
+                    <div class="col-lg-8 col-xl-9 ps-lg-0 px-xl-4">
                         <div class="row g-4">
                             <div class="col-sm-6 col-md-4 col-lg-4">
                                 <a href="#" class="text-decoration-none text-black">
                                     <div class="course-card d-grid gap-1">
                                         <div class="img-container rounded-3">
-                                            <img src="./assets/img/static/course-img8.jpg" />
+                                            <img src="./assets/img/static/course-img6.jpg" />
                                         </div>
                                         <div class="description-block d-grid gap-1">
                                             <div class="fw-bold">Learn Python: The Complete Python
                                                 Programming Course</div>
-                                            <div class="fs-sm text-muted text-truncate">Avinash Jain, The Codex
+                                            <div class="small text-muted text-truncate">Avinash Jain, The Codex
                                             </div>
-                                            <div class="course-rating fs-sm d-flex gap-2">
+                                            <div class="course-rating small d-flex gap-2">
+                                                <span class="fw-bold">4.5</span>
+                                                <span class="star-rating_r">
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fa-solid fa-star-half-stroke"></i>
+                                                </span>
+                                                <span class="text-muted">(852)</span>
+                                            </div>
+                                            <div class="fw-bold">$1,999</div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-sm-6 col-md-4 col-lg-4">
+                                <a href="#" class="text-decoration-none text-black">
+                                    <div class="course-card d-grid gap-1">
+                                        <div class="img-container rounded-3">
+                                            <img src="./assets/img/static/course-img6.jpg" />
+                                        </div>
+                                        <div class="description-block d-grid gap-1">
+                                            <div class="fw-bold">Learn Python: The Complete Python
+                                                Programming Course</div>
+                                            <div class="small text-muted text-truncate">Avinash Jain, The Codex
+                                            </div>
+                                            <div class="course-rating small d-flex gap-2">
                                                 <span class="fw-bold">4.5</span>
                                                 <span class="star-rating_r">
                                                     <i class="fas fa-star"></i>
@@ -385,9 +475,9 @@
                                         <div class="description-block d-grid gap-1">
                                             <div class="fw-bold">Learn Python: The Complete Python
                                                 Programming Course</div>
-                                            <div class="fs-sm text-muted text-truncate">Avinash Jain, The Codex
+                                            <div class="small text-muted text-truncate">Avinash Jain, The Codex
                                             </div>
-                                            <div class="course-rating fs-sm d-flex gap-2">
+                                            <div class="course-rating small d-flex gap-2">
                                                 <span class="fw-bold">4.5</span>
                                                 <span class="star-rating_r">
                                                     <i class="fas fa-star"></i>
@@ -412,9 +502,9 @@
                                         <div class="description-block d-grid gap-1">
                                             <div class="fw-bold">Learn Python: The Complete Python
                                                 Programming Course</div>
-                                            <div class="fs-sm text-muted text-truncate">Avinash Jain, The Codex
+                                            <div class="small text-muted text-truncate">Avinash Jain, The Codex
                                             </div>
-                                            <div class="course-rating fs-sm d-flex gap-2">
+                                            <div class="course-rating small d-flex gap-2">
                                                 <span class="fw-bold">4.5</span>
                                                 <span class="star-rating_r">
                                                     <i class="fas fa-star"></i>
@@ -439,9 +529,9 @@
                                         <div class="description-block d-grid gap-1">
                                             <div class="fw-bold">Learn Python: The Complete Python
                                                 Programming Course</div>
-                                            <div class="fs-sm text-muted text-truncate">Avinash Jain, The Codex
+                                            <div class="small text-muted text-truncate">Avinash Jain, The Codex
                                             </div>
-                                            <div class="course-rating fs-sm d-flex gap-2">
+                                            <div class="course-rating small d-flex gap-2">
                                                 <span class="fw-bold">4.5</span>
                                                 <span class="star-rating_r">
                                                     <i class="fas fa-star"></i>
@@ -466,9 +556,9 @@
                                         <div class="description-block d-grid gap-1">
                                             <div class="fw-bold">Learn Python: The Complete Python
                                                 Programming Course</div>
-                                            <div class="fs-sm text-muted text-truncate">Avinash Jain, The Codex
+                                            <div class="small text-muted text-truncate">Avinash Jain, The Codex
                                             </div>
-                                            <div class="course-rating fs-sm d-flex gap-2">
+                                            <div class="course-rating small d-flex gap-2">
                                                 <span class="fw-bold">4.5</span>
                                                 <span class="star-rating_r">
                                                     <i class="fas fa-star"></i>
@@ -488,14 +578,122 @@
                                 <a href="#" class="text-decoration-none text-black">
                                     <div class="course-card d-grid gap-1">
                                         <div class="img-container rounded-3">
-                                            <img src="./assets/img/static/course-img8.jpg" />
+                                            <img src="./assets/img/static/course-img6.jpg" />
                                         </div>
                                         <div class="description-block d-grid gap-1">
                                             <div class="fw-bold">Learn Python: The Complete Python
                                                 Programming Course</div>
-                                            <div class="fs-sm text-muted text-truncate">Avinash Jain, The Codex
+                                            <div class="small text-muted text-truncate">Avinash Jain, The Codex
                                             </div>
-                                            <div class="course-rating fs-sm d-flex gap-2">
+                                            <div class="course-rating small d-flex gap-2">
+                                                <span class="fw-bold">4.5</span>
+                                                <span class="star-rating_r">
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fa-solid fa-star-half-stroke"></i>
+                                                </span>
+                                                <span class="text-muted">(852)</span>
+                                            </div>
+                                            <div class="fw-bold">$1,999</div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-sm-6 col-md-4 col-lg-4">
+                                <a href="#" class="text-decoration-none text-black">
+                                    <div class="course-card d-grid gap-1">
+                                        <div class="img-container rounded-3">
+                                            <img src="./assets/img/static/course-img6.jpg" />
+                                        </div>
+                                        <div class="description-block d-grid gap-1">
+                                            <div class="fw-bold">Learn Python: The Complete Python
+                                                Programming Course</div>
+                                            <div class="small text-muted text-truncate">Avinash Jain, The Codex
+                                            </div>
+                                            <div class="course-rating small d-flex gap-2">
+                                                <span class="fw-bold">4.5</span>
+                                                <span class="star-rating_r">
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fa-solid fa-star-half-stroke"></i>
+                                                </span>
+                                                <span class="text-muted">(852)</span>
+                                            </div>
+                                            <div class="fw-bold">$1,999</div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-sm-6 col-md-4 col-lg-4">
+                                <a href="#" class="text-decoration-none text-black">
+                                    <div class="course-card d-grid gap-1">
+                                        <div class="img-container rounded-3">
+                                            <img src="./assets/img/static/course-img6.jpg" />
+                                        </div>
+                                        <div class="description-block d-grid gap-1">
+                                            <div class="fw-bold">Learn Python: The Complete Python
+                                                Programming Course</div>
+                                            <div class="small text-muted text-truncate">Avinash Jain, The Codex
+                                            </div>
+                                            <div class="course-rating small d-flex gap-2">
+                                                <span class="fw-bold">4.5</span>
+                                                <span class="star-rating_r">
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fa-solid fa-star-half-stroke"></i>
+                                                </span>
+                                                <span class="text-muted">(852)</span>
+                                            </div>
+                                            <div class="fw-bold">$1,999</div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-sm-6 col-md-4 col-lg-4">
+                                <a href="#" class="text-decoration-none text-black">
+                                    <div class="course-card d-grid gap-1">
+                                        <div class="img-container rounded-3">
+                                            <img src="./assets/img/static/course-img6.jpg" />
+                                        </div>
+                                        <div class="description-block d-grid gap-1">
+                                            <div class="fw-bold">Learn Python: The Complete Python
+                                                Programming Course</div>
+                                            <div class="small text-muted text-truncate">Avinash Jain, The Codex
+                                            </div>
+                                            <div class="course-rating small d-flex gap-2">
+                                                <span class="fw-bold">4.5</span>
+                                                <span class="star-rating_r">
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fa-solid fa-star-half-stroke"></i>
+                                                </span>
+                                                <span class="text-muted">(852)</span>
+                                            </div>
+                                            <div class="fw-bold">$1,999</div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-sm-6 col-md-4 col-lg-4">
+                                <a href="#" class="text-decoration-none text-black">
+                                    <div class="course-card d-grid gap-1">
+                                        <div class="img-container rounded-3">
+                                            <img src="./assets/img/static/course-img6.jpg" />
+                                        </div>
+                                        <div class="description-block d-grid gap-1">
+                                            <div class="fw-bold">Learn Python: The Complete Python
+                                                Programming Course</div>
+                                            <div class="small text-muted text-truncate">Avinash Jain, The Codex
+                                            </div>
+                                            <div class="course-rating small d-flex gap-2">
                                                 <span class="fw-bold">4.5</span>
                                                 <span class="star-rating_r">
                                                     <i class="fas fa-star"></i>
@@ -527,7 +725,7 @@
                     <div class="row gy-4">
                         <div class="col-sm-6 col-md-12">
                             <p class="mb-1 fw-bold">About Us</p>
-                            <p class="fs-sm mb-0">We want to help bring talented students and unique startups together
+                            <p class="small mb-0">We want to help bring talented students and unique startups together
                             </p>
                         </div>
                         <div class="col-sm-6 col-md-12">
@@ -536,14 +734,14 @@
                                 <span class="contact-rings">
                                     <img src="./assets/img/icons/phonecall.png" alt="logo">
                                 </span>
-                                <a class="text-white text-decoration-none fs-sm" href="tel:+919990009900">+91 9990 009
+                                <a class="text-white text-decoration-none small" href="tel:+919990009900">+91 9990 009
                                     900</a>
                             </div>
                             <div class="d-flex align-items-center gap-2">
                                 <span class="contact-rings">
                                     <img src="./assets/img/icons/emailicon.png" alt="logo">
                                 </span>
-                                <a class="text-white text-decoration-none fs-sm"
+                                <a class="text-white text-decoration-none small"
                                     href="demo@gmail.com">demo@gmail.com</a>
                             </div>
                         </div>
