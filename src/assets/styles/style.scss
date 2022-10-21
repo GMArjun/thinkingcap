@@ -807,7 +807,7 @@ footer {
         padding-left: $spacer * 1.5;
         &::before {
           font-family: FontAwesome;
-          content: "\f058";
+          content: "\f05d";
           color: $primary;
           position: absolute;
           left: 0;
@@ -846,17 +846,18 @@ footer {
   .offcanvas-backdrop {
     display: none;
   }
-  .stickable-lg{
-    position: sticky;
-    top: 95px;
-  }
+}
+
+.stickable-lg {
+  position: sticky;
+  top: 95px;
 }
 
 .filters-block {
   @include media-breakpoint-up(lg) {
     border: 1px solid $gray-300;
   }
-  .btn-close{
+  .btn-close {
     background: none;
     justify-content: center;
     align-items: center;
@@ -904,5 +905,42 @@ footer {
   }
   hr {
     color: $gray-500;
+  }
+}
+
+.details-accordion-block {
+  .accordion {
+    border: 1px solid $gray-300;
+    --bs-accordion-bg: $gray-100;
+    background-color: $gray-100;
+    .accordion-button {
+      user-select: none;
+      .details-accord-title {
+        padding-left: $spacer * 1.5;
+        position: relative;
+        &::before {
+          font-family: FontAwesome;
+          content: "\f078";
+          display: inline-block;
+          color: $black;
+          position: absolute;
+          left: $spacer;
+          font-size: $input-font-size;
+          top: 2px;
+          left: 0;
+          transition: 0.3s ease;
+        }
+      }
+      &[aria-expanded="true"] {
+        .details-accord-title {
+          &::before {
+            transform: rotate(-180deg);
+          }
+        }
+      }
+      &::after {
+        display: none;
+      }
+    }
   }
 }
