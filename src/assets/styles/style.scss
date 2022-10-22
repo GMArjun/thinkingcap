@@ -972,3 +972,7 @@ footer {
     width: $spacer * 3.5;
   }
 }
+
+.dash-table > :not(caption) > * > * {
+  padding: $spacer $spacer !important;
+}
