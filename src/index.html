@@ -60,23 +60,23 @@
                 <div class="header-controls d-none d-lg-flex align-items-center flex-0-auto">
                     <a href="#" class="nav-link">Instructors</a>
                     <div class="d-flex align-items-center gap-3 auth-dropdowns">
-                        <div class="nav-item dropdown dropdown-menu-end d-none d-lg-block">
+                        <div class="nav-item dropdown dropdown-menu-end d-none d-lg-block notification-menu">
                             <a class="nav-link dropdown-toggle icon-circle rounded-circle p-1" href="#"
                                 data-bs-toggle="dropdown" data-bs-auto-close="outside" data-bs-offset="0,24"><i
                                     class="fa-regular fa-bell" style="font-size: 1.143rem;"></i></a>
-                            <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="#">Health & Fitness</a></li>
-                                <li><a class="dropdown-item" href="#">Business</a></li>
-                            </ul>
+                            <div class="dropdown-menu">
+                                <h6 class="dropdown-header">Notifications</h6>
+                                <div class="text-muted text-center mt-4 p-3">No Notifications</div>
+                            </div>
                         </div>
-                        <div class="nav-item dropdown dropdown-menu-end d-none d-lg-block">
+                        <div class="nav-item dropdown dropdown-menu-end d-none d-lg-block message-menu">
                             <a class="nav-link dropdown-toggle icon-circle rounded-circle p-1" href="#"
                                 data-bs-toggle="dropdown" data-bs-auto-close="outside" data-bs-offset="0,24"><i
                                     class="fa-regular fa-message"></i></a>
-                            <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="#">Health & Fitness</a></li>
-                                <li><a class="dropdown-item" href="#">Business</a></li>
-                            </ul>
+                            <div class="dropdown-menu">
+                                <h6 class="dropdown-header">Messages</h6>
+                                <div class="text-muted text-center mt-4 p-3">No Messages</div>
+                            </div>
                         </div>
                         <div class="nav-item dropdown dropdown-menu-end d-none d-lg-block">
                             <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown"
@@ -88,14 +88,34 @@
                             <ul class="dropdown-menu">
                                 <li>
                                     <a class="dropdown-item" href="#">
-                                        <div class="d-flex align-items-center gap-2">
+                                        <div class="d-flex align-items-center gap-3">
                                             <div class="author-preview flex-0-auto">
                                                 <img src="./assets/img/static/sampleperson.jpg" alt="">
                                             </div>
-                                            <div>User Account</div>
+                                            <div>
+                                                <div class="text-black fw-bold"> User Account</div>
+                                                <div class="small text-muted"> testuser1@gmail.com </div>
+                                            </div>
                                         </div>
                                     </a>
                                 </li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#">My Learnings</a></li>
+                                <li><a class="dropdown-item" href="#">My Listing</a></li>
+                                <li><a class="dropdown-item" href="#">My Favourites</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#">Edit Profile</a></li>
+                                <li><a class="dropdown-item" href="#">Purchase History</a></li>
+                                <li><a class="dropdown-item" href="#">My Address</a></li>
+                                <li><a class="dropdown-item" href="#">Settings</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#">Help</a></li>
                                 <li><a class="dropdown-item" href="#">Logout</a></li>
                             </ul>
                         </div>

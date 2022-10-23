@@ -302,13 +302,10 @@ header {
 
 .auth-dropdowns {
   .dropdown-menu {
+    min-height: 175px;
     border-radius: $spacer / 2;
-    min-width: 225px;
-    max-width: 226px;
     box-shadow: 0 14px 18px -18px $gray-500;
     @include media-breakpoint-up(xl) {
-      min-width: 250px;
-      max-width: 250px;
     }
     .dropdown-item {
       @extend .text-truncate, .pe-5;
@@ -322,6 +319,12 @@ header {
         height: 4rem;
         width: 4rem;
       }
+    }
+  }
+  .notification-menu, .message-menu{
+    .dropdown-menu{
+      min-width: 450px;
+      max-width:450px;
     }
   }
 }
