@@ -221,8 +221,37 @@ footer {
   box-shadow: none !important;
 }
 
+header {
+  .dropdown-toggle {
+    outline: 0;
+    &::after {
+      display: none;
+    }
+  }
+}
+
 .dropdown-menu {
   border-radius: $spacer / 2;
+  min-width: 225px;
+  max-width: 226px;
+  box-shadow: 0 14px 18px -18px $gray-500;
+  @include media-breakpoint-up(xl) {
+    min-width: 250px;
+    max-width: 250px;
+  }
+  .dropdown-item {
+    @extend .text-truncate, .pe-5;
+    padding-right: 3rem;
+    &:hover,
+    &:focus {
+      background-color: transparent !important;
+      color: $primary;
+    }
+    .author-preview {
+      height: 4rem;
+      width: 4rem;
+    }
+  }
 }
 
 .category-menu {
@@ -231,7 +260,6 @@ footer {
     min-width: 225px;
     max-width: 226px;
     box-shadow: 0 14px 18px -18px $gray-500;
-    border: 1px solid $gray-200;
     @include media-breakpoint-up(xl) {
       min-width: 250px;
       max-width: 250px;
@@ -275,12 +303,6 @@ footer {
           }
         }
       }
-    }
-  }
-  & > .dropdown-toggle {
-    outline: 0;
-    &::after {
-      display: none;
     }
   }
   .dropend {
@@ -468,11 +490,11 @@ footer {
         display: flex;
         justify-content: center;
         align-items: center;
-        min-height: 200px;
         flex-direction: column;
         gap: $spacer;
+        font-size: $input-font-size;
         img {
-          height: 100px;
+          height: 90px;
         }
       }
     }
