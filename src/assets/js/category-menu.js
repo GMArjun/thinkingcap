@@ -1,40 +1,38 @@
-let menuHomeToggler = document.querySelector(
+let categoryToggler = document.querySelector(
   ".category-menu > .dropdown-toggle"
 );
-let menuAllLevelToggler = document.querySelectorAll(
+let categoryLevelToggler = document.querySelectorAll(
   "header .dropend .dropdown-toggle"
 );
 
-let categoryMenu = [menuHomeToggler, ...menuAllLevelToggler];
+let categoryMenu = [categoryToggler, ...categoryLevelToggler];
 
-let showCategoryMenu = (level) => {
-  new bootstrap.Dropdown(level);
-  let menuInstance = bootstrap.Dropdown.getInstance(level);
-  menuInstance.show();
+let dropdownToggler = (handler, toggle) => {
+  new bootstrap.Dropdown(handler);
+  let menuInstance = bootstrap.Dropdown.getInstance(handler);
+  toggle == "show" ? menuInstance.show() : menuInstance.hide();
 };
 
-menuHomeToggler.addEventListener("shown.bs.dropdown", (event) => {
-  const main = document.querySelector("main");
-  const overlay = document.createElement("div");
-  overlay.classList.add("menu-dropdown-overlay");
-  main.appendChild(overlay);
-  overlay.addEventListener("mouseover", () => {
-    new bootstrap.Dropdown(menuHomeToggler);
-    let menuInstance = bootstrap.Dropdown.getInstance(menuHomeToggler);
-    menuInstance.hide();
+categoryMenu.forEach((handler) => {
+  ["click", "mouseover"].forEach((event) => {
+    handler.addEventListener(event, () => {
+      dropdownToggler(handler, "show");
+    });
   });
 });
 
-menuHomeToggler.addEventListener("hidden.bs.dropdown", (event) => {
-  const main = document.querySelector(".menu-dropdown-overlay");
-  main.remove();
-});
-
-categoryMenu.forEach((level) => {
-  level.addEventListener("click", () => {
-    showCategoryMenu(level);
-  });
-  level.addEventListener("mouseover", () => {
-    showCategoryMenu(level);
+["shown.bs.dropdown", "hidden.bs.dropdown"].forEach((event, index) => {
+  categoryToggler.addEventListener(event, () => {
+    if (index == 0) {
+      const overlay = document.createElement("div");
+      overlay.classList.add("drop-overlay");
+      document.body.insertAdjacentElement("beforeend", overlay);
+      overlay.addEventListener("mouseover", () =>
+        dropdownToggler(categoryToggler, "hide")
+      );
+    } else {
+      const overlay = document.querySelector(".drop-overlay");
+      overlay.remove();
+    }
   });
 });
