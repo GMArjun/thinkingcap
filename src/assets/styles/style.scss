@@ -230,30 +230,6 @@ header {
   }
 }
 
-.dropdown-menu {
-  border-radius: $spacer / 2;
-  min-width: 225px;
-  max-width: 226px;
-  box-shadow: 0 14px 18px -18px $gray-500;
-  @include media-breakpoint-up(xl) {
-    min-width: 250px;
-    max-width: 250px;
-  }
-  .dropdown-item {
-    @extend .text-truncate, .pe-5;
-    padding-right: 3rem;
-    &:hover,
-    &:focus {
-      background-color: transparent !important;
-      color: $primary;
-    }
-    .author-preview {
-      height: 4rem;
-      width: 4rem;
-    }
-  }
-}
-
 .category-menu {
   .dropdown-menu {
     min-height: 400px;
@@ -319,6 +295,32 @@ header {
         position: absolute;
         top: 8px;
         right: 15px;
+      }
+    }
+  }
+}
+
+.auth-dropdowns {
+  .dropdown-menu {
+    border-radius: $spacer / 2;
+    min-width: 225px;
+    max-width: 226px;
+    box-shadow: 0 14px 18px -18px $gray-500;
+    @include media-breakpoint-up(xl) {
+      min-width: 250px;
+      max-width: 250px;
+    }
+    .dropdown-item {
+      @extend .text-truncate, .pe-5;
+      padding-right: 3rem;
+      &:hover,
+      &:focus {
+        background-color: transparent !important;
+        color: $primary;
+      }
+      .author-preview {
+        height: 4rem;
+        width: 4rem;
       }
     }
   }
