@@ -1204,3 +1204,21 @@ header {
     }
   }
 }
+
+.help-page {
+  .accordion-button {
+    box-shadow: none !important;
+  }
+  .list-group {
+    .list-group-item {
+      padding-left: $spacer * 1.5;
+      &::before {
+        font-family: FontAwesome;
+        content: "\f05d";
+        color: $primary;
+        position: absolute;
+        left: 0;
+      }
+    }
+  }
+}
