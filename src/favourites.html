@@ -465,7 +465,6 @@
                         <div class="my-4 py-4"></div>
 
 
-
                         <!-- My Listing -->
 
                         <h4 class="fw-bold mb-4">My Listing</h4>
@@ -1075,6 +1074,70 @@
                                 </a>
                             </div>
                         </div>
+
+                        <div class="my-4 py-4"></div>
+
+                        <!-- Settings -->
+                        <h4 class="fw-bold mb-4">Settings</h4>
+
+                        <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                            data-bs-target="#changePasswordModal">
+                            Change Password
+                        </button>
+
+                        <div class="modal fade" id="changePasswordModal" tabindex="-1"
+                            aria-labelledby="changePasswordModalLabel" aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-centered">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h1 class="modal-title fs-5" id="changePasswordModalLabel">Change Password</h1>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                            aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <form action="">
+                                            <div class="form-floating mb-4">
+                                                <input type="password" class="form-control" id="oldpass"
+                                                    placeholder="Name">
+                                                <label for="oldpass">Current Password</label>
+                                            </div>
+                                            <div class="form-floating mb-4">
+                                                <input type="password" class="form-control" id="newpass"
+                                                    placeholder="newpass">
+                                                <label for="newpass">New Password</label>
+                                            </div>
+                                            <div class="form-floating">
+                                                <input type="password" class="form-control" id="confirmnewpass"
+                                                    placeholder="confirmnewpass">
+                                                <label for="confirmnewpass">Confirm New Password</label>
+                                            </div>
+                                        </form>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-light"
+                                            data-bs-dismiss="modal">Close</button>
+                                        <button type="button" class="btn btn-primary">Change Passeord</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row mt-3 g-4">
+                            <div class="col-6">
+                                <label for="exampleFormControlInput1" class="form-label">Public Key</label>
+                                <input type="email" class="form-control" placeholder="Public Key">
+                            </div>
+                            <div class="col-6">
+                                <label for="exampleFormControlInput1" class="form-label">Private Key</label>
+                                <input type="email" class="form-control" placeholder="Private Key">
+                            </div>
+                            <div class="col-12 text-end">
+                                <button type="button" class="btn btn-primary">
+                                    Save Changes
+                                </button>
+                            </div>
+                        </div>
+
 
                         <div class="my-4 py-4"></div>
 
