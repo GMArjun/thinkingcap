@@ -375,8 +375,128 @@
 
                         <!-- My Address -->
                         <h4 class="fw-bold mb-4">My Address</h4>
-                        <div class="text-end"><button type="button" class="btn btn-primary"><i
-                                    class="fa-solid fa-plus"></i> Add New Address</button></div>
+                        <div class="text-end"><button type="button" data-bs-toggle="modal" data-bs-target="#addAddress"
+                                class="btn btn-primary"><i class="fa-solid fa-plus"></i> Add New Address</button></div>
+
+                        <!-- Add Address Modal -->
+                        <div class="modal fade" id="addAddress" tabindex="-1" aria-labelledby="addAddressLabel"
+                            aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-centered">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h1 class="modal-title fs-5" id="addAddressLabel">Add New Address</h1>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                            aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <form action="">
+                                            <div class="form-floating mb-4">
+                                                <input type="text" class="form-control" id="addressName"
+                                                    placeholder="Name">
+                                                <label for="addressName">Address Name</label>
+                                            </div>
+                                            <div class="form-floating mb-4">
+                                                <input type="text" class="form-control" id="street1" placeholder="Name">
+                                                <label for="street1">Street 1</label>
+                                            </div>
+                                            <div class="form-floating mb-4">
+                                                <input type="text" class="form-control" id="street2" placeholder="Name">
+                                                <label for="street2">Street 2</label>
+                                            </div>
+                                            <div class="form-floating mb-4">
+                                                <input type="text" class="form-control" id="country" placeholder="Name">
+                                                <label for="country">Country</label>
+                                            </div>
+                                            <div class="form-floating mb-4">
+                                                <input type="text" class="form-control" id="zipcode" placeholder="Name">
+                                                <label for="zipcode">Zipcode</label>
+                                            </div>
+                                            <div class="form-floating">
+                                                <input type="text" class="form-control" id="phoneNumber"
+                                                    placeholder="Name">
+                                                <label for="phoneNumber">Phone Number</label>
+                                            </div>
+                                        </form>
+                                    </div>
+                                    <div class="modal-footer border-0">
+                                        <button type="button" class="btn btn-light"
+                                            data-bs-dismiss="modal">Close</button>
+                                        <button type="button" class="btn btn-primary">Save</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Edit Address Modal -->
+                        <div class="modal fade" id="editAddress" tabindex="-1" aria-labelledby="editAddressLabel"
+                            aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-centered">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h1 class="modal-title fs-5" id="editAddressLabel">Edit Address</h1>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                            aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <form action="">
+                                            <div class="form-floating mb-4">
+                                                <input type="text" class="form-control" id="addressName"
+                                                    placeholder="Name">
+                                                <label for="addressName">Address Name</label>
+                                            </div>
+                                            <div class="form-floating mb-4">
+                                                <input type="text" class="form-control" id="street1" placeholder="Name">
+                                                <label for="street1">Street 1</label>
+                                            </div>
+                                            <div class="form-floating mb-4">
+                                                <input type="text" class="form-control" id="street2" placeholder="Name">
+                                                <label for="street2">Street 2</label>
+                                            </div>
+                                            <div class="form-floating mb-4">
+                                                <input type="text" class="form-control" id="country" placeholder="Name">
+                                                <label for="country">Country</label>
+                                            </div>
+                                            <div class="form-floating mb-4">
+                                                <input type="text" class="form-control" id="zipcode" placeholder="Name">
+                                                <label for="zipcode">Zipcode</label>
+                                            </div>
+                                            <div class="form-floating">
+                                                <input type="text" class="form-control" id="phoneNumber"
+                                                    placeholder="Name">
+                                                <label for="phoneNumber">Phone Number</label>
+                                            </div>
+                                        </form>
+                                    </div>
+                                    <div class="modal-footer border-0">
+                                        <button type="button" class="btn btn-light"
+                                            data-bs-dismiss="modal">Close</button>
+                                        <button type="button" class="btn btn-primary">Save</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Confirm Delete Modal -->
+                        <div class="modal fade" id="confirmDeleteAddress" tabindex="-1"
+                            aria-labelledby="confirmDeleteAddressLabel" aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-centered">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h1 class="modal-title fs-5" id="confirmDeleteAddressLabel">Edit Address</h1>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                            aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <div class="text-muted">Are you sure you want to delete this Address ?</div>
+                                    </div>
+                                    <div class="modal-footer border-0">
+                                        <button type="button" class="btn btn-light"
+                                            data-bs-dismiss="modal">Close</button>
+                                        <button type="button" class="btn btn-primary">Confirm</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
 
                         <div class="row g-4 mt-3 address-cards">
                             <div class="col-sm-6">
@@ -384,9 +504,11 @@
                                     <div class="card-body">
                                         <div class="d-flex justify-content-end mb-3">
                                             <h5 class="card-title mb-0 me-4">Home</h5>
-                                            <button class="btn bg-light ms-auto me-3"><i
+                                            <button data-bs-toggle="modal" data-bs-target="#editAddress"
+                                                class="btn bg-light ms-auto me-3"><i
                                                     class="fa-solid fa-pen-to-square"></i></button>
-                                            <button class="btn bg-light"><i class="fa-solid fa-trash-can"></i></button>
+                                            <button data-bs-toggle="modal" data-bs-target="#confirmDeleteAddress"
+                                                class="btn bg-light"><i class="fa-solid fa-trash-can"></i></button>
                                         </div>
                                         <div class="card-subtitle fw-bold">John Doe</div>
 
@@ -404,9 +526,11 @@
                                     <div class="card-body">
                                         <div class="d-flex justify-content-end mb-3">
                                             <h5 class="card-title mb-0 me-4">Home</h5>
-                                            <button class="btn bg-light ms-auto me-3"><i
+                                            <button data-bs-toggle="modal" data-bs-target="#editAddress"
+                                                class="btn bg-light ms-auto me-3"><i
                                                     class="fa-solid fa-pen-to-square"></i></button>
-                                            <button class="btn bg-light"><i class="fa-solid fa-trash-can"></i></button>
+                                            <button data-bs-toggle="modal" data-bs-target="#confirmDeleteAddress"
+                                                class="btn bg-light"><i class="fa-solid fa-trash-can"></i></button>
                                         </div>
                                         <div class="card-subtitle fw-bold">John Doe</div>
 
@@ -424,9 +548,11 @@
                                     <div class="card-body">
                                         <div class="d-flex justify-content-end mb-3">
                                             <h5 class="card-title mb-0 me-4">Home</h5>
-                                            <button class="btn bg-light ms-auto me-3"><i
+                                            <button data-bs-toggle="modal" data-bs-target="#editAddress"
+                                                class="btn bg-light ms-auto me-3"><i
                                                     class="fa-solid fa-pen-to-square"></i></button>
-                                            <button class="btn bg-light"><i class="fa-solid fa-trash-can"></i></button>
+                                            <button data-bs-toggle="modal" data-bs-target="#confirmDeleteAddress"
+                                                class="btn bg-light"><i class="fa-solid fa-trash-can"></i></button>
                                         </div>
                                         <div class="card-subtitle fw-bold">John Doe</div>
 
@@ -444,9 +570,11 @@
                                     <div class="card-body">
                                         <div class="d-flex justify-content-end mb-3">
                                             <h5 class="card-title mb-0 me-4">Home</h5>
-                                            <button class="btn bg-light ms-auto me-3"><i
+                                            <button data-bs-toggle="modal" data-bs-target="#editAddress"
+                                                class="btn bg-light ms-auto me-3"><i
                                                     class="fa-solid fa-pen-to-square"></i></button>
-                                            <button class="btn bg-light"><i class="fa-solid fa-trash-can"></i></button>
+                                            <button data-bs-toggle="modal" data-bs-target="#confirmDeleteAddress"
+                                                class="btn bg-light"><i class="fa-solid fa-trash-can"></i></button>
                                         </div>
                                         <div class="card-subtitle fw-bold">John Doe</div>
 
@@ -1113,7 +1241,7 @@
                                             </div>
                                         </form>
                                     </div>
-                                    <div class="modal-footer">
+                                    <div class="modal-footer border-0">
                                         <button type="button" class="btn btn-light"
                                             data-bs-dismiss="modal">Close</button>
                                         <button type="button" class="btn btn-primary">Change Passeord</button>
