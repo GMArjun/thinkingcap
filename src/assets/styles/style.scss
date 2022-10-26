@@ -363,7 +363,7 @@ header {
         .message-content {
           @include line-clamp(2);
         }
-        .message-stamp{
+        .message-stamp {
           font-size: $font-size-xs;
         }
       }
@@ -602,9 +602,9 @@ header {
       }
     }
   }
-  &.fav-content{
+  &.fav-content {
     position: relative;
-    .heart-like{
+    .heart-like {
       position: absolute;
       top: 10px;
       right: 10px;
@@ -1138,6 +1138,68 @@ header {
           content: "\f004";
           color: $white;
         }
+      }
+    }
+  }
+}
+
+.message-block {
+  .sender-preview-img {
+    border-radius: 100%;
+    overflow: hidden;
+    img {
+      height: 100%;
+      width: 100%;
+      object-fit: cover;
+    }
+  }
+  .message-preview {
+    .preview-list {
+      border-top: 1px solid $gray-200;
+      &:hover {
+        background-color: $gray-100;
+      }
+      &.active {
+        .sender-name,
+        .sender-preview-msg {
+          color: $white !important;
+        }
+        background-color: $primary;
+      }
+      .sender-preview-img {
+        height: $spacer * 3;
+        width: $spacer * 3;
+      }
+    }
+  }
+  .message-full {
+    @include media-breakpoint-up(md) {
+      border-left: var(--bs-border-width) var(--bs-border-style)
+        var(--bs-border-color);
+    }
+    .message-detailed-block {
+      @include media-breakpoint-down(md) {
+        display: none;
+      }
+      .sender-preview-img {
+        height: $spacer * 4;
+        width: $spacer * 4;
+      }
+      .message-detailed-body {
+        height: 100%;
+        overflow-y: auto;
+        max-height: 500px;
+        .msg {
+          max-width: 500px;
+        }
+        .msg-sent {
+          align-self: flex-end;
+        }
+      }
+    }
+    .dropdown-toggle {
+      &::after {
+        display: none;
       }
     }
   }

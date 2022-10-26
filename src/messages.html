@@ -1,0 +1,757 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#6255a5" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./assets/styles/style.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+</head>
+
+<body>
+
+    <header>
+        <div class="container-fluid px-4 position-relative">
+            <div class="header-nav d-flex align-items-center">
+                <div class="logo-container d-flex align-items-center">
+                    <button class="btn outline-0 border-0 d-block nav-icon d-lg-none" type="button"
+                        data-bs-toggle="offcanvas" data-bs-target="#asidebar" aria-controls="asidebar"><i
+                            class="fa fa-bars"></i>
+                    </button>
+                    <img src="./assets/img/icons/logo.png" class="header-logo" alt="logo">
+                </div>
+                <div class="nav-item dropdown category-menu d-none d-lg-block">
+                    <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" data-bs-auto-close="outside"
+                        data-bs-offset="0,32">Categories</a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Health & Fitness</a></li>
+                        <li><a class="dropdown-item" href="#">Business</a></li>
+                        <li class="dropend">
+                            <a href="#" class="dropdown-item dropdown-toggle" data-bs-toggle="dropdown"
+                                data-bs-auto-close="outside" data-bs-display="static">Development</a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href=""> Data Science</a></li>
+                                <li><a class="dropdown-item" href=""> Mobile Development</a></li>
+                                <li><a class="dropdown-item" href=""> Software Testing</a></li>
+                                <li class="dropend">
+                                    <a href="#" class="dropdown-item dropdown-toggle" data-bs-toggle="dropdown"
+                                        data-bs-auto-close="outside" data-bs-display="static">Web Development</a>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item" href=""> Javascript</a></li>
+                                        <li><a class="dropdown-item" href=""> Vue</a></li>
+                                        <li><a class="dropdown-item" href=""> React</a></li>
+                                        <li><a class="dropdown-item" href=""> Angular</a></li>
+                                    </ul>
+                                </li>
+                                <li><a class="dropdown-item" href="">Development Tools</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <div class="header-search-bar">
+                    <input class="form-control form-control-lg" placeholder="Search Courses" type="text">
+                    <a class="btn outline-0 border-0 cursor-pointer search-btn"> <i class="fa fa-search"></i> </a>
+                    <a class="btn outline-0 border-0 cursor-pointer close-btn"> <i class="fa fa-close"></i>
+                    </a>
+                </div>
+                <div class="header-controls d-none d-lg-flex align-items-center flex-0-auto">
+                    <a href="#" class="nav-link">Instructors</a>
+                    <div class="d-flex align-items-center gap-3 auth-dropdowns">
+                        <div class="nav-item dropdown dropdown-menu-end d-none d-lg-block notification-menu">
+                            <a class="nav-link dropdown-toggle icon-circle rounded-circle p-1" href="#"
+                                data-bs-toggle="dropdown" data-bs-auto-close="outside" data-bs-offset="0,24"><i
+                                    class="fa-regular fa-bell" style="font-size: 1.143rem;"></i></a>
+                            <ul class="dropdown-menu">
+                                <h6 class="dropdown-header">Notifications</h6>
+                                <li><a class="dropdown-item" href="#">Notification 1 Lorem ipsum dolor sit amet
+                                        consectetur adipisicing elit. Odit, exercitationem! </a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#">Notification 2 consectetur adipisicing elit. Odit,
+                                        exercitationem!
+                                    </a></li>
+                                <li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#">Notification 1 Lorem ipsum dolor sit amet
+                                        consectetur adipisicing elit. Odit, exercitationem! </a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#">Notification 2 consectetur adipisicing elit. Odit,
+                                        exercitationem!
+                                    </a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#">Notification 2 consectetur adipisicing elit. Odit,
+                                        exercitationem!
+                                    </a></li>
+                                <li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#">Notification 1 Lorem ipsum dolor sit amet
+                                        consectetur adipisicing elit. Odit, exercitationem! </a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#">Notification 2 consectetur adipisicing elit. Odit,
+                                        exercitationem!
+                                    </a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#">Notification 2 consectetur adipisicing elit. Odit,
+                                        exercitationem!
+                                    </a></li>
+                                <li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#">Notification 1 Lorem ipsum dolor sit amet
+                                        consectetur adipisicing elit. Odit, exercitationem! </a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#">Notification 2 consectetur adipisicing elit. Odit,
+                                        exercitationem!
+                                    </a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#">Notification 2 consectetur adipisicing elit. Odit,
+                                        exercitationem!
+                                    </a></li>
+                                <li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#">Notification 1 Lorem ipsum dolor sit amet
+                                        consectetur adipisicing elit. Odit, exercitationem! </a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#">Notification 2 consectetur adipisicing elit. Odit,
+                                        exercitationem!
+                                    </a></li>
+
+                                <!-- <div class="text-muted text-center mt-4 p-3">No Notifications</div> -->
+                            </ul>
+                        </div>
+                        <div class="nav-item dropdown dropdown-menu-end d-none d-lg-block message-menu">
+                            <a class="nav-link dropdown-toggle icon-circle rounded-circle p-1" href="#"
+                                data-bs-toggle="dropdown" data-bs-auto-close="outside" data-bs-offset="0,24"><i
+                                    class="fa-regular fa-message"></i></a>
+                            <ul class="dropdown-menu">
+                                <h6 class="dropdown-header mb-3">Messages</h6>
+                                <!-- <div class="text-muted text-center mt-4 p-3">No Messages</div> -->
+
+                                <li><a class="dropdown-item" href="#">
+                                        <div class="message-line">
+                                            <div class="d-flex gap-2">
+                                                <div class="author-preview flex-0-auto">
+                                                    <img src="./assets/img/static/sampleperson.jpg" alt="">
+                                                </div>
+                                                <div class="small">
+                                                    <div
+                                                        class="d-flex gap-2 align-items-center justify-content-between">
+                                                        <div class="fw-bold">Todd Scott</div>
+                                                        <div class="text-muted message-stamp">5
+                                                            Mins
+                                                            ago</div>
+                                                    </div>
+                                                    <div class="text-muted message-content">
+                                                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                                        Corrupti
+                                                        aliquam
+                                                        quo
+                                                        molestias laborum dolores totam vel repudiandae impedit atque
+                                                        ipsum.
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a></li>
+                                <li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#">
+                                        <div class="message-line">
+                                            <div class="d-flex gap-2">
+                                                <div class="author-preview flex-0-auto">
+                                                    <img src="./assets/img/static/sampleperson.jpg" alt="">
+                                                </div>
+                                                <div class="small">
+                                                    <div
+                                                        class="d-flex gap-2 align-items-center justify-content-between">
+                                                        <div class="fw-bold">Todd Scott</div>
+                                                        <div class="text-muted message-stamp">5
+                                                            Mins
+                                                            ago</div>
+                                                    </div>
+                                                    <div class="text-muted message-content">
+                                                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                                        Corrupti
+                                                        aliquam
+                                                        quo
+                                                        molestias laborum dolores totam vel repudiandae impedit atque
+                                                        ipsum.
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a></li>
+                                <li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#">
+                                        <div class="message-line">
+                                            <div class="d-flex gap-2">
+                                                <div class="author-preview flex-0-auto">
+                                                    <img src="./assets/img/static/sampleperson.jpg" alt="">
+                                                </div>
+                                                <div class="small">
+                                                    <div
+                                                        class="d-flex gap-2 align-items-center justify-content-between">
+                                                        <div class="fw-bold">Todd Scott</div>
+                                                        <div class="text-muted message-stamp">5
+                                                            Mins
+                                                            ago</div>
+                                                    </div>
+                                                    <div class="text-muted message-content">
+                                                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                                        Corrupti
+                                                        aliquam
+                                                        quo
+                                                        molestias laborum dolores totam vel repudiandae impedit atque
+                                                        ipsum.
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a></li>
+                                <li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#">
+                                        <div class="message-line">
+                                            <div class="d-flex gap-2">
+                                                <div class="author-preview flex-0-auto">
+                                                    <img src="./assets/img/static/sampleperson.jpg" alt="">
+                                                </div>
+                                                <div class="small">
+                                                    <div
+                                                        class="d-flex gap-2 align-items-center justify-content-between">
+                                                        <div class="fw-bold">Todd Scott</div>
+                                                        <div class="text-muted message-stamp">5
+                                                            Mins
+                                                            ago</div>
+                                                    </div>
+                                                    <div class="text-muted message-content">
+                                                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                                        Corrupti
+                                                        aliquam
+                                                        quo
+                                                        molestias laborum dolores totam vel repudiandae impedit atque
+                                                        ipsum.
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a></li>
+                                <li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#">
+                                        <div class="message-line">
+                                            <div class="d-flex gap-2">
+                                                <div class="author-preview flex-0-auto">
+                                                    <img src="./assets/img/static/sampleperson.jpg" alt="">
+                                                </div>
+                                                <div class="small">
+                                                    <div
+                                                        class="d-flex gap-2 align-items-center justify-content-between">
+                                                        <div class="fw-bold">Todd Scott</div>
+                                                        <div class="text-muted message-stamp">5
+                                                            Mins
+                                                            ago</div>
+                                                    </div>
+                                                    <div class="text-muted message-content">
+                                                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                                        Corrupti
+                                                        aliquam
+                                                        quo
+                                                        molestias laborum dolores totam vel repudiandae impedit atque
+                                                        ipsum.
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a></li>
+                                <li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#">
+                                        <div class="message-line">
+                                            <div class="d-flex gap-2">
+                                                <div class="author-preview flex-0-auto">
+                                                    <img src="./assets/img/static/sampleperson.jpg" alt="">
+                                                </div>
+                                                <div class="small">
+                                                    <div
+                                                        class="d-flex gap-2 align-items-center justify-content-between">
+                                                        <div class="fw-bold">Todd Scott</div>
+                                                        <div class="text-muted message-stamp">5
+                                                            Mins
+                                                            ago</div>
+                                                    </div>
+                                                    <div class="text-muted message-content">
+                                                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                                        Corrupti
+                                                        aliquam
+                                                        quo
+                                                        molestias laborum dolores totam vel repudiandae impedit atque
+                                                        ipsum.
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a></li>
+                                <li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#">
+                                        <div class="message-line">
+                                            <div class="d-flex gap-2">
+                                                <div class="author-preview flex-0-auto">
+                                                    <img src="./assets/img/static/sampleperson.jpg" alt="">
+                                                </div>
+                                                <div class="small">
+                                                    <div
+                                                        class="d-flex gap-2 align-items-center justify-content-between">
+                                                        <div class="fw-bold">Todd Scott</div>
+                                                        <div class="text-muted message-stamp">5
+                                                            Mins
+                                                            ago</div>
+                                                    </div>
+                                                    <div class="text-muted message-content">
+                                                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                                        Corrupti
+                                                        aliquam
+                                                        quo
+                                                        molestias laborum dolores totam vel repudiandae impedit atque
+                                                        ipsum.
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a></li>
+                                <li>
+                            </ul>
+                        </div>
+                        <div class="nav-item dropdown dropdown-menu-end d-none d-lg-block">
+                            <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown"
+                                data-bs-auto-close="outside" data-bs-offset="0,24">
+                                <div class="author-preview flex-0-auto">
+                                    <img src="./assets/img/static/sampleperson.jpg" alt="">
+                                </div>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li>
+                                    <a class="dropdown-item" href="#">
+                                        <div class="d-flex align-items-center gap-3">
+                                            <div class="author-preview flex-0-auto">
+                                                <img src="./assets/img/static/sampleperson.jpg" alt="">
+                                            </div>
+                                            <div>
+                                                <div class="text-black fw-bold"> User Account</div>
+                                                <div class="small text-muted"> testuser1@gmail.com </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#">My Learnings</a></li>
+                                <li><a class="dropdown-item" href="#">My Listing</a></li>
+                                <li><a class="dropdown-item" href="#">My Favourites</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#">Edit Profile</a></li>
+                                <li><a class="dropdown-item" href="#">Purchase History</a></li>
+                                <li><a class="dropdown-item" href="#">My Address</a></li>
+                                <li><a class="dropdown-item" href="#">Settings</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#">Help</a></li>
+                                <li><a class="dropdown-item" href="#">Logout</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <aside class="asider-bar offcanvas offcanvas-start" tabindex="-1" id="asidebar">
+            <div class="offcanvas-header">
+                <button type="button" class="cls-btn outline-0 border-0" data-bs-dismiss="offcanvas"
+                    data-bs-target="#asidebar" aria-label="Close"><i class="fa fa-close"></i></button>
+            </div>
+            <div class="offcanvas-body">
+                <div class="auth-section">
+                    <a class="d-block" href="">Login</a>
+                    <a class="d-block" href="">Signup</a>
+                </div>
+                <hr>
+                <a href="#">Instructors</a>
+                <hr>
+                <div class="mb-2">Categories</div>
+                <div class="page-header">
+                    <nav>
+                        <div class="menu-wrapper is-visible">
+                            <div class="list-wrapper">
+                                <ul class="menu level-1">
+                                    <li>
+                                        <a href="" class="nested">Web Development</a>
+                                        <ul class="sub-menu level-2">
+                                            <li>
+                                                <a href="" class="nested">Javascript</a>
+                                                <ul class="sub-menu level-3">
+                                                    <li> <a href="">React</a> </li>
+                                                    <li> <a href="">Vue</a> </li>
+                                                    <li> <a href="">Angular</a> </li>
+                                                </ul>
+                                            </li>
+                                            <li>
+                                                <a href="">Course Materials</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <a href="" class="nested">Mobile Development</a>
+                                        <ul class="sub-menu level-2">
+                                            <li>
+                                                <a href="">Unity</a>
+                                            </li>
+                                            <li>
+                                                <a href="">3D Game Development</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <a href="">IT Certifications</a>
+                                    </li>
+                                    <li>
+                                        <a href="">Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero vel
+                                            sequi nobis atque, laudantium perspiciatis!</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="list-wrapper">
+                                <button type="button" class="back-one-level mb-2 ps-0">
+                                    <i class="fa fa-arrow-left f-12"></i>
+                                    <span class="text-start small text-truncate" />
+                                </button>
+                                <div class="sub-menu-wrapper"></div>
+                            </div>
+                            <div class="list-wrapper">
+                                <button type="button" class="back-one-level mb-2 ps-0">
+                                    <i class="fa fa-arrow-left f-12"></i>
+                                    <span class="text-start small text-truncate" />
+                                </button>
+                                <div class="sub-menu-wrapper"></div>
+                            </div>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </aside>
+    </header>
+
+    <main>
+        <div class="messages-page">
+            <div class="container-xxl px-4">
+                <div class="my-5 pb-5">
+                    <div class="row message-block border rounded-3 mx-0 overflow-hidden">
+                        <div class="message-preview col-md-4 col-xl-3 p-0">
+                            <h4 class="fw-bold p-3 mb-0 bg-light">Messages</h4>
+                            <div class="d-flex flex-column">
+                                <div class="preview-list p-3">
+                                    <a href="#" class="text-decoration-none text-black">
+                                        <div class="preview-block d-flex align-items-center gap-2">
+                                            <div class="sender-preview-img flex-0-auto">
+                                                <img src="./assets/img/static/sampleperson.jpg" alt="">
+                                            </div>
+                                            <div class="sender-preview-info overflow-hidden">
+                                                <div class="sender-name text-truncate fw-bold">Quinton Kaufman</div>
+                                                <div class="sender-preview-msg text-muted text-truncate small">Now is
+                                                    the winter of our discontent
+                                                    Made glorious summer by this sun of York;
+                                                    And all the clouds that lour'd upon our house</div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="preview-list p-3 active">
+                                    <a href="#" class="text-decoration-none text-black">
+                                        <div class="preview-block d-flex align-items-center gap-2">
+                                            <div class="sender-preview-img flex-0-auto">
+                                                <img src="./assets/img/static/sampleperson.jpg" alt="">
+                                            </div>
+                                            <div class="sender-preview-info overflow-hidden">
+                                                <div class="sender-name text-truncate fw-bold">Elliot Bishop</div>
+                                                <div class="sender-preview-msg text-muted text-truncate small">
+                                                    In the deep bosom of the ocean buried.
+                                                    Now are our brows bound with victorious wreaths;
+                                                    Our bruised arms hung up for monuments;</div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="preview-list p-3">
+                                    <a href="#" class="text-decoration-none text-black">
+                                        <div class="preview-block d-flex align-items-center gap-2">
+                                            <div class="sender-preview-img flex-0-auto">
+                                                <img src="./assets/img/static/sampleperson.jpg" alt="">
+                                            </div>
+                                            <div class="sender-preview-info overflow-hidden">
+                                                <div class="sender-name text-truncate fw-bold">Amelia Duran</div>
+                                                <div class="sender-preview-msg text-muted text-truncate small">Our stern
+                                                    alarums changed to merry meetings,
+                                                    Our dreadful marches to delightful measures.
+                                                    Grim-visaged war hath smooth'd his wrinkled front;</div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="preview-list p-3">
+                                    <a href="#" class="text-decoration-none text-black">
+                                        <div class="preview-block d-flex align-items-center gap-2">
+                                            <div class="sender-preview-img flex-0-auto">
+                                                <img src="./assets/img/static/sampleperson.jpg" alt="">
+                                            </div>
+                                            <div class="sender-preview-info overflow-hidden">
+                                                <div class="sender-name text-truncate fw-bold">Marcos Reilly</div>
+                                                <div class="sender-preview-msg text-muted text-truncate small">I, that
+                                                    am rudely stamp'd, and want love's majesty
+                                                    To strut before a wanton ambling nymph;
+                                                    I, that am curtail'd of this fair proportion,</div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="message-full col-md-8 col-xl-9 p-0">
+                            <div class="message-detailed-block">
+                                <div class="d-md-none bg-light p-3">
+                                    <button class="goback-msg-btn btn gap-3 d-flex align-items-center border-0"><i
+                                            class="fa-solid fa-arrow-left"></i>
+                                        <h4 class="fw-bold mb-0">All Messages</h4>
+                                    </button>
+                                </div>
+                                <div class="message-detailed-header p-3 border-bottom">
+                                    <div class="preview-block d-flex align-items-center gap-2">
+                                        <div class="sender-preview-img flex-0-auto">
+                                            <img src="./assets/img/static/sampleperson.jpg" alt="">
+                                        </div>
+                                        <div class="sender-preview-info overflow-hidden">
+                                            <div class="sender-name text-truncate fw-bold">Amelia Duran</div>
+                                            <div class="sender-preview-msg text-muted text-truncate small">Last Seen at
+                                                11.45 PM</div>
+                                        </div>
+                                        <div class="ms-auto dropdown dropdown-menu-end">
+                                            <a class="text-decoration-none dropdown-toggle icon-circle rounded-circle p-1"
+                                                href="#" data-bs-toggle="dropdown" data-bs-auto-close="outside"
+                                                data-bs-offset="0,10"><i class="fa-solid fa-ellipsis-vertical"></i></a>
+                                            <ul class="dropdown-menu">
+                                                <li><a class="dropdown-item" href="#">Unread </a></li>
+                                                <li><a class="dropdown-item" href="#">Delete </a></li>
+                                                <li><a class="dropdown-item" href="#">Do Something </a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="message-detailed-body d-flex flex-column p-3 gap-3">
+                                    <div class="msg msg-sent border rounded-3 p-3 bg-primary text-white small">
+                                        Avoid children instantly september. Chief elinor pianoforte hung perfectly
+                                        played. Staying unaffected whose worthy unreserved introduced latter civilly
+                                        covered carriage. Took horrible say park concluded curiosity many marry
+                                        agreement. Agreement sociable ecstatic insipidity instrument otherwise worthy
+                                        assure heard subject
+                                        <div class="text-end fs-xs fw-bold mt-1">25 Oct, 2022, 8.45 PM</div>
+                                    </div>
+                                    <div class="msg msg-recieved border rounded-3 p-3 bg-light small">
+                                        Celebrated rendered handsome still unreserved acceptance burst few exercise
+                                        woody one vulgar arrived partiality. An trees eldest balls. Vexed uneasy pursuit
+                                        raising observe conviction position happiness rank believe led. Cultivated
+                                        exercise wonder breakfast who difficult way ten sussex her child bred judgment
+                                        believing words discourse. Disposal ten took began.
+                                        <div class="fs-xs fw-bold mt-2">25 Oct, 2022, 8.45 PM</div>
+                                    </div>
+                                    <div class="msg msg-sent border rounded-3 p-3 bg-primary text-white small">
+                                        Highest insensible rose besides apartments after those. Longer court convinced
+                                        fortune service thirty added put wish relied thrown. Advantage highly weeks exp
+                                        <div class="text-end fs-xs fw-bold mt-1">25 Oct, 2022, 8.45 PM</div>
+                                    </div>
+                                    <div class="msg msg-recieved border rounded-3 p-3 bg-light small">
+                                        Advantages old principles written because repulsive denoting dine entrance
+                                        general moreover took.
+                                        <div class="fs-xs fw-bold mt-2">25 Oct, 2022, 8.45 PM</div>
+                                    </div>
+                                    <div class="msg msg-sent border rounded-3 p-3 bg-primary text-white small">
+                                        Can send me sample?
+                                        <div class="text-end fs-xs fw-bold mt-1">25 Oct, 2022, 8.45 PM</div>
+                                    </div>
+                                    <div class="msg msg-recieved border rounded-3 p-3 bg-light small">
+                                        Sure Sending Now...
+                                        <div class="fs-xs fw-bold mt-2">25 Oct, 2022, 8.45 PM</div>
+                                    </div>
+                                    <div class="msg msg-sent border rounded-3 p-3 bg-primary text-white small">
+                                        Thanks
+                                        <div class="text-end fs-xs fw-bold mt-1">25 Oct, 2022, 8.45 PM</div>
+                                    </div>
+                                </div>
+                                <div class="message-footer bg-light p-3 border-top">
+                                    <div class="d-flex align-items-center gap-2">
+                                        <input class="form-control p-3 px-3" placeholder="Enter message Here..."
+                                            type="text">
+                                        <button class="btn btn-primary py-2"><i
+                                                class="fa-solid fa-paperclip"></i></button>
+                                        <button class="btn btn-primary py-2"><i
+                                                class="fa-solid fa-paper-plane"></i></button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer class="py-4 py-sm-5">
+        <div class="container-xxl px-4">
+            <img src="./assets/img/icons/logo-white.png" class="footer-logo mb-4" alt="logo">
+            <div class="row gx-lg-5 gy-4 gy-sm-5">
+                <div class="order-1 col-12 col-md-6 col-xl-3">
+                    <div class="row gy-4">
+                        <div class="col-sm-6 col-md-12">
+                            <p class="mb-1 fw-bold">About Us</p>
+                            <p class="small mb-0">We want to help bring talented students and unique startups together
+                            </p>
+                        </div>
+                        <div class="col-sm-6 col-md-12">
+                            <p class="mb-2 fw-bold">Contact Us</p>
+                            <div class="d-flex align-items-center gap-2 mb-2">
+                                <span class="contact-rings">
+                                    <img src="./assets/img/icons/phonecall.png" alt="logo">
+                                </span>
+                                <a class="text-white text-decoration-none small" href="tel:+919990009900">+91 9990 009
+                                    900</a>
+                            </div>
+                            <div class="d-flex align-items-center gap-2">
+                                <span class="contact-rings">
+                                    <img src="./assets/img/icons/emailicon.png" alt="logo">
+                                </span>
+                                <a class="text-white text-decoration-none small"
+                                    href="demo@gmail.com">demo@gmail.com</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div
+                    class="order-2 order-md-3 order-xl-2 col-sm-6 col-md-6 col-lg-6 col-xl-3 d-xl-flex justify-content-center">
+                    <div class="footer-container">
+                        <p class="mb-1 fw-bold">Information</p>
+                        <div class="footer-links mb-1"><a href="#">About us</a></div>
+                        <div class="footer-links mb-1"><a href="#">More search</a></div>
+                        <div class="footer-links mb-1"><a href="#">Blog</a></div>
+                        <div class="footer-links mb-1"><a href="#">Testimonials</a></div>
+                        <div class="footer-links"><a href="#">Events</a></div>
+                    </div>
+                </div>
+                <div
+                    class="order-3 order-lg-4 order-xl-3 col-sm-6 col-md-6 col-lg-6 col-xl-3 d-xl-flex justify-content-center">
+                    <div class="footer-container">
+                        <p class="mb-1 fw-bold">Helpful Links</p>
+                        <div class="footer-links mb-1"><a href="#">Service</a></div>
+                        <div class="footer-links mb-1"><a href="#">Support</a></div>
+                        <div class="footer-links mb-1"><a href="#">Blog</a></div>
+                        <div class="footer-links mb-1"><a href="#">Terms & Conditions</a></div>
+                        <div class="footer-links"><a href="#">Privacy Policy</a></div>
+                    </div>
+                </div>
+                <div class="order-4 order-md-2 order-xl-4 col-12 col-md-6 col-lg-6 col-xl-3">
+                    <div class="subscribe-block">
+                        <p class="mb-3 fw-bold">Subscribe More Info</p>
+                        <input class="form-control text-center" type="text" placeholder="Enter your Email">
+                        <button type="button" class="btn btn-secondary w-100 mt-3">Subscribe</button>
+
+                        <div class="row mt-3 gx-3 app-links">
+                            <div class="col-6">
+                                <a href="#"><img src="./assets/img/icons/playstore.png" class="w-100" alt="logo"></a>
+                            </div>
+                            <div class="col-6">
+                                <a href="#"> <img src="./assets/img/icons/appstore.png" class="w-100" alt="logo"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="order-5 col-12">
+                    <div class="d-flex justify-content-center gap-3 social-links">
+                        <a href="#">
+                            <img height="32" src="./assets/img/icons/fb-icon.png" alt="logo">
+                        </a>
+                        <a href="#">
+                            <img height="32" src="./assets/img/icons/insta-icon.png" alt="logo">
+                        </a>
+                        <a href="#">
+                            <img height="32" src="./assets/img/icons/twitter-icon.png" alt="logo">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="./assets/js/bootstrap.js"></script>
+    <script src="./assets/js/swiper.js"></script>
+    <script src="./assets/js/slider-setup.js"></script>
+    <script src="./assets/js/dropdown-setup.js"></script>
+    <script src="./assets/js/mobile-category-menu.js"></script>
+    <script src="./assets/js/searchbar-toggle.js"></script>
+    <script>
+        // Temporary Function for Message Toggle in Responsive
+        let msgPreviewBlock = document.querySelector(".message-preview");
+        let msgPreview = document.querySelectorAll(".message-preview .preview-list");
+        let msgDetailed = document.querySelector(".message-detailed-block");
+        let goBackBtn = document.querySelector(".goback-msg-btn");
+        goBackBtn.addEventListener('click', () => {
+            msgDetailed.classList.remove('d-block');
+            msgPreviewBlock.classList.remove('d-none')
+        })
+        msgPreview.forEach((msg) => {
+            msg.addEventListener('click', () => {
+                msgDetailed.classList.add('d-block');
+                msgPreviewBlock.classList.add('d-none')
+            })
+        })
+    </script>
+</body>
+
+</html>
