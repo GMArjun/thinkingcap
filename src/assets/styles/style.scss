@@ -15,6 +15,7 @@ $enable-negative-margins: true;
 
 @import "../../../node_modules/bootstrap/scss/bootstrap";
 @import "swiper";
+@import "video-js";
 
 @mixin line-clamp($line) {
   display: -webkit-box;
@@ -1308,6 +1309,10 @@ header {
   }
 }
 
-.cursor-pointer{
+.cursor-pointer {
   cursor: pointer;
+}
+
+#video-preview-player{
+
 }

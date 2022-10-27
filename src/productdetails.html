@@ -9,7 +9,6 @@
     <title>Document</title>
     <link rel="stylesheet" href="./assets/styles/style.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
-    <link href="https://vjs.zencdn.net/7.20.3/video-js.css" rel="stylesheet" />
 </head>
 
 <body>
@@ -298,8 +297,9 @@
                                         </div>
                                         <div class="modal-body p-0">
                                             <div class="px-3">
-                                                <video class="video-js w-100" controls preload="auto"
-                                                    poster="MY_VIDEO_POSTER.jpg" data-setup="{}">
+                                                <video id="video-preview-player" class="video-js w-100" controls
+                                                    preload="auto" poster="./assets/img/static/course-img1.jpg"
+                                                    data-setup="{}">
                                                     <source src="https://vjs.zencdn.net/v/oceans.mp4"
                                                         type="video/mp4" />
                                                     <p class="vjs-no-js">
@@ -327,7 +327,7 @@
                                                                     <div
                                                                         class="course-preview-name text-truncate fw-bold">
                                                                         <i class="fa-solid fa-play me-2"></i>
-                                                                        Course Structure and Projects
+                                                                        The Complete JavaScript Course 2022: From Zero
                                                                     </div>
                                                                 </div>
                                                                 <div class="preview-time">03:22</div>
@@ -363,7 +363,7 @@
                                                                     <div
                                                                         class="course-preview-name text-truncate fw-bold">
                                                                         <i class="fa-solid fa-play me-2"></i>
-                                                                        Course Structure and Projects
+                                                                        Pathways and Section Roadmaps
                                                                     </div>
                                                                 </div>
                                                                 <div class="preview-time">03:22</div>
@@ -381,7 +381,7 @@
                                                                     <div
                                                                         class="course-preview-name text-truncate fw-bold">
                                                                         <i class="fa-solid fa-play me-2"></i>
-                                                                        Course Structure and Projects
+                                                                        Scope and The Scope Chain
                                                                     </div>
                                                                 </div>
                                                                 <div class="preview-time">03:22</div>
@@ -399,7 +399,7 @@
                                                                     <div
                                                                         class="course-preview-name text-truncate fw-bold">
                                                                         <i class="fa-solid fa-play me-2"></i>
-                                                                        Course Structure and Projects
+                                                                        Prototypal Inheritance and The Prototype Chain
                                                                     </div>
                                                                 </div>
                                                                 <div class="preview-time">03:22</div>
@@ -417,7 +417,7 @@
                                                                     <div
                                                                         class="course-preview-name text-truncate fw-bold">
                                                                         <i class="fa-solid fa-play me-2"></i>
-                                                                        Course Structure and Projects
+                                                                        Managing Workout Data: Creating Classes
                                                                     </div>
                                                                 </div>
                                                                 <div class="preview-time">03:22</div>
@@ -1136,11 +1136,34 @@
 
     <script src="./assets/js/bootstrap.js"></script>
     <script src="./assets/js/swiper.js"></script>
-    <script src="https://vjs.zencdn.net/7.20.3/video.min.js"></script>
+    <script src="./assets/js/video.min.js"></script>
     <script src="./assets/js/slider-setup.js"></script>
     <script src="./assets/js/dropdown-setup.js"></script>
     <script src="./assets/js/mobile-category-menu.js"></script>
     <script src="./assets/js/searchbar-toggle.js"></script>
+    <script>
+        // Temp Function for Video Preview
+        const previewVideo = document.getElementById("video-preview-player");
+        const coursePreviewModal = document.getElementById('coursePreviewModal');
+        const videoPreviewList = document.querySelectorAll(".video-list-container .video-preview-list");
+
+        coursePreviewModal.addEventListener('show.bs.modal', () => {
+            previewVideo.play();
+            videoPreviewList.forEach((videoList) => {
+                videoList.addEventListener("click", () => {
+                    previewVideo.currentTime = 0;
+                    previewVideo.play();
+                    [...videoPreviewList].filter(i => i.classList.contains('active')).forEach((item) => item.classList.remove('active'));
+                    videoList.classList.add('active');
+                })
+            })
+        })
+
+        coursePreviewModal.addEventListener('hide.bs.modal', () => {
+            previewVideo.currentTime = 0;
+            previewVideo.pause();
+        })
+    </script>
 </body>
 
 </html>
