@@ -1313,6 +1313,10 @@ header {
   cursor: pointer;
 }
 
-#video-preview-player{
-
+#video-preview-player {
+  .vjs-big-play-button {
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
 }
