@@ -9,6 +9,7 @@
     <title>Document</title>
     <link rel="stylesheet" href="./assets/styles/style.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <link href="https://vjs.zencdn.net/7.20.3/video-js.css" rel="stylesheet" />
 </head>
 
 <body>
@@ -271,9 +272,163 @@
                                 </div>
                             </div>
 
-                            <div class="video-player bg-secondary text-white rounded-3 mb-4 border d-flex justify-content-center fw-bold align-items-center text-center"
-                                style="height: 500px">
-                                Video Player ( Coming Soon )
+
+                            <div class="video-player-preview rounded-3 mb-4 border overflow-hidden"
+                                data-bs-toggle="modal" data-bs-target="#coursePreviewModal">
+                                <img src="./assets/img/static/course-img2.jpg" class="w-100" alt="">
+                                <div class="preview-block">
+                                    <div class="play-btn rounded-circle"><i class="fa-solid fa-play"></i></div>
+                                    <div class="fw-bold">Preview this Course</div>
+                                </div>
+                            </div>
+
+                            <!-- Confirm Delete Modal -->
+                            <div class="modal fade" id="coursePreviewModal" tabindex="-1"
+                                aria-labelledby="coursePreviewModalLabel" aria-hidden="true">
+                                <div class="modal-dialog modal-dialog-centered">
+                                    <div class="modal-content">
+                                        <div class="modal-header border-0">
+                                            <div class="modal-title">
+                                                <div class="small">Course Preview</div>
+                                                <div class="fs-5 fw-bold">Learn Python: The Complete Python Programming
+                                                    Course</div>
+                                            </div>
+                                            <button type="button" class="btn" data-bs-dismiss="modal"
+                                                aria-label="Close"><i class="fa-solid fa-xmark"></i></button>
+                                        </div>
+                                        <div class="modal-body p-0">
+                                            <div class="px-3">
+                                                <video class="video-js w-100" controls preload="auto"
+                                                    poster="MY_VIDEO_POSTER.jpg" data-setup="{}">
+                                                    <source src="https://vjs.zencdn.net/v/oceans.mp4"
+                                                        type="video/mp4" />
+                                                    <p class="vjs-no-js">
+                                                        To view this video please enable JavaScript, and consider
+                                                        upgrading
+                                                        to a
+                                                        web browser that
+                                                        <a href="https://videojs.com/html5-video-support/"
+                                                            target="_blank">supports HTML5
+                                                            video</a>
+                                                    </p>
+                                                </video>
+                                            </div>
+                                            <div class="sample-videos-block">
+                                                <div class="fw-bold px-3 my-3">Free Sample Videos:</div>
+                                                <div class="d-flex flex-column video-list-container">
+                                                    <div class="video-preview-list p-3">
+                                                        <a href="#" class="text-decoration-none text-black">
+                                                            <div class="preview-block d-flex align-items-center gap-3">
+                                                                <div class="preview-img flex-0-auto">
+                                                                    <img src="./assets/img/static/course-img1.jpg"
+                                                                        alt="">
+                                                                </div>
+                                                                <div class="preview-info overflow-hidden me-auto">
+                                                                    <div
+                                                                        class="course-preview-name text-truncate fw-bold">
+                                                                        <i class="fa-solid fa-play me-2"></i>
+                                                                        Course Structure and Projects
+                                                                    </div>
+                                                                </div>
+                                                                <div class="preview-time">03:22</div>
+                                                            </div>
+                                                        </a>
+                                                    </div>
+                                                    <div class="video-preview-list p-3">
+                                                        <a href="#" class="text-decoration-none text-black">
+                                                            <div class="preview-block d-flex align-items-center gap-3">
+                                                                <div class="preview-img flex-0-auto">
+                                                                    <img src="./assets/img/static/course-img2.jpg"
+                                                                        alt="">
+                                                                </div>
+                                                                <div class="preview-info overflow-hidden me-auto">
+                                                                    <div
+                                                                        class="course-preview-name text-truncate fw-bold">
+                                                                        <i class="fa-solid fa-play me-2"></i>
+                                                                        Course Structure and Projects
+                                                                    </div>
+                                                                </div>
+                                                                <div class="preview-time">03:22</div>
+                                                            </div>
+                                                        </a>
+                                                    </div>
+                                                    <div class="video-preview-list p-3">
+                                                        <a href="#" class="text-decoration-none text-black">
+                                                            <div class="preview-block d-flex align-items-center gap-3">
+                                                                <div class="preview-img flex-0-auto">
+                                                                    <img src="./assets/img/static/course-img3.jpg"
+                                                                        alt="">
+                                                                </div>
+                                                                <div class="preview-info overflow-hidden me-auto">
+                                                                    <div
+                                                                        class="course-preview-name text-truncate fw-bold">
+                                                                        <i class="fa-solid fa-play me-2"></i>
+                                                                        Course Structure and Projects
+                                                                    </div>
+                                                                </div>
+                                                                <div class="preview-time">03:22</div>
+                                                            </div>
+                                                        </a>
+                                                    </div>
+                                                    <div class="video-preview-list p-3">
+                                                        <a href="#" class="text-decoration-none text-black">
+                                                            <div class="preview-block d-flex align-items-center gap-3">
+                                                                <div class="preview-img flex-0-auto">
+                                                                    <img src="./assets/img/static/course-img4.jpg"
+                                                                        alt="">
+                                                                </div>
+                                                                <div class="preview-info overflow-hidden me-auto">
+                                                                    <div
+                                                                        class="course-preview-name text-truncate fw-bold">
+                                                                        <i class="fa-solid fa-play me-2"></i>
+                                                                        Course Structure and Projects
+                                                                    </div>
+                                                                </div>
+                                                                <div class="preview-time">03:22</div>
+                                                            </div>
+                                                        </a>
+                                                    </div>
+                                                    <div class="video-preview-list p-3">
+                                                        <a href="#" class="text-decoration-none text-black">
+                                                            <div class="preview-block d-flex align-items-center gap-3">
+                                                                <div class="preview-img flex-0-auto">
+                                                                    <img src="./assets/img/static/course-img5.jpg"
+                                                                        alt="">
+                                                                </div>
+                                                                <div class="preview-info overflow-hidden me-auto">
+                                                                    <div
+                                                                        class="course-preview-name text-truncate fw-bold">
+                                                                        <i class="fa-solid fa-play me-2"></i>
+                                                                        Course Structure and Projects
+                                                                    </div>
+                                                                </div>
+                                                                <div class="preview-time">03:22</div>
+                                                            </div>
+                                                        </a>
+                                                    </div>
+                                                    <div class="video-preview-list p-3">
+                                                        <a href="#" class="text-decoration-none text-black">
+                                                            <div class="preview-block d-flex align-items-center gap-3">
+                                                                <div class="preview-img flex-0-auto">
+                                                                    <img src="./assets/img/static/course-img6.jpg"
+                                                                        alt="">
+                                                                </div>
+                                                                <div class="preview-info overflow-hidden me-auto">
+                                                                    <div
+                                                                        class="course-preview-name text-truncate fw-bold">
+                                                                        <i class="fa-solid fa-play me-2"></i>
+                                                                        Course Structure and Projects
+                                                                    </div>
+                                                                </div>
+                                                                <div class="preview-time">03:22</div>
+                                                            </div>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
 
                             <p class="fs-5 fw-bold">
@@ -330,12 +485,25 @@
                                         <div id="details-collapse-1" class="accordion-collapse collapse"
                                             aria-labelledby="details-head-1" data-bs-parent="#details-accordion">
                                             <div class="accordion-body">
-                                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur,
-                                                earum.
-                                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur,
-                                                earum.
-                                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur,
-                                                earum.
+                                                <div class="d-grid gap-2">
+                                                    <div class="small d-flex gap-2 text-primary cursor-pointer"
+                                                        data-bs-toggle="modal" data-bs-target="#coursePreviewModal">
+                                                        <i class="fa-solid fa-circle-play align-self-center"></i>
+                                                        <span class="text-decoration-underline">Course Structure and
+                                                            Projects</span>
+                                                        <span class="ms-auto">03:25</span>
+                                                    </div>
+                                                    <div class="small d-flex gap-2">
+                                                        <i class="fa-solid fa-circle-play align-self-center"></i>
+                                                        <span>Watch Before You Start!</span>
+                                                        <span class="ms-auto">05:30</span>
+                                                    </div>
+                                                    <div class="small d-flex gap-2">
+                                                        <i class="fa-solid fa-circle-play align-self-center"></i>
+                                                        <span>Setting Up Our Code Editor</span>
+                                                        <span class="ms-auto">05:30</span>
+                                                    </div>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
@@ -351,14 +519,27 @@
                                         </div>
                                         <div id="details-collapse-2" class="accordion-collapse collapse"
                                             aria-labelledby="details-head-2" data-bs-parent="#details-accordion">
-                                            <div class="accordion-body">Lorem ipsum dolor sit amet consectetur
-                                                adipisicing elit. Quis, repellat.
-                                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur,
-                                                earum. Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                                                Pariatur,
-                                                earum. Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                                                Pariatur,
-                                                earum.</div>
+                                            <div class="accordion-body">
+                                                <div class="d-grid gap-2">
+                                                    <div class="small d-flex gap-2 text-primary cursor-pointer"
+                                                        data-bs-toggle="modal" data-bs-target="#coursePreviewModal">
+                                                        <i class="fa-solid fa-circle-play align-self-center"></i>
+                                                        <span class="text-decoration-underline">Course Structure and
+                                                            Projects</span>
+                                                        <span class="ms-auto">03:25</span>
+                                                    </div>
+                                                    <div class="small d-flex gap-2">
+                                                        <i class="fa-solid fa-circle-play align-self-center"></i>
+                                                        <span>Watch Before You Start!</span>
+                                                        <span class="ms-auto">05:30</span>
+                                                    </div>
+                                                    <div class="small d-flex gap-2">
+                                                        <i class="fa-solid fa-circle-play align-self-center"></i>
+                                                        <span>Setting Up Our Code Editor</span>
+                                                        <span class="ms-auto">05:30</span>
+                                                    </div>
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
                                     <div class="accordion-item">
@@ -373,14 +554,27 @@
                                         </div>
                                         <div id="details-collapse-3" class="accordion-collapse collapse"
                                             aria-labelledby="details-head-3" data-bs-parent="#details-accordion">
-                                            <div class="accordion-body">Lorem ipsum dolor sit amet consectetur
-                                                adipisicing elit. Quis, repellat.
-                                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur,
-                                                earum. Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                                                Pariatur,
-                                                earum. Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                                                Pariatur,
-                                                earum.</div>
+                                            <div class="accordion-body">
+                                                <div class="d-grid gap-2">
+                                                    <div class="small d-flex gap-2 text-primary cursor-pointer"
+                                                        data-bs-toggle="modal" data-bs-target="#coursePreviewModal">
+                                                        <i class="fa-solid fa-circle-play align-self-center"></i>
+                                                        <span class="text-decoration-underline">Course Structure and
+                                                            Projects</span>
+                                                        <span class="ms-auto">03:25</span>
+                                                    </div>
+                                                    <div class="small d-flex gap-2">
+                                                        <i class="fa-solid fa-circle-play align-self-center"></i>
+                                                        <span>Watch Before You Start!</span>
+                                                        <span class="ms-auto">05:30</span>
+                                                    </div>
+                                                    <div class="small d-flex gap-2">
+                                                        <i class="fa-solid fa-circle-play align-self-center"></i>
+                                                        <span>Setting Up Our Code Editor</span>
+                                                        <span class="ms-auto">05:30</span>
+                                                    </div>
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
                                     <div class="accordion-item">
@@ -395,14 +589,27 @@
                                         </div>
                                         <div id="details-collapse-4" class="accordion-collapse collapse"
                                             aria-labelledby="details-head-4" data-bs-parent="#details-accordion">
-                                            <div class="accordion-body">Lorem ipsum dolor sit amet consectetur
-                                                adipisicing elit. Quis, repellat.
-                                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur,
-                                                earum. Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                                                Pariatur,
-                                                earum. Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                                                Pariatur,
-                                                earum.</div>
+                                            <div class="accordion-body">
+                                                <div class="d-grid gap-2">
+                                                    <div class="small d-flex gap-2 text-primary cursor-pointer"
+                                                        data-bs-toggle="modal" data-bs-target="#coursePreviewModal">
+                                                        <i class="fa-solid fa-circle-play align-self-center"></i>
+                                                        <span class="text-decoration-underline">Course Structure and
+                                                            Projects</span>
+                                                        <span class="ms-auto">03:25</span>
+                                                    </div>
+                                                    <div class="small d-flex gap-2">
+                                                        <i class="fa-solid fa-circle-play align-self-center"></i>
+                                                        <span>Watch Before You Start!</span>
+                                                        <span class="ms-auto">05:30</span>
+                                                    </div>
+                                                    <div class="small d-flex gap-2">
+                                                        <i class="fa-solid fa-circle-play align-self-center"></i>
+                                                        <span>Setting Up Our Code Editor</span>
+                                                        <span class="ms-auto">05:30</span>
+                                                    </div>
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
@@ -929,6 +1136,7 @@
 
     <script src="./assets/js/bootstrap.js"></script>
     <script src="./assets/js/swiper.js"></script>
+    <script src="https://vjs.zencdn.net/7.20.3/video.min.js"></script>
     <script src="./assets/js/slider-setup.js"></script>
     <script src="./assets/js/dropdown-setup.js"></script>
     <script src="./assets/js/mobile-category-menu.js"></script>
