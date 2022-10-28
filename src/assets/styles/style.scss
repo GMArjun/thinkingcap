@@ -82,7 +82,6 @@ header {
   .logo-container {
     gap: $spacer / 2;
   }
-  .header-controls,
   .header-nav {
     gap: $spacer * 1.5;
     @include media-breakpoint-up(xl) {
@@ -246,6 +245,9 @@ header {
 
 .category-menu {
   & > .dropdown-toggle {
+    min-height: 75px;
+    display: flex;
+    align-items: center;
     &::after {
       font-family: FontAwesome;
       content: "\f078";
@@ -281,6 +283,14 @@ header {
     }
   }
   & > .dropdown-menu {
+    &::before {
+      height: 14px;
+      width: 100%;
+      content: "";
+      top: -13px;
+      left: 0;
+      position: absolute;
+    }
     &:has(.dropdown-toggle[aria-expanded="true"]) {
       border-top-right-radius: 0px;
       border-bottom-right-radius: 0px;
@@ -326,11 +336,25 @@ header {
 }
 
 .auth-dropdowns {
+  & > .dropdown {
+    & > .dropdown-toggle {
+      min-height: 75px;
+      display: flex;
+      align-items: center;
+    }
+  }
   .dropdown-menu {
+    &::before {
+      height: 14px;
+      width: 100%;
+      content: "";
+      top: -13px;
+      left: 0;
+      position: absolute;
+    }
     min-height: 175px;
     border-radius: $spacer / 2;
     box-shadow: 0 14px 18px -18px $gray-500;
-    overflow-y: auto;
     @include media-breakpoint-up(xl) {
     }
     .dropdown-item {
@@ -348,9 +372,12 @@ header {
   .notification-menu,
   .message-menu {
     .dropdown-menu {
-      min-width: 450px;
-      max-width: 450px;
-      max-height: 400px;
+      .overflow-menu {
+        overflow-y: auto;
+        min-width: 450px;
+        max-width: 450px;
+        max-height: 400px;
+      }
     }
   }
   .notification-menu {
@@ -928,14 +955,6 @@ header {
   }
 }
 
-.drop-overlay {
-  position: fixed;
-  width: 100%;
-  left: 0;
-  top: 90px;
-  height: calc(100vh - 90px);
-}
-
 .form-check-label {
   cursor: pointer;
 }
@@ -1103,8 +1122,8 @@ header {
 .dropdown-menu {
   &.show {
     animation-name: zoomIn;
-    animation-duration: 0.1s;
-    animation-duration: 0.1s;
+    animation-duration: 0.2s;
+    animation-duration: 0.2s;
     animation-fill-mode: both;
   }
 }
