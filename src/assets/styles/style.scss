@@ -1339,3 +1339,11 @@ header {
     transform: translate(-50%, -50%);
   }
 }
+
+.filter-height-fix{
+  @include media-breakpoint-up(md) {
+    max-height: calc(100vh - 220px);
+    overflow-y: auto;
+    height: 100%;
+  }
+}
