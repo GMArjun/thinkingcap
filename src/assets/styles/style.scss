@@ -16,19 +16,8 @@ $enable-negative-margins: true;
 @import "../../../node_modules/bootstrap/scss/bootstrap";
 @import "swiper";
 @import "video-js";
-
-@mixin line-clamp($line) {
-  display: -webkit-box;
-  -webkit-line-clamp: $line;
-  -webkit-box-orient: vertical;
-  overflow: hidden;
-}
-
-@mixin flex-center() {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
+@import "mixins";
+@import "anime";
 
 /* scrollbar */
 ::-webkit-scrollbar {
@@ -355,7 +344,9 @@ header {
     min-height: 175px;
     border-radius: $spacer / 2;
     box-shadow: 0 14px 18px -18px $gray-500;
-    @include media-breakpoint-up(xl) {
+    .dropdown-header {
+      border-bottom: var(--bs-border-width) var(--bs-border-style)
+        var(--bs-border-color);
     }
     .dropdown-item {
       &:hover,
@@ -376,7 +367,15 @@ header {
         overflow-y: auto;
         min-width: 450px;
         max-width: 450px;
-        max-height: 430px;
+        max-height: 380px;
+        li {
+          &:not(:first-child) {
+            .dropdown-item {
+              border-top: var(--bs-border-width) var(--bs-border-style)
+                var(--bs-border-color);
+            }
+          }
+        }
       }
     }
   }
@@ -384,6 +383,9 @@ header {
     .dropdown-item {
       white-space: normal;
       @include line-clamp(2);
+    }
+    .overflow-menu{
+      max-height: 372px !important;
     }
   }
   .message-menu {
@@ -851,9 +853,8 @@ header {
   background-color: $gray-200;
   height: $spacer * 2.5;
   width: $spacer * 2.5;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  position: relative;
+  @include flex-center;
 }
 
 .purchase-history-block {
@@ -1108,16 +1109,6 @@ header {
     opacity: 1;
   }
 }
-@keyframes zoomIn {
-  0% {
-    opacity: 0;
-    -webkit-transform: scale3d(0.3, 0.3, 0.3);
-    transform: scale3d(0.3, 0.3, 0.3);
-  }
-  50% {
-    opacity: 1;
-  }
-}
 
 .dropdown-menu {
   &.show {
@@ -1340,10 +1331,29 @@ header {
   }
 }
 
-.filter-height-fix{
+.filter-height-fix {
   @include media-breakpoint-up(md) {
     max-height: calc(100vh - 220px);
     overflow-y: auto;
     height: 100%;
   }
+}
+
+.notify-indicator {
+  animation-name: bounce;
+  animation-timing-function: ease;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  position: absolute;
+  font-size: 0.5rem;
+  color: $white;
+  top: -6px;
+  right: -6px;
+  width: 22px;
+  background: $secondary;
+  border-radius: 100%;
+  padding: 5px;
+  font-weight: bold;
+  height: 22px;
+  @include flex-center;
 }
