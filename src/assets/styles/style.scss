@@ -647,6 +647,16 @@ header {
       right: 10px;
     }
   }
+  .course-label {
+    position: absolute;
+    &.label-promoted {
+      background-color: $secondary;
+      color: $white;
+      padding: $spacer / 4 $spacer;
+      border-bottom-right-radius: $spacer / 2;
+      font-size: $font-size-xs;
+    }
+  }
 }
 
 .star-rating_r {
