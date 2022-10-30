@@ -368,6 +368,7 @@ header {
         min-width: 450px;
         max-width: 450px;
         max-height: 380px;
+        overscroll-behavior: contain;
         li {
           &:not(:first-child) {
             .dropdown-item {
@@ -384,7 +385,7 @@ header {
       white-space: normal;
       @include line-clamp(2);
     }
-    .overflow-menu{
+    .overflow-menu {
       max-height: 372px !important;
     }
   }
