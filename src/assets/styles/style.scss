@@ -970,6 +970,11 @@ header {
 .form-check-label {
   cursor: pointer;
 }
+.form-select{
+  box-shadow: none !important;
+  border-color: $gray-400 !important;
+  cursor: pointer;
+}
 
 #filtersbottom {
   height: 100%;
