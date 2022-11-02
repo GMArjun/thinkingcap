@@ -671,7 +671,7 @@ header {
 }
 
 .auth-block {
-  max-width: 440px;
+  max-width: 520px;
   margin: 0 auto;
   width: 100%;
 }
@@ -704,8 +704,8 @@ header {
     padding-right: 3px;
     vertical-align: middle;
     position: absolute;
-    left: $spacer * 0.875;
-    font-size: $input-font-size;
+    left: $spacer * 1.5;
+    font-size: $spacer;
   }
   &-fb {
     color: $white !important;
@@ -720,7 +720,7 @@ header {
     background-image: url("../img//icons/google-icon.png");
     background-size: 16px;
     background-repeat: no-repeat;
-    background-position: 10px 8px;
+    background-position: 20px 19px;
   }
 }
 
