@@ -684,9 +684,9 @@ header {
       top: 7px;
       right: 0.65rem;
     }
-    &:hover{
+    &:hover {
       background-color: $primary;
-      &::after{
+      &::after {
         color: $white;
       }
     }
@@ -1406,4 +1406,11 @@ header {
   font-weight: bold;
   height: 22px;
   @include flex-center;
+}
+
+.lecture-list-accordion {
+  .accordion-button {
+    color: var(--bs-accordion-active-color);
+    background-color: var(--bs-accordion-active-bg);
+  }
 }

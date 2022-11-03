@@ -488,7 +488,7 @@
     </header>
 
     <main>
-        <div class="tab-type-page">
+        <div class="addproduct-page">
             <div class="container-xxl px-4">
                 <div class="py-5">
                     <nav aria-label="breadcrumb">
@@ -501,9 +501,12 @@
                     <h5 class="fw-bold mt-4">Post your Course</h5>
                     <div class="text-muted">Tip: Tell us more about your course to reach more people</div>
 
-                    <hr class="my-4" />
 
-                    <div class="row gy-4">
+
+                    <div class="row gy-4 mt-0">
+                        <div class="col-12">
+                            <hr class="m-0" />
+                        </div>
                         <div class="col-sm-6">
                             <div class="form-floating">
                                 <input type="email" class="form-control" id="courseTitle"
@@ -616,19 +619,149 @@
                             </div>
                         </div>
                         <div class="col-12">
-                            <hr class="my-4" />
+                            <hr class="my-0" />
+                        </div>
+                        <div class="col-12">
+                            <h5 class="fw-bold">Add Lectures</h5>
+                        </div>
+                        <div class="col-6">
+                            <div class="form-floating">
+                                <input type="email" class="form-control" id="lectureTitle"
+                                    placeholder="name@example.com">
+                                <label for="lectureTitle">Lecture Title</label>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <div class="form-floating">
+                                <textarea class="form-control" placeholder="Description" id="description"
+                                    style="min-height: 120px"></textarea>
+                                <label for="description">What will students do at the end of the video</label>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <div class="text-start">
+                                <button type="button" class="btn btn-primary btn-lg">Add Lecture</button>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <h6 class="fw-bold my-4">Uploaded Lectures</h6>
+                            <div class="accordion lecture-list-accordion">
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header">
+                                        <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                            data-bs-target="#collapseOne" aria-expanded="true"
+                                            aria-controls="collapseOne">
+                                            One
+                                        </button>
+                                    </h2>
+                                    <div id="collapseOne" class="accordion-collapse collapse show">
+                                        <div class="accordion-body">
+                                            <div class="d-grid gap-2">
+                                                <div class="small d-flex gap-2 text-primary cursor-pointer">
+                                                    <i class="fa-solid fa-circle-play align-self-center"></i>
+                                                    <span class="text-decoration-underline">Course Structure and
+                                                        Projects</span>
+                                                    <span class="ms-auto"><i
+                                                            class="fa-solid fa-trash-can text-danger"></i></span>
+                                                </div>
+                                                <div class="small d-flex gap-2 text-primary cursor-pointer">
+                                                    <i class="fa-solid fa-circle-play align-self-center"></i>
+                                                    <span class="text-decoration-underline">Watch Before You
+                                                        Start!</span>
+                                                    <span class="ms-auto"><i
+                                                            class="fa-solid fa-trash-can text-danger"></i></span>
+                                                </div>
+                                                <div class="small d-flex gap-2 text-primary cursor-pointer">
+                                                    <i class="fa-solid fa-circle-play align-self-center"></i>
+                                                    <span class="text-decoration-underline">Setting Up Our Code
+                                                        Editor</span>
+                                                    <span class="ms-auto"><i
+                                                            class="fa-solid fa-trash-can text-danger"></i></span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header">
+                                        <button class="accordion-button collapsed" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="true"
+                                            aria-controls="collapseTwo">
+                                            Two
+                                        </button>
+                                    </h2>
+                                    <div id="collapseTwo" class="accordion-collapse collapse show">
+                                        <div class="accordion-body">
+                                            <div class="d-grid gap-2">
+                                                <div class="small d-flex gap-2 text-primary cursor-pointer">
+                                                    <i class="fa-solid fa-circle-play align-self-center"></i>
+                                                    <span class="text-decoration-underline">Course Structure and
+                                                        Projects</span>
+                                                    <span class="ms-auto"><i
+                                                            class="fa-solid fa-trash-can text-danger"></i></span>
+                                                </div>
+                                                <div class="small d-flex gap-2 text-primary cursor-pointer">
+                                                    <i class="fa-solid fa-circle-play align-self-center"></i>
+                                                    <span class="text-decoration-underline">Watch Before You
+                                                        Start!</span>
+                                                    <span class="ms-auto"><i
+                                                            class="fa-solid fa-trash-can text-danger"></i></span>
+                                                </div>
+                                                <div class="small d-flex gap-2 text-primary cursor-pointer">
+                                                    <i class="fa-solid fa-circle-play align-self-center"></i>
+                                                    <span class="text-decoration-underline">Setting Up Our Code
+                                                        Editor</span>
+                                                    <span class="ms-auto"><i
+                                                            class="fa-solid fa-trash-can text-danger"></i></span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header">
+                                        <button class="accordion-button collapsed" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#collapseThree"
+                                            aria-expanded="true" aria-controls="collapseThree">
+                                            Three
+                                        </button>
+                                    </h2>
+                                    <div id="collapseThree" class="accordion-collapse collapse show">
+                                        <div class="accordion-body">
+                                            <div class="d-grid gap-2">
+                                                <div class="small d-flex gap-2 text-primary cursor-pointer">
+                                                    <i class="fa-solid fa-circle-play align-self-center"></i>
+                                                    <span class="text-decoration-underline">Course Structure and
+                                                        Projects</span>
+                                                    <span class="ms-auto"><i
+                                                            class="fa-solid fa-trash-can text-danger"></i></span>
+                                                </div>
+                                                <div class="small d-flex gap-2 text-primary cursor-pointer">
+                                                    <i class="fa-solid fa-circle-play align-self-center"></i>
+                                                    <span class="text-decoration-underline">Watch Before You
+                                                        Start!</span>
+                                                    <span class="ms-auto"><i
+                                                            class="fa-solid fa-trash-can text-danger"></i></span>
+                                                </div>
+                                                <div class="small d-flex gap-2 text-primary cursor-pointer">
+                                                    <i class="fa-solid fa-circle-play align-self-center"></i>
+                                                    <span class="text-decoration-underline">Setting Up Our Code
+                                                        Editor</span>
+                                                    <span class="ms-auto"><i
+                                                            class="fa-solid fa-trash-can text-danger"></i></span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
 
 
-                    <h5 class="fw-bold mb-4">Add Lectures</h5>
 
-                    <div class="form-floating">
-                        <input type="email" class="form-control" id="lectureTitle" placeholder="name@example.com">
-                        <label for="lectureTitle">Lecture Title</label>
-                    </div>
 
-                    <div class="text-end">
+                    <div class="text-end mt-4">
                         <button type="button" class="btn btn-primary btn-lg my-3">Submit for Review</button>
                     </div>
 
