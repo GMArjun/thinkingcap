@@ -501,11 +501,30 @@
                     <h5 class="fw-bold mt-4">Post your Course</h5>
                     <div class="text-muted">Tip: Tell us more about your course to reach more people</div>
 
-
-
                     <div class="row gy-4 mt-0">
                         <div class="col-12">
-                            <hr class="m-0" />
+                            <hr class="mb-4 mt-0" />
+                            <div class="d-flex gap-4">
+
+                                <div class="preview-course-block">
+                                    <h6 class="mb-3">Course Image</h6>
+                                    <div id="display-image" class="border rounded-3">
+                                        <span class="uploader-input uploader-img">
+                                            <input type="file" name="theFile">
+                                        </span>
+                                    </div>
+                                </div>
+
+                                <div class="preview-course-block">
+                                    <h6 class="mb-3">Course Preview</h6>
+                                    <div id="display-image" class="border rounded-3">
+                                        <span class="uploader-input uploader-video">
+                                            <input type="file" name="theFile">
+                                        </span>
+                                    </div>
+                                </div>
+
+                            </div>
                         </div>
                         <div class="col-sm-6">
                             <div class="form-floating">
@@ -629,6 +648,20 @@
                                 <input type="email" class="form-control" id="lectureTitle"
                                     placeholder="name@example.com">
                                 <label for="lectureTitle">Lecture Title</label>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="d-flex gap-4">
+                                <div class="border rounded-3 card-upload">
+                                    <span class="uploader-input uploader-video">
+                                        <input type="file" name="theFile">
+                                    </span>
+                                </div>
+                                <div class="border rounded-3 card-upload">
+                                    <span class="uploader-input uploader-video-list">
+                                        <input type="file" name="theFile">
+                                    </span>
+                                </div>
                             </div>
                         </div>
                         <div class="col-12">

@@ -1414,3 +1414,76 @@ header {
     background-color: var(--bs-accordion-active-bg);
   }
 }
+
+.preview-course-block {
+  #display-image {
+    width: 140px;
+    height: 140px;
+    border: 1px solid $gray-200;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+  }
+  .uploader-input {
+    width: 100%;
+    height: 100%;
+    display: inline-block;
+    overflow: hidden;
+    cursor: pointer;
+    color: $white;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    input {
+      height: 100%;
+      width: 100%;
+      opacity: 0;
+      cursor: pointer;
+    }
+    &.uploader-img{
+      background-image: url("../img/icons/uploadCourse.png");
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+    &.uploader-video{
+      background-image: url("../img/icons/uploadCourseVideoPreview.png");
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+  }
+}
+
+.card-upload{
+  height: 58px;
+  width: 58px;
+  position: relative;
+  .uploader-input {
+    width: 100%;
+    height: 100%;
+    display: inline-block;
+    overflow: hidden;
+    cursor: pointer;
+    color: $white;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    input {
+      height: 100%;
+      width: 100%;
+      opacity: 0;
+      cursor: pointer;
+    }
+    &.uploader-video{
+      background-image: url("../img/icons/uploadCourseVideoPreview.png");
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: 30px;
+    }
+    &.uploader-video-list{
+      background-image: url("../img/icons/uploadCourseVideoList.png");
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: 30px;
+    }
+  }
+}
