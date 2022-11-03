@@ -500,53 +500,130 @@
                     </nav>
                     <h5 class="fw-bold mt-4">Post your Course</h5>
                     <div class="text-muted">Tip: Tell us more about your course to reach more people</div>
-                    <hr class="my-4" />
-
-
-                    <div class="form-floating mb-3">
-                        <input type="email" class="form-control" id="courseTitle" placeholder="name@example.com">
-                        <label for="courseTitle">Course Title</label>
-                    </div>
-                    <div class="form-floating mb-3">
-                        <select class="form-select" id="ChooseCategory">
-                            <option selected hidden>Select one</option>
-                            <option value="1">One</option>
-                            <option value="2">Two</option>
-                            <option value="3">Three</option>
-                        </select>
-                        <label for="ChooseCategory">Choose Category</label>
-                    </div>
-                    <div class="form-floating mb-3">
-                        <select class="form-select" id="ChooseSubCategory">
-                            <option selected hidden>Select one</option>
-                            <option value="1">One</option>
-                            <option value="2">Two</option>
-                            <option value="3">Three</option>
-                        </select>
-                        <label for="ChooseSubCategory">Choose Sub Category</label>
-                    </div>
-                    <div class="form-floating mb-3">
-                        <select class="form-select" id="ChooseChildCategory">
-                            <option selected hidden>Select one</option>
-                            <option value="1">One</option>
-                            <option value="2">Two</option>
-                            <option value="3">Three</option>
-                        </select>
-                        <label for="ChooseChildCategory">Choose Child Category</label>
-                    </div>
-
-                    <div class="form-floating">
-                        <textarea class="form-control" placeholder="Description" id="description"
-                            style="min-height: 100px"></textarea>
-                        <label for="description">Description</label>
-                    </div>
-
 
                     <hr class="my-4" />
+
+                    <div class="row gy-4">
+                        <div class="col-sm-6">
+                            <div class="form-floating">
+                                <input type="email" class="form-control" id="courseTitle"
+                                    placeholder="name@example.com">
+                                <label for="courseTitle">Course Title</label>
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="form-floating">
+                                <select class="form-select" id="ChooseCategory">
+                                    <option selected hidden>Select one</option>
+                                    <option value="1">One</option>
+                                    <option value="2">Two</option>
+                                    <option value="3">Three</option>
+                                </select>
+                                <label for="ChooseCategory">Choose Category</label>
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="form-floating">
+                                <select class="form-select" id="ChooseSubCategory">
+                                    <option selected hidden>Select one</option>
+                                    <option value="1">One</option>
+                                    <option value="2">Two</option>
+                                    <option value="3">Three</option>
+                                </select>
+                                <label for="ChooseSubCategory">Choose Sub Category</label>
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="form-floating">
+                                <select class="form-select" id="ChooseChildCategory">
+                                    <option selected hidden>Select one</option>
+                                    <option value="1">One</option>
+                                    <option value="2">Two</option>
+                                    <option value="3">Three</option>
+                                </select>
+                                <label for="ChooseChildCategory">Choose Child Category</label>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <div class="form-floating">
+                                <textarea class="form-control" placeholder="Description" id="description"
+                                    style="min-height: 200px"></textarea>
+                                <label for="description">Description</label>
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="row g-2">
+                                <div class="col-9">
+                                    <div class="form-floating">
+                                        <input type="email" class="form-control" id="floatingInputGrid"
+                                            placeholder="name@example.com">
+                                        <label for="floatingInputGrid">Product Price</label>
+                                    </div>
+                                </div>
+                                <div class="col-3">
+                                    <div class="form-floating">
+                                        <select class="form-select" id="floatingSelectGrid">
+                                            <option selected>USD</option>
+                                            <option value="2">Two</option>
+                                            <option value="3">Three</option>
+                                        </select>
+                                        <label for="floatingSelectGrid">Price</label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="form-floating">
+                                <input type="email" class="form-control" id="howMuchSpend"
+                                    placeholder="name@example.com">
+                                <label for="howMuchSpend">How much time spend</label>
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="form-floating">
+                                <textarea class="form-control" placeholder="Description" id="description"
+                                    style="min-height: 120px"></textarea>
+                                <label for="description">Requirements or prerequistes for taking course</label>
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="form-floating">
+                                <textarea class="form-control" placeholder="Description" id="description"
+                                    style="min-height: 120px"></textarea>
+                                <label for="description">What student will learn after completion</label>
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="form-floating">
+                                <select class="form-select" id="ChooseSubCategory">
+                                    <option selected hidden>Select one</option>
+                                    <option value="1">One</option>
+                                    <option value="2">Two</option>
+                                    <option value="3">Three</option>
+                                </select>
+                                <label for="ChooseSubCategory">Who is the course for</label>
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="form-floating">
+                                <select class="form-select" id="ChooseChildCategory">
+                                    <option selected hidden>Select one</option>
+                                    <option value="1">One</option>
+                                    <option value="2">Two</option>
+                                    <option value="3">Three</option>
+                                </select>
+                                <label for="ChooseChildCategory">Course language</label>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <hr class="my-4" />
+                        </div>
+                    </div>
+
 
                     <h5 class="fw-bold mb-4">Add Lectures</h5>
 
-                    <div class="form-floating mb-3">
+                    <div class="form-floating">
                         <input type="email" class="form-control" id="lectureTitle" placeholder="name@example.com">
                         <label for="lectureTitle">Lecture Title</label>
                     </div>
@@ -619,10 +696,10 @@
                         <button type="button" class="btn btn-secondary w-100 mt-3">Subscribe</button>
 
                         <div class="row mt-3 gx-3 app-links">
-                            <div class="col-6">
+                            <div class="col-sm-6">
                                 <a href="#"><img src="./assets/img/icons/playstore.png" class="w-100" alt="logo"></a>
                             </div>
-                            <div class="col-6">
+                            <div class="col-sm-6">
                                 <a href="#"> <img src="./assets/img/icons/appstore.png" class="w-100" alt="logo"></a>
                             </div>
                         </div>
