@@ -1,0 +1,645 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#6255a5" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./assets/styles/style.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+</head>
+
+<body>
+
+    <header>
+        <div class="container-fluid px-4 position-relative">
+            <div class="header-nav d-flex align-items-center">
+                <div class="logo-container d-flex align-items-center">
+                    <button class="btn outline-0 border-0 d-block nav-icon d-lg-none" type="button"
+                        data-bs-toggle="offcanvas" data-bs-target="#asidebar" aria-controls="asidebar"><i
+                            class="fa fa-bars"></i>
+                    </button>
+                    <img src="./assets/img/icons/logo.png" class="header-logo" alt="logo">
+                </div>
+                <div class="nav-item dropdown category-menu d-none d-lg-block">
+                    <a class="nav-link dropdown-toggle px-3" href="#" data-bs-toggle="dropdown"
+                        data-bs-auto-close="outside" data-bs-offset="0,8">Categories</a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Health & Fitness</a></li>
+                        <li><a class="dropdown-item" href="#">Business</a></li>
+                        <li class="dropend">
+                            <a href="#" class="dropdown-item dropdown-toggle" data-bs-toggle="dropdown"
+                                data-bs-auto-close="outside" data-bs-display="static">Development</a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href=""> Data Science</a></li>
+                                <li><a class="dropdown-item" href=""> Mobile Development</a></li>
+                                <li><a class="dropdown-item" href=""> Software Testing</a></li>
+                                <li class="dropend">
+                                    <a href="#" class="dropdown-item dropdown-toggle" data-bs-toggle="dropdown"
+                                        data-bs-auto-close="outside" data-bs-display="static">Web Development</a>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item" href=""> Javascript</a></li>
+                                        <li><a class="dropdown-item" href=""> Vue</a></li>
+                                        <li><a class="dropdown-item" href=""> React</a></li>
+                                        <li><a class="dropdown-item" href=""> Angular</a></li>
+                                    </ul>
+                                </li>
+                                <li><a class="dropdown-item" href="">Development Tools</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <div class="header-search-bar">
+                    <input class="form-control form-control-lg" placeholder="Search Courses" type="text">
+                    <a class="btn outline-0 border-0 cursor-pointer search-btn"> <i class="fa fa-search"></i> </a>
+                    <a class="btn outline-0 border-0 cursor-pointer close-btn"> <i class="fa fa-close"></i>
+                    </a>
+                </div>
+                <div class="header-controls d-none d-lg-flex align-items-center flex-0-auto">
+                    <a href="#" class="nav-link px-3">Instructors</a>
+                    <div class="d-flex align-items-center auth-dropdowns">
+                        <div class="nav-item dropdown dropdown-menu-end d-none d-lg-block notification-menu">
+                            <a class="nav-link dropdown-toggle px-2" href="#" data-bs-toggle="dropdown"
+                                data-bs-auto-close="outside" data-bs-offset="0,8">
+                                <span class="icon-circle rounded-circle p-1">
+                                    <span class="notify-indicator">2</span><i class="fa-regular fa-bell"
+                                        style="font-size: 1.143rem;"></i>
+                                </span>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <h6 class="dropdown-header pb-3 d-flex align-items-center">Notifications <a href="#"
+                                        class="text-decoration-none ms-auto">View all Notifications</a></h6>
+                                <div class="overflow-menu">
+
+                                    <li><a class="dropdown-item py-3 small" href="#">Notification 1 Lorem ipsum dolor
+                                            sit amet
+                                            consectetur adipisicing elit. Odit, exercitationem! </a></li>
+
+                                    <li><a class="dropdown-item py-3 small" href="#">Notification 2 consectetur
+                                            adipisicing
+                                            elit.
+                                            Odit,
+                                            exercitationem!
+                                        </a></li>
+                                    <li>
+                                    <li><a class="dropdown-item py-3 small" href="#">Notification 1 Lorem ipsum dolor
+                                            sit amet
+                                            consectetur adipisicing elit. Odit, exercitationem! </a></li>
+
+                                    <li><a class="dropdown-item py-3 small" href="#">Notification 2 consectetur
+                                            adipisicing
+                                            elit.
+                                            Odit,
+                                            exercitationem!
+                                        </a></li>
+                                    <li><a class="dropdown-item py-3 small" href="#">Notification 2 consectetur
+                                            adipisicing
+                                            elit.
+                                            Odit,
+                                            exercitationem!
+                                        </a></li>
+                                    <li>
+                                    <li><a class="dropdown-item py-3 small" href="#">Notification 1 Lorem ipsum dolor
+                                            sit amet
+                                            consectetur adipisicing elit. Odit, exercitationem! </a></li>
+
+                                    <li><a class="dropdown-item py-3 small" href="#">Notification 2 consectetur
+                                            adipisicing
+                                            elit.
+                                            Odit,
+                                            exercitationem!
+                                        </a></li>
+                                    <li><a class="dropdown-item py-3 small" href="#">Notification 2 consectetur
+                                            adipisicing
+                                            elit.
+                                            Odit,
+                                            exercitationem!
+                                        </a></li>
+                                    <li>
+                                    <li><a class="dropdown-item py-3 small" href="#">Notification 1 Lorem ipsum dolor
+                                            sit amet
+                                            consectetur adipisicing elit. Odit, exercitationem! </a></li>
+                                    <li><a class="dropdown-item py-3 small" href="#">Notification 2 consectetur
+                                            adipisicing
+                                            elit.
+                                            Odit,
+                                            exercitationem!
+                                        </a></li>
+                                    <li><a class="dropdown-item py-3 small" href="#">Notification 2 consectetur
+                                            adipisicing
+                                            elit.
+                                            Odit,
+                                            exercitationem!
+                                        </a></li>
+                                    <li>
+                                    <li><a class="dropdown-item py-3 small" href="#">Notification 1 Lorem ipsum dolor
+                                            sit amet
+                                            consectetur adipisicing elit. Odit, exercitationem! </a></li>
+                                    <li><a class="dropdown-item py-3 small" href="#">Notification 2 consectetur
+                                            adipisicing
+                                            elit.
+                                            Odit,
+                                            exercitationem!
+                                        </a></li>
+                                </div>
+
+                                <!-- <div class="text-muted text-center mt-4 p-3">No Notifications</div> -->
+                            </ul>
+                        </div>
+                        <div class="nav-item dropdown dropdown-menu-end d-none d-lg-block message-menu">
+                            <a class="nav-link dropdown-toggle px-2" href="#" data-bs-toggle="dropdown"
+                                data-bs-auto-close="outside" data-bs-offset="0,8">
+                                <span class="icon-circle rounded-circle p-1">
+                                    <span class="notify-indicator">2</span><i class="fa-regular fa-message"></i></span>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <h6 class="dropdown-header pb-3 d-flex align-items-center">Messages <a href="#"
+                                        class="text-decoration-none ms-auto">View all Messages</a></h6>
+                                <!-- <div class="text-muted text-center mt-4 p-3">No Messages</div> -->
+                                <div class="overflow-menu">
+
+                                    <li><a class="dropdown-item py-3" href="#">
+                                            <div class="message-line">
+                                                <div class="d-flex gap-2">
+                                                    <div class="author-preview flex-0-auto">
+                                                        <img src="./assets/img/static/sampleperson.jpg" alt="">
+                                                    </div>
+                                                    <div class="small">
+                                                        <div
+                                                            class="d-flex gap-2 align-items-center justify-content-between">
+                                                            <div class="fw-bold">Todd Scott</div>
+                                                            <div class="text-muted message-stamp flex-0-auto">5
+                                                                Mins
+                                                                ago</div>
+                                                        </div>
+                                                        <div class="text-muted message-content">
+                                                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                                            Corrupti
+                                                            aliquam
+                                                            quo
+                                                            molestias laborum dolores totam vel repudiandae impedit
+                                                            atque
+                                                            ipsum.
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a></li>
+                                    <li>
+
+                                    <li><a class="dropdown-item py-3" href="#">
+                                            <div class="message-line">
+                                                <div class="d-flex gap-2">
+                                                    <div class="author-preview flex-0-auto">
+                                                        <img src="./assets/img/static/sampleperson.jpg" alt="">
+                                                    </div>
+                                                    <div class="small">
+                                                        <div
+                                                            class="d-flex gap-2 align-items-center justify-content-between">
+                                                            <div class="fw-bold">Todd Scott</div>
+                                                            <div class="text-muted message-stamp flex-0-auto">5
+                                                                Mins
+                                                                ago</div>
+                                                        </div>
+                                                        <div class="text-muted message-content">
+                                                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                                            Corrupti
+                                                            aliquam
+                                                            quo
+                                                            molestias laborum dolores totam vel repudiandae impedit
+                                                            atque
+                                                            ipsum.
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a></li>
+                                    <li>
+
+                                    <li><a class="dropdown-item py-3" href="#">
+                                            <div class="message-line">
+                                                <div class="d-flex gap-2">
+                                                    <div class="author-preview flex-0-auto">
+                                                        <img src="./assets/img/static/sampleperson.jpg" alt="">
+                                                    </div>
+                                                    <div class="small">
+                                                        <div
+                                                            class="d-flex gap-2 align-items-center justify-content-between">
+                                                            <div class="fw-bold">Todd Scott</div>
+                                                            <div class="text-muted message-stamp flex-0-auto">5
+                                                                Mins
+                                                                ago</div>
+                                                        </div>
+                                                        <div class="text-muted message-content">
+                                                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                                            Corrupti
+                                                            aliquam
+                                                            quo
+                                                            molestias laborum dolores totam vel repudiandae impedit
+                                                            atque
+                                                            ipsum.
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a></li>
+                                    <li>
+
+                                    <li><a class="dropdown-item py-3" href="#">
+                                            <div class="message-line">
+                                                <div class="d-flex gap-2">
+                                                    <div class="author-preview flex-0-auto">
+                                                        <img src="./assets/img/static/sampleperson.jpg" alt="">
+                                                    </div>
+                                                    <div class="small">
+                                                        <div
+                                                            class="d-flex gap-2 align-items-center justify-content-between">
+                                                            <div class="fw-bold">Todd Scott</div>
+                                                            <div class="text-muted message-stamp flex-0-auto">5
+                                                                Mins
+                                                                ago</div>
+                                                        </div>
+                                                        <div class="text-muted message-content">
+                                                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                                            Corrupti
+                                                            aliquam
+                                                            quo
+                                                            molestias laborum dolores totam vel repudiandae impedit
+                                                            atque
+                                                            ipsum.
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a></li>
+                                    <li>
+
+                                    <li><a class="dropdown-item py-3" href="#">
+                                            <div class="message-line">
+                                                <div class="d-flex gap-2">
+                                                    <div class="author-preview flex-0-auto">
+                                                        <img src="./assets/img/static/sampleperson.jpg" alt="">
+                                                    </div>
+                                                    <div class="small">
+                                                        <div
+                                                            class="d-flex gap-2 align-items-center justify-content-between">
+                                                            <div class="fw-bold">Todd Scott</div>
+                                                            <div class="text-muted message-stamp flex-0-auto">5
+                                                                Mins
+                                                                ago</div>
+                                                        </div>
+                                                        <div class="text-muted message-content">
+                                                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                                            Corrupti
+                                                            aliquam
+                                                            quo
+                                                            molestias laborum dolores totam vel repudiandae impedit
+                                                            atque
+                                                            ipsum.
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a></li>
+                                    <li>
+
+                                    <li><a class="dropdown-item py-3" href="#">
+                                            <div class="message-line">
+                                                <div class="d-flex gap-2">
+                                                    <div class="author-preview flex-0-auto">
+                                                        <img src="./assets/img/static/sampleperson.jpg" alt="">
+                                                    </div>
+                                                    <div class="small">
+                                                        <div
+                                                            class="d-flex gap-2 align-items-center justify-content-between">
+                                                            <div class="fw-bold">Todd Scott</div>
+                                                            <div class="text-muted message-stamp flex-0-auto">5
+                                                                Mins
+                                                                ago</div>
+                                                        </div>
+                                                        <div class="text-muted message-content">
+                                                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                                            Corrupti
+                                                            aliquam
+                                                            quo
+                                                            molestias laborum dolores totam vel repudiandae impedit
+                                                            atque
+                                                            ipsum.
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a></li>
+                                    <li>
+
+                                    <li><a class="dropdown-item py-3" href="#">
+                                            <div class="message-line">
+                                                <div class="d-flex gap-2">
+                                                    <div class="author-preview flex-0-auto">
+                                                        <img src="./assets/img/static/sampleperson.jpg" alt="">
+                                                    </div>
+                                                    <div class="small">
+                                                        <div
+                                                            class="d-flex gap-2 align-items-center justify-content-between">
+                                                            <div class="fw-bold">Todd Scott</div>
+                                                            <div class="text-muted message-stamp flex-0-auto">5
+                                                                Mins
+                                                                ago</div>
+                                                        </div>
+                                                        <div class="text-muted message-content">
+                                                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                                            Corrupti
+                                                            aliquam
+                                                            quo
+                                                            molestias laborum dolores totam vel repudiandae impedit
+                                                            atque
+                                                            ipsum.
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a></li>
+                                    <li>
+                                </div>
+                            </ul>
+                        </div>
+                        <div class="nav-item dropdown dropdown-menu-end d-none d-lg-block">
+                            <a class="nav-link dropdown-toggle px-2" href="#" data-bs-toggle="dropdown"
+                                data-bs-auto-close="outside" data-bs-offset="0,8">
+                                <div class="author-preview flex-0-auto">
+                                    <img src="./assets/img/static/sampleperson.jpg" alt="">
+                                </div>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li>
+                                    <a class="dropdown-item" href="#">
+                                        <div class="d-flex align-items-center gap-3">
+                                            <div class="author-preview flex-0-auto">
+                                                <img src="./assets/img/static/sampleperson.jpg" alt="">
+                                            </div>
+                                            <div>
+                                                <div class="text-black fw-bold"> User Account</div>
+                                                <div class="small text-muted"> testuser1@gmail.com </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#">My Learnings</a></li>
+                                <li><a class="dropdown-item" href="#">My Listing</a></li>
+                                <li><a class="dropdown-item" href="#">My Favourites</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#">Edit Profile</a></li>
+                                <li><a class="dropdown-item" href="#">Purchase History</a></li>
+                                <li><a class="dropdown-item" href="#">My Address</a></li>
+                                <li><a class="dropdown-item" href="#">Settings</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#">Help</a></li>
+                                <li><a class="dropdown-item" href="#">Logout</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <aside class="asider-bar offcanvas offcanvas-start" tabindex="-1" id="asidebar">
+            <div class="offcanvas-header">
+                <button type="button" class="cls-btn outline-0 border-0" data-bs-dismiss="offcanvas"
+                    data-bs-target="#asidebar" aria-label="Close"><i class="fa fa-close"></i></button>
+            </div>
+            <div class="offcanvas-body">
+                <div class="auth-section">
+                    <a class="d-block" href="">Login</a>
+                    <a class="d-block" href="">Signup</a>
+                </div>
+                <hr>
+                <a href="#">Instructors</a>
+                <hr>
+                <div class="mb-2">Categories</div>
+                <div class="page-header">
+                    <nav>
+                        <div class="menu-wrapper is-visible">
+                            <div class="list-wrapper">
+                                <ul class="menu level-1">
+                                    <li>
+                                        <a href="" class="nested">Web Development</a>
+                                        <ul class="sub-menu level-2">
+                                            <li>
+                                                <a href="" class="nested">Javascript</a>
+                                                <ul class="sub-menu level-3">
+                                                    <li> <a href="">React</a> </li>
+                                                    <li> <a href="">Vue</a> </li>
+                                                    <li> <a href="">Angular</a> </li>
+                                                </ul>
+                                            </li>
+                                            <li>
+                                                <a href="">Course Materials</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <a href="" class="nested">Mobile Development</a>
+                                        <ul class="sub-menu level-2">
+                                            <li>
+                                                <a href="">Unity</a>
+                                            </li>
+                                            <li>
+                                                <a href="">3D Game Development</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <a href="">IT Certifications</a>
+                                    </li>
+                                    <li>
+                                        <a href="">Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero vel
+                                            sequi nobis atque, laudantium perspiciatis!</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="list-wrapper">
+                                <button type="button" class="back-one-level mb-2 ps-0">
+                                    <i class="fa fa-arrow-left f-12"></i>
+                                    <span class="text-start small text-truncate" />
+                                </button>
+                                <div class="sub-menu-wrapper"></div>
+                            </div>
+                            <div class="list-wrapper">
+                                <button type="button" class="back-one-level mb-2 ps-0">
+                                    <i class="fa fa-arrow-left f-12"></i>
+                                    <span class="text-start small text-truncate" />
+                                </button>
+                                <div class="sub-menu-wrapper"></div>
+                            </div>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </aside>
+    </header>
+
+    <main>
+        <div class="instructor-page">
+            <div class="container-xxl px-4">
+                <div class="py-4">
+                    <div class="row g-4">
+                        <div class="col-12">
+                            <div class="card">
+                                <div class="card-header">
+                                    Jump Into Course Creation
+                                </div>
+                                <div class="card-body">
+                                    <h5 class="card-title">Special title treatment</h5>
+                                    <p class="card-text">With supporting text below as a natural lead-in to additional
+                                        content.</p>
+                                    <a href="#" class="btn btn-primary btn-lg py-2">Add Course</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <div class="text-muted text-center my-5">Based on your experience, we think these resources
+                                will be
+                                helpful.</div>
+                        </div>
+                        <div class="col-12">
+                            <div class="card">
+                                <div class="card-body">
+                                    <h5 class="card-title">Card title</h5>
+                                    <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
+                                    <p class="card-text">Some quick example text to build on the card title and make up
+                                        the bulk of the card's content.</p>
+                                    <a href="#" class="card-link">Get Started</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="card">
+                                <div class="card-body">
+                                    <h5 class="card-title">Card title</h5>
+                                    <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
+                                    <p class="card-text">Some quick example text to build on the card title and make up
+                                        the bulk of the card's content.</p>
+                                    <a href="#" class="card-link">Get Started</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="card">
+                                <div class="card-body">
+                                    <h5 class="card-title">Card title</h5>
+                                    <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
+                                    <p class="card-text">Some quick example text to build on the card title and make up
+                                        the bulk of the card's content.</p>
+                                    <a href="#" class="card-link">Get Started</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </main>
+
+    <footer class="py-4 py-sm-5">
+        <div class="container-xxl px-4">
+            <img src="./assets/img/icons/logo-white.png" class="footer-logo mb-4" alt="logo">
+            <div class="row gx-lg-5 gy-4 gy-sm-5">
+                <div class="order-1 col-12 col-md-6 col-xl-3">
+                    <div class="row gy-4">
+                        <div class="col-sm-6 col-md-12">
+                            <p class="mb-1 fw-bold">About Us</p>
+                            <p class="small mb-0">We want to help bring talented students and unique startups together
+                            </p>
+                        </div>
+                        <div class="col-sm-6 col-md-12">
+                            <p class="mb-2 fw-bold">Contact Us</p>
+                            <div class="d-flex align-items-center gap-2 mb-2">
+                                <span class="contact-rings">
+                                    <img src="./assets/img/icons/phonecall.png" alt="logo">
+                                </span>
+                                <a class="text-white text-decoration-none small" href="tel:+919990009900">+91 9990 009
+                                    900</a>
+                            </div>
+                            <div class="d-flex align-items-center gap-2">
+                                <span class="contact-rings">
+                                    <img src="./assets/img/icons/emailicon.png" alt="logo">
+                                </span>
+                                <a class="text-white text-decoration-none small"
+                                    href="demo@gmail.com">demo@gmail.com</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div
+                    class="order-2 order-md-3 order-xl-2 col-sm-6 col-md-6 col-lg-6 col-xl-3 d-xl-flex justify-content-center">
+                    <div class="footer-container">
+                        <p class="mb-1 fw-bold">Information</p>
+                        <div class="footer-links mb-1"><a href="#">About us</a></div>
+                        <div class="footer-links mb-1"><a href="#">More search</a></div>
+                        <div class="footer-links mb-1"><a href="#">Blog</a></div>
+                        <div class="footer-links mb-1"><a href="#">Testimonials</a></div>
+                        <div class="footer-links"><a href="#">Events</a></div>
+                    </div>
+                </div>
+                <div
+                    class="order-3 order-lg-4 order-xl-3 col-sm-6 col-md-6 col-lg-6 col-xl-3 d-xl-flex justify-content-center">
+                    <div class="footer-container">
+                        <p class="mb-1 fw-bold">Helpful Links</p>
+                        <div class="footer-links mb-1"><a href="#">Service</a></div>
+                        <div class="footer-links mb-1"><a href="#">Support</a></div>
+                        <div class="footer-links mb-1"><a href="#">Blog</a></div>
+                        <div class="footer-links mb-1"><a href="#">Terms & Conditions</a></div>
+                        <div class="footer-links"><a href="#">Privacy Policy</a></div>
+                    </div>
+                </div>
+                <div class="order-4 order-md-2 order-xl-4 col-12 col-md-6 col-lg-6 col-xl-3">
+                    <div class="subscribe-block">
+                        <p class="mb-3 fw-bold">Subscribe More Info</p>
+                        <input class="form-control text-center" type="text" placeholder="Enter your Email">
+                        <button type="button" class="btn btn-secondary w-100 mt-3">Subscribe</button>
+
+                        <div class="row mt-3 gx-3 app-links">
+                            <div class="col-6">
+                                <a href="#"><img src="./assets/img/icons/playstore.png" class="w-100" alt="logo"></a>
+                            </div>
+                            <div class="col-6">
+                                <a href="#"> <img src="./assets/img/icons/appstore.png" class="w-100" alt="logo"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="order-5 col-12">
+                    <div class="d-flex justify-content-center gap-3 social-links">
+                        <a href="#">
+                            <img height="32" src="./assets/img/icons/fb-icon.png" alt="logo">
+                        </a>
+                        <a href="#">
+                            <img height="32" src="./assets/img/icons/insta-icon.png" alt="logo">
+                        </a>
+                        <a href="#">
+                            <img height="32" src="./assets/img/icons/twitter-icon.png" alt="logo">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="./assets/js/bootstrap.js"></script>
+    <script src="./assets/js/swiper.js"></script>
+    <script src="./assets/js/slider-setup.js"></script>
+    <script src="./assets/js/dropdown-setup.js"></script>
+    <script src="./assets/js/mobile-category-menu.js"></script>
+    <script src="./assets/js/searchbar-toggle.js"></script>
+    <script src="./assets/js/file-upload.js"></script>
+</body>
+
+</html>
