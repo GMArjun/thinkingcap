@@ -431,6 +431,10 @@ header {
   a {
     text-decoration: none;
   }
+  .dropdown-menu {
+    z-index: unset;
+    box-shadow: none;
+  }
 }
 
 .page-header {
@@ -1440,12 +1444,12 @@ header {
       opacity: 0;
       cursor: pointer;
     }
-    &.uploader-img{
+    &.uploader-img {
       background-image: url("../img/icons/uploadCourse.png");
       background-repeat: no-repeat;
       background-position: center;
     }
-    &.uploader-video{
+    &.uploader-video {
       background-image: url("../img/icons/uploadCourseVideoPreview.png");
       background-repeat: no-repeat;
       background-position: center;
@@ -1453,7 +1457,7 @@ header {
   }
 }
 
-.card-upload{
+.card-upload {
   height: 58px;
   width: 58px;
   position: relative;
@@ -1473,17 +1477,28 @@ header {
       opacity: 0;
       cursor: pointer;
     }
-    &.uploader-video{
+    &.uploader-video {
       background-image: url("../img/icons/uploadCourseVideoPreview.png");
       background-repeat: no-repeat;
       background-position: center;
       background-size: 30px;
     }
-    &.uploader-video-list{
+    &.uploader-video-list {
       background-image: url("../img/icons/uploadCourseVideoList.png");
       background-repeat: no-repeat;
       background-position: center;
       background-size: 30px;
+    }
+  }
+}
+
+#profile-menu-collapse{
+  i{
+    transition: 0.2s ease;
+  }
+  &[aria-expanded="true"]{
+    i{
+      transform: rotate(90deg);
     }
   }
 }

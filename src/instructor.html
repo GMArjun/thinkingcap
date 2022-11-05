@@ -58,7 +58,7 @@
                     </a>
                 </div>
                 <div class="header-controls d-none d-lg-flex align-items-center flex-0-auto">
-                    <a href="#" class="nav-link px-3">Instructors</a>
+                    <a class="btn btn-secondary mx-3" style="--bs-btn-padding-x: 1.5rem;" href="#">Add Course</a>
                     <div class="d-flex align-items-center auth-dropdowns">
                         <div class="nav-item dropdown dropdown-menu-end d-none d-lg-block notification-menu">
                             <a class="nav-link dropdown-toggle px-2" href="#" data-bs-toggle="dropdown"
@@ -389,21 +389,21 @@
                                 <li>
                                     <hr class="dropdown-divider">
                                 </li>
-                                <li><a class="dropdown-item" href="#">My Learnings</a></li>
-                                <li><a class="dropdown-item" href="#">My Listing</a></li>
-                                <li><a class="dropdown-item" href="#">My Favourites</a></li>
+                                <li><a class="dropdown-item small" href="#">My Learnings</a></li>
+                                <li><a class="dropdown-item small" href="#">My Listing</a></li>
+                                <li><a class="dropdown-item small" href="#">My Favourites</a></li>
                                 <li>
                                     <hr class="dropdown-divider">
                                 </li>
-                                <li><a class="dropdown-item" href="#">Edit Profile</a></li>
-                                <li><a class="dropdown-item" href="#">Purchase History</a></li>
-                                <li><a class="dropdown-item" href="#">My Address</a></li>
-                                <li><a class="dropdown-item" href="#">Settings</a></li>
+                                <li><a class="dropdown-item small" href="#">Edit Profile</a></li>
+                                <li><a class="dropdown-item small" href="#">Purchase History</a></li>
+                                <li><a class="dropdown-item small" href="#">My Address</a></li>
+                                <li><a class="dropdown-item small" href="#">Settings</a></li>
                                 <li>
                                     <hr class="dropdown-divider">
                                 </li>
-                                <li><a class="dropdown-item" href="#">Help</a></li>
-                                <li><a class="dropdown-item" href="#">Logout</a></li>
+                                <li><a class="dropdown-item small" href="#">Help</a></li>
+                                <li><a class="dropdown-item small" href="#">Logout</a></li>
                             </ul>
                         </div>
                     </div>
@@ -416,15 +416,63 @@
                 <button type="button" class="cls-btn outline-0 border-0" data-bs-dismiss="offcanvas"
                     data-bs-target="#asidebar" aria-label="Close"><i class="fa fa-close"></i></button>
             </div>
-            <div class="offcanvas-body">
-                <div class="auth-section">
-                    <a class="d-block" href="">Login</a>
-                    <a class="d-block" href="">Signup</a>
+            <div class="offcanvas-body auth-dropdowns">
+                <div class="profile-menu-mobile">
+                    <div class="d-flex align-items-center gap-3 cursor-pointer" id="profile-menu-collapse" data-bs-toggle="collapse"
+                        href="#profile" role="button" aria-expanded="false" aria-controls="profile">
+                        <div class="author-preview flex-0-auto">
+                            <img src="./assets/img/static/sampleperson.jpg" alt="">
+                        </div>
+                        <div>
+                            <div class="text-black fw-bold"> User Account</div>
+                            <div class="small text-muted"> testuser1@gmail.com </div>
+                        </div>
+                        <i class="fa-solid fa-chevron-right ms-auto small"></i>
+                    </div>
+
+                    <div class="collapse" id="profile">
+                        <div class="profile-menu-wrapper">
+                            <ul class="dropdown-menu py-0 show position-relative border-0">
+                                <li>
+                                    <hr class="dropdown-divider mt-3">
+                                </li>
+                                <li>
+                                    <a class="dropdown-item px-0 bg-white small d-flex align-items-center justify-content-between"
+                                        href="#">Notifications <span
+                                            class="badge text-bg-secondary text-white">4</span></a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item px-0 bg-white small d-flex align-items-center justify-content-between"
+                                        href="#">Messages <span class="badge text-bg-secondary text-white">4</span></a>
+                                </li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item px-0 bg-white small" href="#">My Learnings</a></li>
+                                <li><a class="dropdown-item px-0 bg-white small" href="#">My Listing</a></li>
+                                <li><a class="dropdown-item px-0 bg-white small" href="#">My Favourites</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item px-0 bg-white small" href="#">Edit Profile</a></li>
+                                <li><a class="dropdown-item px-0 bg-white small" href="#">Purchase History</a></li>
+                                <li><a class="dropdown-item px-0 bg-white small" href="#">My Address</a></li>
+                                <li><a class="dropdown-item px-0 bg-white small" href="#">Settings</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item px-0 bg-white small" href="#">Help</a></li>
+                                <li><a class="dropdown-item px-0 bg-white small" href="#">Logout</a></li>
+                            </ul>
+                        </div>
+                    </div>
+
                 </div>
+
                 <hr>
-                <a href="#">Instructors</a>
+                <a href="#" class="text-black small">Instructors</a>
                 <hr>
-                <div class="mb-2">Categories</div>
+                <div class="mb-2 text-muted small">Categories</div>
                 <div class="page-header">
                     <nav>
                         <div class="menu-wrapper is-visible">
