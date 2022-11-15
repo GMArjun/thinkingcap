@@ -6,6 +6,17 @@ const allNavTogglers = [
 const allHeaderTogglers = document.querySelectorAll("header .dropdown-toggle");
 const allHeaderDropdowns = document.querySelectorAll("header .dropdown-menu");
 
+const categoryLevel1Togglers = [
+  ...document.querySelectorAll(
+    ".category-menu > .dropdown-menu > .dropend > .dropdown-toggle"
+  ),
+];
+const categoryLevel2Togglers = [
+  ...document.querySelectorAll(
+    ".category-menu > .dropdown-menu > .dropend > .dropdown-menu > .dropend > .dropdown-toggle"
+  ),
+];
+
 let dropdownVisibilty = (handler, toggle) => {
   new bootstrap.Dropdown(handler);
   let menuInstance = bootstrap.Dropdown.getInstance(handler);
@@ -31,6 +42,24 @@ allNavTogglers.forEach((handler) => {
       dropdownVisibilty(handler, "hide");
     });
     let prevDropdowns = allNavTogglers.filter((item) => item !== handler);
+    prevDropdowns.forEach((ele) => dropdownVisibilty(ele, "hide"));
+  });
+});
+
+categoryLevel1Togglers.forEach((handler) => {
+  handler.addEventListener("shown.bs.dropdown", () => {
+    let prevDropdowns = categoryLevel1Togglers.filter(
+      (item) => item !== handler
+    );
+    prevDropdowns.forEach((ele) => dropdownVisibilty(ele, "hide"));
+  });
+});
+
+categoryLevel2Togglers.forEach((handler) => {
+  handler.addEventListener("shown.bs.dropdown", () => {
+    let prevDropdowns = categoryLevel2Togglers.filter(
+      (item) => item !== handler
+    );
     prevDropdowns.forEach((ele) => dropdownVisibilty(ele, "hide"));
   });
 });

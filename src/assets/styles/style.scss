@@ -257,6 +257,13 @@ header {
       max-width: 250px;
     }
     --bs-dropdown-item-padding-y: 0.4rem;
+    li {
+      @extend .py-2;
+      a{
+        padding-top: 0px;
+        padding-bottom: 0px;
+      }
+    }
     .dropdown-item {
       @extend .text-truncate, .pe-5;
       padding-right: 3rem;
@@ -286,8 +293,9 @@ header {
     }
     & > .dropend {
       & > .dropdown-menu {
-        top: -4.79rem;
-        margin-left: -1px;
+        position: fixed;
+        top: -0.05rem;
+        margin-left: -0.003rem;
         border-top-left-radius: 0px;
         border-bottom-left-radius: 0px;
         &:has(.dropdown-toggle[aria-expanded="true"]) {
@@ -296,8 +304,9 @@ header {
         }
         & > .dropend {
           & > .dropdown-menu {
-            top: -6.89rem;
-            margin-left: -1px;
+            position: fixed;
+            top: -0.06rem;
+            margin-left: -0.003rem;
             border-top-left-radius: 0px;
             border-bottom-left-radius: 0px;
           }
@@ -1492,12 +1501,12 @@ header {
   }
 }
 
-#profile-menu-collapse{
-  i{
+#profile-menu-collapse {
+  i {
     transition: 0.2s ease;
   }
-  &[aria-expanded="true"]{
-    i{
+  &[aria-expanded="true"] {
+    i {
       transform: rotate(90deg);
     }
   }
