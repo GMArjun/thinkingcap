@@ -248,7 +248,6 @@ header {
     }
   }
   .dropdown-menu {
-    min-height: 400px;
     min-width: 225px;
     max-width: 226px;
     box-shadow: 0 14px 18px -18px $gray-500;
@@ -298,6 +297,9 @@ header {
         margin-left: -0.003rem;
         border-top-left-radius: 0px;
         border-bottom-left-radius: 0px;
+        &.show{
+          animation: none !important;
+        }
         &:has(.dropdown-toggle[aria-expanded="true"]) {
           border-top-right-radius: 0px;
           border-bottom-right-radius: 0px;
@@ -306,9 +308,13 @@ header {
           & > .dropdown-menu {
             position: fixed;
             top: -0.06rem;
+            left: 497px;
             margin-left: -0.003rem;
             border-top-left-radius: 0px;
             border-bottom-left-radius: 0px;
+            &.show{
+              animation: none !important;
+            }
           }
         }
       }

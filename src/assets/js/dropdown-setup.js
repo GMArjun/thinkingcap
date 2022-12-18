@@ -1,27 +1,11 @@
-const allNavTogglers = [
-  ...document.querySelectorAll(
-    ".category-menu > .dropdown-toggle, .auth-dropdowns .dropdown-toggle"
-  ),
-];
-const allHeaderTogglers = document.querySelectorAll("header .dropdown-toggle");
-const allHeaderDropdowns = document.querySelectorAll("header .dropdown-menu");
-
-const categoryLevel1Togglers = [
-  ...document.querySelectorAll(
-    ".category-menu > .dropdown-menu > .dropend > .dropdown-toggle"
-  ),
-];
-const categoryLevel2Togglers = [
-  ...document.querySelectorAll(
-    ".category-menu > .dropdown-menu > .dropend > .dropdown-menu > .dropend > .dropdown-toggle"
-  ),
-];
-
 let dropdownVisibilty = (handler, toggle) => {
   new bootstrap.Dropdown(handler);
   let menuInstance = bootstrap.Dropdown.getInstance(handler);
   toggle == "show" ? menuInstance.show() : menuInstance.hide();
 };
+
+const allHeaderTogglers = document.querySelectorAll("header .dropdown-toggle");
+const allHeaderDropdowns = document.querySelectorAll("header .dropdown-menu");
 
 allHeaderTogglers.forEach((handler) => {
   ["click", "mouseover"].forEach((event) => {
@@ -35,6 +19,24 @@ allHeaderTogglers.forEach((handler) => {
 allHeaderDropdowns.forEach((dropdown) => {
   dropdown.addEventListener("mouseover", (ev) => ev.stopPropagation());
 });
+
+const allNavTogglers = [
+  ...document.querySelectorAll(
+    ".category-menu > .dropdown-toggle, .auth-dropdowns .dropdown-toggle"
+  ),
+];
+
+const categoryLevel1Togglers = [
+  ...document.querySelectorAll(
+    ".category-menu > .dropdown-menu > .dropend > .dropdown-toggle"
+  ),
+];
+
+const categoryLevel2Togglers = [
+  ...document.querySelectorAll(
+    ".category-menu > .dropdown-menu > .dropend > .dropdown-menu > .dropend > .dropdown-toggle"
+  ),
+];
 
 allNavTogglers.forEach((handler) => {
   handler.addEventListener("shown.bs.dropdown", () => {
@@ -63,3 +65,16 @@ categoryLevel2Togglers.forEach((handler) => {
     prevDropdowns.forEach((ele) => dropdownVisibilty(ele, "hide"));
   });
 });
+
+setEqualCategoryMenuHeight = () => {
+  const toggler = document.querySelector(".category-menu > .dropdown-toggle");
+  const dropdowns = document.querySelectorAll(".category-menu .dropdown-menu");
+  const menuHeight = document.querySelector(".category-menu > .dropdown-menu");
+  toggler.addEventListener("shown.bs.dropdown", () => {
+    dropdowns.forEach((i) => {
+      i.style.minHeight = `${menuHeight.offsetHeight}px`;
+    });
+  });
+};
+
+setEqualCategoryMenuHeight();
